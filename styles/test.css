@@ -1,0 +1,207 @@
+﻿html,
+body,
+div,
+img {
+  margin: 0.01px;
+  padding: 0.01px;
+
+}
+
+body {
+  font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 已連結過 */
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 滑鼠移至連結 */
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* 選擇的連結 */
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.box {
+  display: flex;
+  padding-top: 1px;
+}
+
+.box1 {
+  background-color: rgba(187, 187, 255, 0.447);
+  margin-top: 10px;
+  display: flex;
+
+}
+
+.boxes1 {
+  flex-direction: column
+}
+
+.boxes2 {
+  background-color: aquamarine;
+  padding-top: 1px;
+  margin: 0.1%;
+  /**/
+  flex: none;
+  /**/
+  display: flex;
+
+
+}
+
+.boxes3 {
+  background-color: rgba(0, 0, 255, 0.26);
+  margin: 30px;
+  /**/
+  flex: none;
+}
+
+.boxes4 {
+  background-color: rgba(0, 0, 255, 0.26);
+  margin: 11px;
+  text-align: center;
+  /**/
+  flex: auto;
+
+
+}
+
+.boxes5 {
+
+  background-color: blueviolet;
+
+  /**/
+  flex-direction: row;
+  flex: auto;
+  /**/
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+}
+
+.boxes6 {
+  display: flex;
+  background-color: rgb(213, 181, 243);
+  width: 30%;
+  height: 670px;
+  margin: 10px;
+  text-align: center;
+  /**/
+  flex: auto;
+}
+
+.boxes7 {
+  background-color: rgb(213, 181, 243);
+  width: 60%;
+  height: 670px;
+  margin: 10px;
+  /**/
+  flex: none;
+  flex-direction: column;
+  /**/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.boxes8 {
+
+  background-color: black;
+  height: 20%;
+  width: 95%;
+  margin: 10px;
+  /**/
+  flex: auto;
+  flex-direction: row;
+  /**/
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxes9 {
+  background-color: aqua;
+  background-size: cover;
+  height: 90%;
+  width: 30%;
+  margin: 10px;
+  /**/
+  flex: 1;
+  flex: auto;
+
+}
+
+.img1 {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.topstyl1 {
+  font-weight: bold;
+  font-size: 24px;
+  width: 15%;
+  margin: 11px;
+  text-align: center;
+  /**/
+  flex: none;
+}
+
+.topstyl2 {
+  font-size: 24px;
+  width: auto;
+  margin: 11px;
+  margin: left;
+  text-align: center;
+  /**/
+  flex: none;
+}
+
+/* 伸縮FAQ */
+
+ul {
+  list-style: none;
+  width: 500px;
+  padding: 30px 0;
+  margin: 0 auto
+}
+
+.qa-title {
+  background: #0088ff;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer
+}
+
+.qa-title.on {
+  background: #78bffe
+}
+
+.qa-content {
+  display: none;
+  background: #0088ff66;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 8px 0;
+}
