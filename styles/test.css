@@ -84,32 +84,30 @@ a:active {
 .boxes5 {
 
   background-color: blueviolet;
-
+  height: 685px;
   /**/
   flex-direction: row;
   flex: auto;
   /**/
-  display: flex;
+
   justify-content: space-around;
   align-items: flex-start;
 
 }
 
 .boxes6 {
-  display: flex;
   background-color: rgb(213, 181, 243);
-  width: 30%;
-  height: 670px;
+  height: 27%;
   margin: 10px;
   text-align: center;
   /**/
-  flex: auto;
+
 }
 
 .boxes7 {
   background-color: rgb(213, 181, 243);
-  width: 60%;
-  height: 670px;
+  height: 68%;
+
   margin: 10px;
   /**/
   flex: none;
@@ -204,4 +202,26 @@ ul {
   padding: 20px;
   border-radius: 6px;
   margin: 8px 0;
+}
+
+.go-top {
+  background-color: rgba(178, 243, 243, 0.681);
+  width: 45px;
+  height: 18px;
+  border: 3px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.lefticon {
+  background-color: chartreuse;
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 10px;
 }
