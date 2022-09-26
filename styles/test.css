@@ -49,7 +49,7 @@ a:active {
 }
 
 .boxes1 {
-  flex-direction: column
+  flex-direction: column;
 }
 
 .boxes2 {
@@ -165,7 +165,7 @@ a:active {
 }
 
 .topstyl2 {
-  font-size: 24px;
+  font-size: 24;
   width: auto;
   margin: 11px;
   margin: left;
@@ -224,4 +224,245 @@ ul {
   bottom: 20px;
   left: 20px;
   border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+  html,
+  body,
+  div,
+  img {
+    margin: 0.01px;
+    padding: 0.01px;
+
+  }
+
+  body {
+    font-family: arial, "Microsoft JhengHei", "微軟正黑體", sans-serif !important;
+  }
+
+
+  a:link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* 已連結過 */
+  a:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* 滑鼠移至連結 */
+  a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  /* 選擇的連結 */
+  a:active {
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+  .box {
+    display: flex;
+    padding-top: 1px;
+  }
+
+  .box1 {
+    background-color: rgba(187, 187, 255, 0.447);
+    margin-top: 10px;
+    display: flex;
+
+  }
+
+  .boxes1 {
+    flex-direction: column;
+  }
+
+  .boxes2 {
+    background-color: aquamarine;
+    padding-top: 1px;
+    margin: 0.1%;
+    /**/
+    flex: none;
+    /**/
+    display: block;
+
+
+  }
+
+  .boxes3 {
+    background-color: rgba(0, 0, 255, 0.26);
+    margin: 10px;
+    width: auto !important;
+    /**/
+    flex: none;
+
+  }
+
+  .boxes4 {
+    background-color: rgba(0, 0, 255, 0.26);
+    margin: 11px;
+    text-align: center;
+    width: auto !important;
+    overflow: scroll;
+    /**/
+    flex: auto;
+
+
+  }
+
+  .boxes5 {
+
+    background-color: blueviolet;
+    height: 685px;
+    width: 400px !important;
+    /**/
+    flex-direction: row;
+    flex: auto;
+    /**/
+
+    justify-content: space-around;
+    align-items: flex-start;
+
+  }
+
+  .boxes6 {
+    background-color: rgb(213, 181, 243);
+    height: 27%;
+    margin: 10px;
+    text-align: center;
+    /**/
+
+  }
+
+  .boxes7 {
+    background-color: rgb(213, 181, 243);
+    height: 68%;
+
+    margin: 10px;
+    /**/
+    flex: none;
+    flex-direction: column;
+    /**/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .boxes8 {
+
+    background-color: black;
+    height: 20%;
+    width: 95%;
+    margin: 10px;
+    /**/
+    flex: auto;
+    flex-direction: row;
+    /**/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .boxes9 {
+    background-color: aqua;
+    background-size: cover;
+    height: 90%;
+    width: 30%;
+    margin: 10px;
+    /**/
+    flex: 1;
+    flex: auto;
+
+  }
+
+  .img1 {
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+  }
+
+  .topstyl1 {
+    font-weight: bold;
+    font-size: 18px;
+    width: 10%;
+    margin: 11px;
+    text-align: center;
+    /**/
+    flex: none;
+  }
+
+  .topstyl2 {
+    font-size: 24px;
+    width: auto;
+    margin: 11px;
+    margin: left;
+    text-align: center;
+    /**/
+    flex: none;
+  }
+
+  /* 伸縮FAQ */
+
+  ul {
+    list-style: none;
+    width: auto;
+    padding: 30px 0;
+    margin: 0 auto
+  }
+
+  .qa-title {
+    background: #0088ff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer
+  }
+
+  .qa-title.on {
+    background: #78bffe
+  }
+
+  .qa-content {
+    display: none;
+    background: #0088ff66;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 8px 0;
+  }
+
+  .go-top {
+    background-color: rgba(178, 243, 243, 0.681);
+    width: 45px;
+    height: 18px;
+    border: 3px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .lefticon {
+    background-color: chartreuse;
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 10px;
+  }
+
+  .Iauto {
+    width: 380px;
+  }
 }

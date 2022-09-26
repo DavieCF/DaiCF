@@ -2,8 +2,9 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
+
 	<title>替身醫療論壇</title>
 	<link rel="stylesheet" type="text/css" href="./styles/test.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -11,7 +12,7 @@
 		.BKindex {
 			background-image: url("./images/1st.png");
 			background-size: 100% 100%;
-			background-attachment: fixed;
+
 			height: 685px;
 			padding-top: 1px;
 		}
@@ -28,6 +29,30 @@
 			height: 690px;
 			padding-top: 1px;
 		}
+
+		@media (max-width: 768px) {
+			.BKindex {
+				background-image: url("./images/1st.png");
+				background-size: auto;
+				background-position: center;
+				height: 685px;
+				padding-top: 1px;
+			}
+
+			.BKperson {
+				background-color: red;
+				padding-top: 1px;
+
+			}
+
+			.background2 {
+				background-image: url("./images/1st.png");
+				background-size: 100% 100%;
+				height: 690px;
+				padding-top: 1px;
+			}
+
+		}
 	</style>
 </head>
 
@@ -40,7 +65,7 @@
 			<div class="topstyl1"><a href="#SPpage2">演講人</a></div>
 			<div class="topstyl1"><a href="#faqpage">論壇資訊</a></div>
 			<div class="topstyl1"><a href="#hostpage">辦理單位</a></div>
-			<div class="topstyl1">English</span></div>
+			<div class="topstyl1"><a href="#hostpage">English</a></div>
 
 
 		</div>
@@ -72,9 +97,9 @@
 
 					<div class="boxes4" style="width: 70%">
 						<p>
-							<br>content/content/content/content/content/content/content/
-							<br>content/content/content/content/content/content/content/
-							<br>content/content/content/content/content/content/content/
+							<br>content/content/content/content
+							<br>content/content/content/content
+							<br>content/content/content/content
 						</p>
 					</div>
 				</div>
@@ -362,7 +387,7 @@
 			<div class="boxes6">
 
 				主辦單位<br>
-				<img src="images/CFBiocn.png" margin:auto>
+				<img src="images/CFBiocn.png" margin:auto class="Iauto">
 
 
 
