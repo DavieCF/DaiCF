@@ -226,6 +226,28 @@ ul {
   border-radius: 10px;
 }
 
+.boxes10 {
+  background-color: #ffffff00;
+  display: flex;
+  margin: 30px;
+  text-align: center;
+}
+
+.boxes11 {
+  background-color: #78bffe;
+  flex: auto;
+  margin: 30px;
+  padding: 30px;
+  width: 45%;
+}
+
+.boxes12 {
+  background-color: #78bffe;
+  flex: auto;
+  margin: 30px;
+  padding: 30px;
+  width: 45%;
+}
 
 @media (max-width: 768px) {
 
@@ -381,6 +403,19 @@ ul {
     flex: 1;
     flex: auto;
 
+  }
+
+  .boxes10 {
+    background-color: #fee378;
+    display: flex;
+  }
+
+  .boxes11 {
+    flex: auto;
+  }
+
+  .boxes12 {
+    flex: auto;
   }
 
   .img1 {
