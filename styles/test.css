@@ -364,11 +364,14 @@ ul {
     background-color: rgba(187, 187, 255, 0.447);
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
+
 
   }
 
   .boxes1 {
     flex-direction: column;
+
   }
 
   .boxes2 {
@@ -494,12 +497,13 @@ ul {
 
   .topstyl1 {
     font-weight: bold;
-    font-size: 14px;
-    width: 10%;
+    font-size: 18px;
+    width: 19%;
     margin: 11px;
     text-align: center;
     /**/
     flex: none;
+
   }
 
   .topstyl2 {
@@ -573,11 +577,11 @@ ul {
   }
 
   .Iauto {
-    width: 360px;
+    width: auto;
   }
 
   .boxIC1 {
     flex: none;
-    width: 60%;
+    width: 50%;
   }
 }
