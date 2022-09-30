@@ -251,7 +251,7 @@ ul {
 }
 
 .lefticon {
-  background-color: chartreuse;
+  background-image: url("images/bioHomo.png");
   width: 90px;
   height: 90px;
   position: fixed;
