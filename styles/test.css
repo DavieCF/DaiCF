@@ -39,8 +39,7 @@ a:active {
 .box {
   display: flex;
   padding-top: 1px;
-  height: 686px;
-  width: 401px;
+
 }
 
 .box1 {
