@@ -169,7 +169,7 @@ a:active {
 .ITDtext {
   color: #fff;
   font-size: 22px;
-  overflow-y: scroll;
+  overflow-y: visible;
 }
 
 .img1 {
@@ -275,6 +275,32 @@ ul {
   margin: 30px;
   padding: 30px;
   width: 45%;
+}
+
+.boxIC {
+  display: flex;
+  height: 60px;
+  width: auto;
+  flex: none;
+}
+
+.FBI {
+
+  flex: auto;
+  width: 45px;
+  height: 45px;
+}
+
+.TWI {
+  flex: auto;
+  width: 45px;
+  height: 45px;
+}
+
+.INI {
+  flex: auto;
+  width: 45px;
+  height: 45px;
 }
 
 @media (max-width: 768px) {
@@ -473,6 +499,13 @@ ul {
     /**/
     flex: none;
   }
+
+  .ITDtext {
+    color: #fff;
+    font-size: 22px;
+    overflow-y: scroll;
+  }
+
 
   /* 伸縮FAQ */
 
