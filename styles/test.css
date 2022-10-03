@@ -53,9 +53,12 @@ a:active {
 }
 
 .boxes2 {
-  background-color: aquamarine;
+  background-color: rgb(224, 249, 240);
   padding-top: 1px;
-  margin: 0.1%;
+  margin: 1%;
+  margin-left: 6%;
+  margin-right: 6%;
+  border-radius: 10px;
   /**/
   flex: none;
   /**/
@@ -65,16 +68,14 @@ a:active {
 }
 
 .boxes3 {
-  background-color: rgba(0, 0, 255, 0.26);
   margin: 30px;
   /**/
   flex: none;
 }
 
 .boxes4 {
-  background-color: rgba(0, 0, 255, 0.26);
-  margin: 11px;
-  text-align: center;
+  margin: 30px;
+  margin-left: 0px;
   /**/
   flex: auto;
 
@@ -366,7 +367,6 @@ ul {
   }
 
   .boxes2 {
-    background-color: aquamarine;
     padding-top: 1px;
     margin: 0.1%;
 
