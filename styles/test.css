@@ -250,15 +250,7 @@ ul {
   border-radius: 10px;
 }
 
-.lefticon {
-  background-image: url("images/bioHomo.png");
-  width: 90px;
-  height: 90px;
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  border-radius: 10px;
-}
+
 
 .boxes10 {
   background-color: #ffffff00;
@@ -566,7 +558,6 @@ ul {
   }
 
   .lefticon {
-    background-color: chartreuse;
     width: 45px;
     height: 45px;
     position: fixed;
