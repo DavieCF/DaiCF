@@ -72,7 +72,7 @@ a:active {
 
 .boxes4 {
   margin: 30px;
-  margin-left: 0px;
+  margin-left: 40px;
   /**/
   flex: auto;
 
@@ -235,6 +235,7 @@ ul {
   border-radius: 6px;
   margin: 8px 0;
   font-size: 24;
+  color: #fff;
 }
 
 .go-top {
