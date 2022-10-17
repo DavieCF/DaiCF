@@ -409,6 +409,7 @@ ul {
   .boxes3 {
     background-color: rgba(0, 0, 255, 0);
     margin: 10px;
+    margin-bottom: 0px;
     width: auto !important;
     /**/
     flex: none;
