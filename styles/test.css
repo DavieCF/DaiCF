@@ -306,7 +306,7 @@ ul {
   width: 80%;
 }
 
-.imghost1 {}
+
 
 .imghost2 {
   width: auto;
@@ -330,7 +330,7 @@ ul {
   font-weight: bold;
 }
 
-.text2 {}
+
 
 .headC {
   width: 320px;
@@ -456,7 +456,7 @@ ul {
     background-color: rgba(213, 181, 243, 0);
     height: auto;
 
-    margin: 10px;
+    margin: 6px;
     /**/
     flex: none;
     flex-direction: column;
@@ -619,7 +619,7 @@ ul {
     height: 150px;
     display: block;
     margin: auto;
-    margin-top: 11px
+    margin-top: 20px
   }
 
 
