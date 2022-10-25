@@ -185,6 +185,13 @@ a:active {
   height: 150px;
 }
 
+.agenda {
+  width: auto;
+  height: 900px;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+}
 
 .topstyl1 {
   font-weight: bold;
@@ -265,6 +272,7 @@ ul {
   margin: 30px;
   padding: 30px;
   width: 45%;
+  position: relative;
 }
 
 .boxes12 {
@@ -273,6 +281,14 @@ ul {
   margin: 30px;
   padding: 30px;
   width: 45%;
+  position: relative;
+}
+
+.boxes13 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .boxIC {
