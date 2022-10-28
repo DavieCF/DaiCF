@@ -369,6 +369,17 @@ ul {
   margin: auto;
 }
 
+.go-top {
+  background-size: cover;
+  width: 45px;
+  height: 45px;
+  border: 3px;
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  border-radius: 10px;
+}
+
 @media (max-width: 768px) {
 
   html,
@@ -620,13 +631,12 @@ ul {
   }
 
   .go-top {
-    background-color: rgba(178, 243, 243, 0.681);
     width: 45px;
     height: 18px;
     border: 3px;
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 8px;
     text-align: center;
     border-radius: 10px;
   }
