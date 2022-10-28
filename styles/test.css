@@ -688,6 +688,18 @@ ul {
     margin-bottom: 50px;
   }
 
+  .spker_name {
+    font-size: 24px;
+  }
+
+  .spker_title {
+    font-size: 24px;
+  }
+
+  .spker_contant {
+    font-size: 20px;
+    font-weight: bold !important;
+  }
 
 }
 
