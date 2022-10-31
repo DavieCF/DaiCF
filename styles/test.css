@@ -631,12 +631,12 @@ ul {
   }
 
   .go-top {
-    width: 45px;
-    height: 18px;
+    width: 40px;
+    height: 40px;
     border: 3px;
     position: fixed;
-    bottom: 90px;
-    right: 8px;
+    bottom: 65px;
+    right: 0px;
     text-align: center;
     border-radius: 10px;
   }
