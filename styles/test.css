@@ -223,7 +223,7 @@ ul {
 }
 
 .qa-title {
-  background: #0088ff;
+  background: rgb(0, 150, 180);
   color: #fff;
   padding: 10px 15px;
   border-radius: 6px;
@@ -232,7 +232,7 @@ ul {
 }
 
 .qa-title.on {
-  background: #78bffe
+  background: rgb(0, 150, 180);
 }
 
 .qa-content {
@@ -610,7 +610,7 @@ ul {
   }
 
   .qa-title {
-    background: #0088ff;
+    background: #1ebac0;
     color: #fff;
     padding: 10px 15px;
     border-radius: 6px;
