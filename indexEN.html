@@ -4,10 +4,11 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8" />
-
+	<meta property="og:image" content="https://avatarmedicine.xyz/images/web_01.png" />
 	<title>替身醫療論壇</title>
 	<link rel="stylesheet" type="text/css" href="./styles/test.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 	<style>
 		.BKindex {
 			background-image: url("./images/web_01.png");
@@ -71,6 +72,25 @@
 			border-radius: 10px;
 		}
 
+		.go-top {
+			background-image: url("images/up-arrow.png");
+
+		}
+
+		.dogicon {
+			background-image: url("images/6537.png");
+			background-size: cover;
+			width: 72px;
+			height: 80px;
+			border: 3px;
+			position: fixed;
+			bottom: 1px;
+			right: 1px;
+			border-radius: 5px;
+		}
+
+
+
 		@media (max-width: 768px) {
 			.BKindex {
 				background-image: url("./images/phone_web_01.png");
@@ -99,6 +119,18 @@
 				background-size: 100% 100%;
 			}
 
+			.dogicon {
+				background-image: url("images/6537.png");
+				background-size: cover;
+				width: 36px;
+				height: 40px;
+				border: 3px;
+				position: fixed;
+				bottom: 1px;
+				right: 1px;
+				border-radius: 5px;
+			}
+
 		}
 	</style>
 </head>
@@ -107,15 +139,15 @@
 	<!--主視覺海報-->
 	<div id="top" class="BKindex">
 		<div class="box1">
-			<div class="topstyl1"><a href="#introduce">Introduction</a></div>
-			<div class="topstyl1"><a href="#agenda">Agenda</a></div>
-			<div class="topstyl1"><a href="#SPpage1">Honored Guest</a></div>
-			<div class="topstyl1"><a href="#SPpage2">Speakers</a></div>
+			<div class="topstyl1"><a href="#introduce">論壇介紹</a></div>
+			<div class="topstyl1"><a href="#agenda">活動議程</a></div>
+			<div class="topstyl1"><a href="#SPpage1">貴賓</a></div>
+			<div class="topstyl1"><a href="#SPpage2">演講者</a></div>
 
-			<div class="topstyl1"><a href="#faqpage"><strong>--FAQ--</strong></a></div>
-			<div class="topstyl1"><a href="#hostpage">Organizer</a></div>
-			<div class="topstyl1"><a href="https://www.cancerfree.io/zh-tw/index">Contact US</a></div>
-			<div class="topstyl1"><a href="indexEN.html">Chinese</a></div>
+			<div class="topstyl1"><a href="#faqpage"><strong>FAQ</strong></a></div>
+			<div class="topstyl1"><a href="#hostpage">活動單位</a></div>
+			<div class="topstyl1"><a href="https://www.cancerfree.io/zh-tw/index">聯絡我們</a></div>
+			<div class="topstyl1"><a href="index.html">English</a></div>
 
 
 		</div>
@@ -128,9 +160,11 @@
 			<div class=" ITDbox2">
 
 				<strong>
-					<P style="text-align:center ;color: azure;font-size: 28px;">2022 替身醫療論壇 <br>
-
-						邁向元宇宙醫療 </P>
+					<P style="text-align:center ;color: azure;font-size: 28px;">
+						<br>
+						2022 <br>
+						邁向元宇宙 替身醫療論壇
+					</P>
 				</strong>
 				<p class="ITDtext">
 					<br>
@@ -151,9 +185,8 @@
 
 	<!--議程-->
 	<div class="background3">
-
-		<div id="agenda">
-
+		<div id="agenda" class="BKperson">
+			<img src="images/agenda.png" class="agenda">
 		</div>
 		<!--致詞-->
 		<div class="BKperson">
@@ -168,42 +201,82 @@
 					<!--致詞1-->
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
-							<img src="images/head.jpg" class="headC">
+							<a href="https://publichealth.berkeley.edu/people/michael-lu/">
+								<img src="images/HG1.jpg" class="headC">
+							</a>
 						</div>
 
 						<div class="boxes4" style="width: 70%">
-							<p style="margin-top:0px ;">
-								<br>Michael Lu/Berkeley SPH 院長
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+							<p style="margin:0px ;">
+
+								<br>
+								<span class="spker_name">Michael C. Lu</span>
+
+								<span class="spker_title">院長</span>
+								<br>
+								<br>
+								<strong><span class="spker_contant">柏克萊大學 公共衛生學院</span>
+								</strong>
 							</p>
 						</div>
 					</div>
 					<!--致詞2-->
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
-							<img src="images/HG2.jpg" class="headC">
+							<a href="https://www.ly.gov.tw/Pages/List.aspx?nodeid=38187">
+								<img src="images/HG2.jpg" class="headC">
+							</a>
 						</div>
 
 						<div class="boxes4" style="width: 70%">
-							<p style="margin-top:0px ;">
-								<br>莊競程/現任立法委員
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+							<p style="margin:0px ;">
+								<br>
+								<span class="spker_name">莊競程</span>
+
+								<span class="spker_title">委員</span>
+								<br><br>
+								<span class="spker_contant">立法院 社會福利及衛生環境委員會</span>
 							</p>
 						</div>
 					</div>
 					<!--致詞3-->
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
-							<img src="images/head.jpg" class="headC">
+							<a
+								href="https://www.cancertaipei.tw/%E9%86%AB%E7%99%82%E5%9C%98%E9%9A%8A%E9%86%AB%E5%B8%AB/%E5%BD%AD%E6%B1%AA%E5%98%89%E5%BA%B7/">
+								<img src="images/HG3.jpg" class="headC">
+							</a>
 						</div>
 
 						<div class="boxes4" style="width: 70%">
-							<p style="margin-top:0px ;">
-								<br>彭汪嘉康/臺北癌症中心院長兼講座教授
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+							<p style="margin:0px ;">
+								<br>
+								<span class="spker_name">彭汪嘉康</span>
+
+								<span class="spker_title">院士</span>
+								<br><br>
+								<span class="spker_contant">中央研究院</span>
+
+							</p>
+						</div>
+					</div>
+					<!--致詞4-->
+					<div class="boxes2">
+						<div class="boxes3" style="width: 30%">
+							<a href="https://dta.tw/about/dta/">
+								<img src="images/HG4.jpg" class="headC">
+							</a>
+						</div>
+
+						<div class="boxes4" style="width: 70%">
+							<p style="margin:0px ;">
+								<br>
+								<span class="spker_name">詹婷怡</span>
+
+								<span class="spker_title">副理事長</span>
+								<br><br>
+								<span class="spker_contant">數位經濟暨產業發展協會</span>
+
 							</p>
 						</div>
 					</div>
@@ -225,88 +298,118 @@
 					<!--講者P1-->
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
-							<img src="images/HP3.jpg" class="headC">
+							<a href="https://biotrec.sinica.edu.tw/pages/2899">
+								<img src="images/HP1.jpg" class="headC">
+							</a>
 						</div>
 
 						<div class="boxes4" style="width: 70%">
-							<p style="margin-top:0px ;">
-								<br>陶秘華/轉譯醫學專題中心執行長
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+							<p style="margin:0px ;">
+								<br>
+								<span class="spker_name">陶秘華</span>
+
+								<span class="spker_title">執行長</span>
+								<br><br>
+								<span class="spker_contant">中央研究院 轉譯醫學專題中心</span>
 							</p>
 						</div>
 					</div>
 					<!--講者P2-->
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
-							<img src="images/head.jpg" class="headC">
+							<a href="https://www.clecell.co.kr/">
+								<img src="images/HP2.jpg" class="headC">
+							</a>
 						</div>
 
 						<div class="boxes4" style="width: 70%">
-							<p style="margin-top:0px ;">
-								<br>채수윤/CLECELL
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+							<p style="margin:0px ;">
+								<br>
+								<span class="spker_name">채수윤</span>
+
+								<span class="spker_title">行銷總監</span>
+								<br><br>
+								<span class="spker_contant">CLECELL Co., Ltd.</span>
 							</p>
 						</div>
 					</div>
 					<!--講者P3-->
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
-							<img src="images/HP3.jpg" class="headC">
+							<a href="https://www.tmuh.org.tw/team/team/84/84/842005">
+								<img src="images/HP3.jpg" class="headC">
+							</a>
 						</div>
 
 						<div class="boxes4" style="width: 70%">
-							<p style="margin-top:0px ;">
-								<br>呂隆昇/台北附醫細胞治療中心主任
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+							<p style="margin:0px ;">
+								<br>
+								<span class="spker_name">呂隆昇</span>
+
+								<span class="spker_title">主任</span>
+								<br><br>
+								<span class="spker_contant">臺北附醫細胞治療中心</span>
 							</p>
 						</div>
 					</div>
 					<!--講者A1-->
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
-							<img src="images/HA1.jpg" class="headC">
+							<a href="https://www.graphen.ai/tw/">
+								<img src="images/HA1.jpg" class="headC">
+							</a>
 						</div>
 
 						<div class="boxes4" style="width: 70%">
-							<p style="margin-top:0px ;">
-								<br>林清詠/Graphen
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+							<p style="margin:0px ;">
+								<br>
+								<span class="spker_name">林清詠</span>
+
+								<span class="spker_title">執行長</span>
+								<br><br>
+								<span class="spker_contant">美商圖策智能科技股份有限公司</span>
 							</p>
 						</div>
 					</div>
 					<!--講者A2-->
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
-							<img src="images/HA2.jpg" class="headC">
+							<a href="https://ark720.art/">
+								<img src="images/HA2.jpg" class="headC">
+							</a>
 						</div>
 
 						<div class="boxes4" style="width: 70%">
-							<p style="margin-top:0px ;">
-								<br>林俊宏/ARK Group
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+							<p style="margin:0px ;">
+								<br>
+								<span class="spker_name">林俊宏</span>
+
+								<span class="spker_title">執行長</span>
+								<br><br>
+								<span class="spker_contant">方舟智慧股份有限公司</span>
 							</p>
 						</div>
 					</div>
 					<!--講者A3-->
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
-							<img src="images/HA3.jpg" class="headC">
+							<a href="https://fitzon.io/">
+								<img src="images/HA3.jpg" class="headC">
+							</a>
 						</div>
 
 						<div class="boxes4" style="width: 70%">
-							<p style="margin-top:0px ;">
-								<br>謝賀祥/Fitzon
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+							<p style="margin:0px ;">
+								<br>
+								<span class="spker_name">謝賀祥</span>
+
+								<span class="spker_title">執行長</span>
+								<br><br>
+								<span class="spker_contant">FITION INC.</span>
 							</p>
 						</div>
 					</div>
-					<!--講者L1-->
+					<!--講者L1
 					<div class="boxes2">
 						<div class="boxes3" style="width: 30%">
 							<img src="images/head.jpg" class="headC">
@@ -314,12 +417,13 @@
 
 						<div class="boxes4" style="width: 70%">
 							<p style="margin-top:0px ;">
-								<br>詹婷怡/前NCC主委
-								<br>content/content/content/content/content/content/content/
-								<br>content/content/content/content/content/content/content/
+								<br><p class="spker_name"></p>
+								<br><p class="spker_title"></p>
+								<br><p></p>
 							</p>
 						</div>
 					</div>
+					-->
 
 
 
@@ -337,7 +441,7 @@
 		<div class="BKperson">
 			<p id="faqpage"></p>
 			<div>
-				<div class="text1">--FAQ--</div>
+				<div class="text1">FAQ</div>
 				<ul>
 
 					<li>
@@ -418,7 +522,7 @@
 
 						<div class="qa-content">
 							首先您必須要有一個錢包來支付交易手續費。並且參加本年度的論壇，
-							掃描畫面中出現的QR code，就可以獲得Free Mint限量NFT。
+							掃描畫面中出現的QR code，就可以Free Mint限量NFT。
 						</div>
 
 					</li>
@@ -461,19 +565,36 @@
 
 		<!--報名-->
 		<div class="boxes10">
+
 			<div class="boxes11">
-				報名
+				<a href="https://www.accupass.com/event/2210140955411658495450">
+					<div class="boxes13">
+
+						<img src="images/Accupass_icon.png" class="accupass">
+
+					</div>
+
+				</a>
 			</div>
-			<div class="boxes12">
-				報名
+			<div class="boxes11">
+
+				<a href="https://www.eventbrite.com/e/avatar-medicine-forum-tickets-440741859767">
+					<div class="boxes13">
+
+						<img src="images/eventbrite_icon.png" class="accupass">
+
+					</div>
+				</a>
 			</div>
+			<!--空白格-->
+			<div style="height: 10vh;"></div>
+
 
 
 
 
 		</div>
 
-		<div class="boxes10"></div>
 
 	</div>
 	<!---背景結尾-->
@@ -490,8 +611,8 @@
 				<div class="boxes8">
 
 					<div class="boxes9">
-						<img src="images/CFBiocn2.png" class="imghost2" style="height:80px ;">
-
+						<a href="https://www.cancerfree.io/zh-tw/index"><img src="images/CFBiocn2.png" class="imghost2"
+								style="height:80px ;"></a>
 					</div>
 					<div class="boxes9">
 						<img src="images/CFBiocn.png" class="imghost2">
@@ -508,11 +629,10 @@
 				<div class="boxes8">
 
 					<div class="boxes9">
-						<img src="images/DNA.png" class="imghost2">
-
+						<a href="https://www.dnetwork.asia/en/"><img src="images/DNA.png" class="imghost2"></a>
 					</div>
 					<div class="boxes9">
-						<img src="images/nrbct-upl8e.jpg" class="imghost2">
+						<a href="https://abmedia.io/"><img src="images/nrbct-upl8e.jpg" class="imghost2"></a>
 					</div>
 
 				</div>
@@ -526,15 +646,18 @@
 				<div class="boxes8">
 
 					<div class="boxes9">
-						<img src="images/CCF.png" class="imghost2">
-
+						<a href="https://www.cyff.org.tw/"><img src="images/CCF.png" class="imghost2"></a>
 					</div>
+
 					<div class="boxes9">
-						<img src="images/DNA.png" class="imghost2">
+						<img src="images/CFBiocn.png" class="imghost2">
 					</div>
-
 				</div>
 			</div>
+
+			<!--
+		</div>
+			
 			<div class="boxes7">
 				<div class="boxes8">
 
@@ -548,6 +671,7 @@
 
 				</div>
 			</div>
+-->
 			<!--soccilmedia-->
 			<div style="display:flex ; margin: 24px;">
 				<div class="boxIC1"></div>
@@ -581,12 +705,11 @@
 	</div>
 	</div>
 	<!--xxxxxxxxxxxxxxxxxx-->
-	<div class=go-top>
-		<a href="#top">TOP</a>
-
-		<div class="lefticon">
-
-		</div>
+	<a href="#top">
+		<div class=go-top></div>
+	</a>
+	<div class="lefticon"></div>
+	<div class="dogicon"></div>
 
 </body>
 
