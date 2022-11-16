@@ -529,7 +529,7 @@ ul {
     background-size: cover;
     height: 90%;
     width: 95%;
-    margin: 1px;
+    margin: 10px;
     /**/
     flex: 1;
     flex: auto;
@@ -598,6 +598,15 @@ ul {
     font-size: 22px;
     overflow-y: scroll;
     height: 450px;
+  }
+
+  .ITDbox3 {
+    flex: none;
+    width: 3%
+  }
+
+  .ITDbox2 {
+    height: 60vh;
   }
 
 
@@ -680,7 +689,7 @@ ul {
   }
 
   .agenda {
-    width: 75vw;
+    width: 99vw;
     height: auto;
     margin: auto;
     display: block;
