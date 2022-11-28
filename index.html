@@ -752,6 +752,21 @@
 </body>
 
 <script>
+	var lang = (navigator.language || navigator.browserLanguage).toLowerCase()
+	var cnum = localStorage.getItem('cnum')
+	console.log(lang)
+	console.log(cnum)
+	if (lang != 'zh-tw') {
+		console.log('lang is not tw')
+		if (!cnum) {
+			console.log('welcome')
+			var num = '1';
+			localStorage.setItem('cnum', num);
+			window.location.href = "indexEN.html";
+		} else {
+			console.log('you are not first time comming')
+		}
+	}
 
 	$(".qa-title").click(function () {
 
@@ -779,6 +794,7 @@
 
 		});
 	}
+
 
 
 </script>
