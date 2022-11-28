@@ -652,8 +652,8 @@ ul {
   }
 
   .lefticon {
-    width: 45px;
-    height: 45px;
+    width: 45px !important;
+    height: 45px !important;
     position: fixed;
     bottom: 0px !important;
     left: -10px !important;
