@@ -577,7 +577,7 @@ ul {
     width: 19%;
     margin: 11px;
     text-align: center;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     /**/
     flex: none;
 
