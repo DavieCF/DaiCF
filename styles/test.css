@@ -381,6 +381,18 @@ ul {
   border-radius: 10px;
 }
 
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+
+
+  width: 70vw;
+  height: 80vh;
+
+
+}
+
 @media (max-width: 768px) {
 
   html,
