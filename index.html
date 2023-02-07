@@ -104,7 +104,7 @@
 
 		.info-select {
 
-			width: 75px !important;
+			width: 130px !important;
 			outline: none;
 			appearance: none;
 			-moz-appearance: none;
@@ -177,17 +177,16 @@
 		<div class="box1" style="text-align:center">
 			<div class="topstyl1"></div>
 			<div class="topstyl1"></div>
-			<div class="topstyl1">&emsp;&emsp;&emsp;&emsp;</div>
-			<div class="topstyl1">&emsp;&emsp;&emsp;&emsp;</div>
-
-			<div class="topstyl1">&emsp;&emsp;&emsp;&emsp;</div>
-			<div class="topstyl1">&emsp;&emsp;&emsp;&emsp;</div>
-			<div class="topstyl1">&emsp;&emsp;&emsp;&emsp;</div>
+			<div class="topstyl1"></div>
+			<div class="topstyl1"></div>
+			<div class="topstyl1"></div>
+			<div class="topstyl1"></div>
+			<div class="topstyl1"></div>
 			<div class="topstyl1">
 				<div style="margin: auto;">
 					<select onchange="javascript:location.href=this.value;" class="form-control info-select"
-						style="background-color: rgba(240, 248, 255, 0.6);">
-						<option value="none" selected disabled hidden><a>Version</a></option>
+						style="background-color: rgba(240, 248, 255, 0.9);">
+						<option value="none" selected disabled hidden><a>Version select</a></option>
 						<option value="2021.html">ver.2021</option>
 						<option value="#contain">ver.2022</option>
 						<option value="2023.html">ver.2023</option>
@@ -561,17 +560,33 @@
 
 		<!--影片-->
 		<div id="contain">
-			<p class="text1">2022</p>
-			<div style="display: flex; justify-content: center; margin: 10vh; ">
+			<div style="display: flex; justify-content: space-around ; margin-top:8vh ;">
+				<div>
+					<select style="background-color: rgba(198, 255, 253, 0.6);"
+						class="form-control-video info-select-video" onchange="change(this.value)">
+						<option value="none" selected disabled hidden>段落選擇</option>
+						<option value="1">1.柏克萊大學 公共衛生學院 Michael C. Lu 院長​</option>
+						<option value="2">2.立法院 社會福利及衛生環境委員會​</option>
+						<option value="3">3.中央研究院 彭汪嘉康 院士</option>
+						<option value="4">4.小鼠替身 免疫治療 陶秘華執行長</option>
+						<option value="5">5.腫瘤替身 三維列印 채수윤 行銷總監</option>
+						<option value="6">6.腫瘤替身 臨床實務 呂隆昇 主任</option>
+						<option value="7">7.三維替身 虛實整合 林俊宏 執行長</option>
+						<option value="8">8.虛擬替身 遊戲復健 謝賀祥 執行長</option>
+						<option value="9">9.數位經濟暨產業發展協會</option>
+					</select>
+				</div>
+				<strong>AvatarMedicine 2022</strong>
+			</div>
+			<div style="display: flex; justify-content: center; margin: 5vh; ">
 
 				<div class="video-container">
 
-					<iframe width="720" height="420"
-						src="https://www.youtube.com/embed/videoseries?list=PLrXpCjlw8JVa2N_Tm-VX5KInEWwt4qhKf"
+					<iframe id="ytScreen" width="560" height="315"
+						src="https://www.youtube.com/embed/videoseries?list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-						allowfullscreen>
-					</iframe>
+						allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -789,7 +804,28 @@
 
 		});
 	}
-
+	function change(index) {
+		var ytVideo = document.getElementById('ytScreen')
+		if (index == 1) {
+			ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=1&ab_channel=AvatarMedicine"
+		} if (index == 2) {
+			ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=2&ab_channel=AvatarMedicine"
+		} if (index == 3) {
+			ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=3&ab_channel=AvatarMedicine"
+		} if (index == 4) {
+			ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=4&ab_channel=AvatarMedicine"
+		} if (index == 5) {
+			ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=5&ab_channel=AvatarMedicine"
+		} if (index == 6) {
+			ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=6&ab_channel=AvatarMedicine"
+		} if (index == 7) {
+			ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=7&ab_channel=AvatarMedicine"
+		} if (index == 8) {
+			ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=8&ab_channel=AvatarMedicine"
+		} if (index == 9) {
+			ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=9&ab_channel=AvatarMedicine"
+		}
+	}
 
 
 </script>
