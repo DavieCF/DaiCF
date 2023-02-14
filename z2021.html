@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta property="og:image" content="https://avatarmedicine.xyz/images/web_01.png" />
+    <link href="images/favicon.ico" rel="shortcut icon" />
+    <title>替身醫療論壇 2021 </title>
+    <link rel="stylesheet" type="text/css" href="./styles/test.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta name="author" content="CancerFreeBiotech" />
+</head>
+<style>
+    body {
+        background-image: url(./images/bk2023.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .whitebk {
+        background-color: rgba(255, 228, 196, 0.4);
+        width: 95vw;
+        height: 90vh;
+        margin: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+    }
+
+    .contain {
+        display: none;
+    }
+
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        height: 80vh;
+        width: 80vw;
+    }
+</style>
+
+<body>
+    <div class="whitebk">
+        <div id="contain">
+            <div style="display: flex; justify-content: space-around ; margin-top:8vh ;">
+                <div>
+                    <select style="background-color: rgba(198, 255, 253, 0.6);"
+                        class="form-control-video info-select-video" onchange="change(this.value)">
+                        <option value="none" selected disabled hidden>段落選擇</option>
+                        <option value="1">1.梁賡義 院長 開幕致詞​</option>
+                        <option value="2">2.張榮發慈善基金會董事長 吳景明 致詞​</option>
+                        <option value="3">3.經濟部中小企業處副處長 胡貝蒂 致詞</option>
+                        <option value="4">4.《液態切片 塑造替身-以腫瘤分身實現多元應用》</option>
+                        <option value="5">5.《動物模型 突破異種-癌症病患及他們的阿凡達鼠》</option>
+                        <option value="6">6.《果然可以 蠅領試藥-以果蠅做藥物篩檢》</option>
+                        <option value="7">7.《3D數據探索、協作與通信的新媒介》</option>
+                        <option value="8">8.《醫療進步 破除恐懼-建立有溫度的癌症輔助平台》Part 1</option>
+                        <option value="9">9.《醫療進步 破除恐懼-建立有溫度的癌症輔助平台》Part 2</option>
+                        <option value="10">10.《醫療進步 破除恐懼-建立有溫度的癌症輔助平台》Part 3</option>
+                        <option value="11">11.《接軌國際 提高療效-新境、新競、心靜 創新癌症治療的北醫經驗》</option>
+                        <option value="12">12. 黃珊珊 副市長閉幕致詞</option>
+                    </select>
+                </div>
+                <strong>AvatarMedicine 2022</strong>
+            </div>
+            <div style="display: flex; justify-content: center; margin: 5vh; ">
+
+                <div class="video-container">
+
+                    <iframe id="ytScreen" width="560" height="315"
+                        src="https://www.youtube.com/embed/videoseries?list=PLwdrOZYec0wWabocqmSVF6qIlFZtt7dt6"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script>
+    function change(index) {
+        var ytVideo = document.getElementById('ytScreen')
+        if (index == 1) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=1&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 2) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=2&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 3) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=3&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 4) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=4&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 5) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=5&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 6) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=6&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 7) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=7&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 8) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=8&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 9) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=9&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 10) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=10&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 11) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=11&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        } if (index == 12) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=sz2RNs72bek&list=PLrXpCjlw8JVbyJjexfrOpnZRolAnXJj_B&index=12&ab_channel=%E5%9C%8B%E8%A1%9B%E9%99%A2%E8%82%B2%E6%88%90%E4%B8%AD%E5%BF%83"
+        }
+    }
+</script>
+
+</html>

@@ -20,83 +20,7 @@
         font-family: Microsoft JhengHei;
     }
 
-    .select_list {
-        background: rgba(165, 235, 255, 0.8);
-        border-radius: 4px;
-        position: fixed;
-        top: 16vh;
-        left: 0;
-        width: 80%;
-        display: flex;
 
-        font-weight: bold;
-        /* background-color: black; */
-    }
-
-    /* 描述下拉選單容器 */
-    .dropdown {
-
-        position: relative;
-        width: 20vw;
-    }
-
-    /* 描述下拉選單按鈕 */
-    .dropdown-btn {
-        display: inline-block;
-        color: black;
-        text-decoration: none;
-        line-height: 40px;
-        height: 5.5vh;
-        width: 100%;
-        text-align: center;
-        border-bottom: 2px solid rgb(137, 233, 253);
-
-    }
-
-    /* 描述下拉選單 */
-    .dropdown>.menu {
-        position: absolute;
-        left: 20%;
-        top: 40px;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 60%;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
-        /* 預設menu為隱藏 */
-        display: none;
-    }
-
-    /* 描述hover後的下拉選單 */
-    .dropdown:hover>.menu {
-        display: block;
-    }
-
-    /* 描述下拉選單裡的按鈕 */
-    .dropdown>.menu a {
-        text-decoration: none;
-        background: white;
-        color: gray;
-        display: block;
-        padding: 5px 0;
-        text-align: center;
-        transition: all .5s ease;
-    }
-
-    .dropdown>.menu a:hover {
-        background: #eee;
-    }
-
-    .iconBox {
-        display: flex;
-        justify-content: flex-end;
-
-        position: fixed;
-        bottom: 0;
-        right: 1%;
-        width: 13vw;
-        height: 8vh;
-    }
 
     .FBI {
         background-image: url("images/fbC.png");
@@ -135,10 +59,6 @@
 
     }
 
-    .textwidth {
-        width: 60vw;
-    }
-
     @media (max-width: 768px) {
         body {
             background-image: url("./images/phone_web_AM.png");
@@ -152,48 +72,43 @@
         .dropdown-btn {
             height: 4.5vh;
         }
-
-        .AMcontain {
-            top: 20vh
-        }
-
-        .textwidth {
-            width: 90vw;
-        }
     }
 </style>
 
 <body>
-
-
     <!--內容-->
     <div id="content" class="AMcontain">
-        <div class="indexTbox">
-            <div class="textwidth">
-                <strong>
-                    <P style="text-align:center ;color: azure;font-size: 28px;">
-                        2022 <br>
-                        邁向元宇宙 替身醫療論壇
-                    </P>
-                </strong>
+        <div style="display: flex; justify-content: space-around ; margin: 1px;">
+            <div>
+                <select style="background-color: rgba(198, 255, 253, 0.6);" class="form-control-video info-select-video"
+                    onchange="change(this.value)">
+                    <option value="none" selected disabled hidden>段落選擇</option>
+                    <option value="1">1.柏克萊大學 公共衛生學院 Michael C. Lu 院長​</option>
+                    <option value="2">2.立法院 社會福利及衛生環境委員會​</option>
+                    <option value="3">3.中央研究院 彭汪嘉康 院士</option>
+                    <option value="4">4.小鼠替身 免疫治療 陶秘華執行長</option>
+                    <option value="5">5.腫瘤替身 三維列印 채수윤 行銷總監</option>
+                    <option value="6">6.腫瘤替身 臨床實務 呂隆昇 主任</option>
+                    <option value="7">7.三維替身 虛實整合 林俊宏 執行長</option>
+                    <option value="8">8.虛擬替身 遊戲復健 謝賀祥 執行長</option>
+                    <option value="9">9.數位經濟暨產業發展協會</option>
+                </select>
+            </div>
+            <strong>AvatarMedicine 2022</strong>
+        </div>
+        <div style="display: flex; justify-content: center; margin: 1px; ">
 
+            <div class="video-container">
 
-                <p class="indextext">
-                    <br>
-                    替身醫療論壇主要推廣虛擬和實體替身應用於患者治療之上的概念，
-                    讓大家瞭解替身醫療可能降低其在治療過程中所需承擔的風險，並且可以跨越距離及時間的限制。
-                    推廣技術層面包含類器官、模式生物、大數據、元宇宙...等，讓一般大眾用新的角
-                    度了解目前這些技術開發有潛力替代病患本身並降低醫療上的風險，同時串聯學界及產業界，
-                    讓有潛力的技術或產品可以曝光。<br>
-
-                    此次論壇邀請到產官學研重量級講者來與我們分享後疫情時代所帶來的替身醫療的改變及發展。
-                    以期在不久的將來，透過大數據、AI、AR/VR/XR或NFT就可以讓虛擬替身實現於臨床及教學上。
-
-                </p>
+                <iframe id="ytScreen" width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
         </div>
-    </div>
 
+    </div>
 
     <!--背景-->
     <div class="topBKG"></div>
@@ -213,7 +128,7 @@
             </ul>
         </div>
         <div class="dropdown">
-            <a href="avatarmedicine2023.html" class="dropdown-btn">貳零貳参</a>
+            <a href="AvatarMedicine2023.html" class="dropdown-btn">貳零貳参</a>
             <ul style="display: none;" class="menu">
                 <li>
                     <a href="#">Link12</a>
@@ -258,6 +173,8 @@
         </div>
     </div>
 
+
+
     <!--連結-->
     <div class="iconBox">
         <a href="https://www.linkedin.com/company/cancerfree-biotech/mycompany/">
@@ -274,6 +191,29 @@
 
 
 </body>
-
+<script>
+    function change(index) {
+        var ytVideo = document.getElementById('ytScreen')
+        if (index == 1) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=1&ab_channel=AvatarMedicine"
+        } if (index == 2) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=2&ab_channel=AvatarMedicine"
+        } if (index == 3) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=3&ab_channel=AvatarMedicine"
+        } if (index == 4) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=4&ab_channel=AvatarMedicine"
+        } if (index == 5) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=5&ab_channel=AvatarMedicine"
+        } if (index == 6) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=6&ab_channel=AvatarMedicine"
+        } if (index == 7) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=7&ab_channel=AvatarMedicine"
+        } if (index == 8) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=8&ab_channel=AvatarMedicine"
+        } if (index == 9) {
+            ytVideo.src = "https://www.youtube.com/embed/watch?v=AsaTfOncxUk&list=PLrXpCjlw8JVY8qFcebm9eUEbxSXvbfCR2&index=9&ab_channel=AvatarMedicine"
+        }
+    }
+</script>
 
 </html>
