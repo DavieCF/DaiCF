@@ -16,6 +16,18 @@ body {
     font-family: Microsoft JhengHei;
 }
 
+.indexTbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indextext {
+    color: #fff;
+    font-size: 22px;
+
+}
+
 .Billboard {
     background-image: url("../images/web_AMtop.png");
     background-size: cover;
