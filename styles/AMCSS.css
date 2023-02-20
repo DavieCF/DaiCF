@@ -1,0 +1,228 @@
+html,
+body,
+div,
+img {
+    margin: 0.01px;
+    padding: 0.01px;
+}
+
+body {
+    background-image: url(../images/web_AM01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    font-family: Microsoft JhengHei;
+}
+
+.Billboard {
+    background-image: url("../images/web_AMtop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 15vh;
+}
+
+.select_list {
+    background: rgba(165, 235, 255, 0.8);
+    border-radius: 4px;
+    left: 0;
+    width: 100%;
+    display: flex;
+
+    font-weight: bold;
+    /* background-color: black; */
+}
+
+.ytwell_row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 99%;
+    /* height: 33%; */
+
+
+    margin: 5px;
+    /* background-color: blue; */
+}
+
+.ytwell_column {
+    background-color: rgba(0, 150, 180, 0.8);
+    border-radius: 2%;
+    width: 30%;
+    height: 99%;
+
+
+    margin: 3px;
+    /* background-color: brown; */
+}
+
+
+.ytwell_column iframe {
+    width: 100%;
+    height: 30vh;
+}
+
+.yt_title_L {
+    font-weight: bold;
+    text-align: left;
+}
+
+.yt_title_R {
+    font-weight: bold;
+    text-align: end;
+}
+
+.AMcontain {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 70vh;
+    width: 90vw;
+    margin: 4vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+}
+
+.iconcontent {
+
+    width: 80px;
+    height: 20px;
+    position: fixed;
+    right: 5px;
+    bottom: 10px;
+    transition: height 1s ease 0.1s;
+}
+
+.iconcontent:hover {
+    height: 450px;
+}
+
+.fb-icon {
+    bottom: 0%;
+    right: 1px;
+    z-index: 3;
+    background-image: url(../images/fbC.png);
+
+}
+
+.in-icon {
+    bottom: 10%;
+    right: 1px;
+    z-index: 2;
+    background-image: url(../images/inC.png);
+
+}
+
+.tw-icon {
+    bottom: 20%;
+    right: 1px;
+    z-index: 1;
+    background-image: url(../images/twC.png);
+}
+
+
+.tw-icon,
+.in-icon,
+.fb-icon {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+
+    border-radius: 100%;
+    background-color: #65b7ff;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* 描述下拉選單容器 */
+.dropdown {
+
+    position: relative;
+    width: 20vw;
+    transition: 1s;
+}
+
+.dropdown:hover {
+    background-color: rgb(200, 245, 255);
+    border-radius: 5%;
+
+}
+
+/* 描述下拉選單按鈕 */
+.dropdown-btn {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    line-height: 40px;
+    height: 5.5vh;
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid rgb(137, 233, 253);
+
+}
+
+/* 描述下拉選單 */
+.dropdown>.menu {
+    position: absolute;
+    left: 20%;
+    top: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    /* 預設menu為隱藏 */
+    display: none;
+}
+
+/* 描述hover後的下拉選單 */
+.dropdown:hover>.menu {
+    display: block;
+}
+
+/* 描述下拉選單裡的按鈕 */
+.dropdown>.menu a {
+    text-decoration: none;
+    background: white;
+    color: gray;
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.dropdown>.menu a:hover {
+    background: #eee;
+}
+
+
+@media (max-width: 768px) {
+    .Billboard {
+        background-image: url("../images/web_phone_AMtop.png");
+        width: auto;
+        height: 9vh;
+    }
+
+    .ytwell_row {
+        display: block;
+    }
+
+    .ytwell_column {
+        width: 95%;
+    }
+
+    .iconcontent {
+        height: 300px;
+        width: 30px;
+    }
+
+    .tw-icon,
+    .in-icon,
+    .fb-icon {
+        width: 30px;
+        height: 30px;
+    }
+}
