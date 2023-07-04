@@ -22,8 +22,20 @@
             <div class="topboard-left-2">Avatar Medicine Forum</div>
 
         </div>
-        <div class="topboard-center">A</div>
-        <div class="topboard-right">A</div>
+        <div class="topboard-middle"></div>
+        <div class="topboard-right">
+            <a href="index.html" class="TBR-items">繁體中文</a>
+            <a href="indexEN.html" class="TBR-items">English</a>
+            <div class="TBR-items" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
+                歷年活動
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="#">2021</a>
+                    <a href="#">2022</a>
+                    <a href="#">2023</a>
+                </div>
+            </div>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">聯絡我們</a>
+        </div>
     </div>
     <div class="testboard"></div>
     <div class="testboard"></div>
@@ -31,5 +43,17 @@
     <!--Contant-->
 
 </body>
+
+<script>
+    function showDropdownMenu() {
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        dropdownMenu.style.display = 'block';
+    }
+
+    function hideDropdownMenu() {
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        dropdownMenu.style.display = 'none';
+    }
+</script>
 
 </html>
