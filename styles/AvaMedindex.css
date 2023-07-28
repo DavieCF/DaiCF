@@ -1,0 +1,276 @@
+html,
+body,
+div,
+img {
+    margin: 0.01px;
+    padding: 0.01px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.testboard {
+    height: 99vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.topboard {
+    height: 15vh;
+    width: 100%;
+    margin: 0.1px;
+    padding: 0.1px;
+    background: linear-gradient(to right, #78C789 20%, #39B3AE 60%);
+    box-shadow: 0px 5px 10px #D9D9D9;
+
+    position: fixed;
+    top: 0%;
+
+    display: flex;
+}
+
+.topboard-left {
+    width: 30%;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    user-select: none;
+
+}
+
+.topboard-left-1 {
+    top: 40px;
+    left: 40px;
+    height: auto;
+    width: 20vw;
+    font-size: 36px;
+    font-weight: 700;
+    background-color: rgba(0, 255, 0, 0);
+    letter-spacing: 0.15vw;
+
+
+}
+
+.topboard-left-2 {
+    height: 25%;
+    width: 20vw;
+    font-size: 12px;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 255, 0);
+
+    /* transform: scale(0.9); */
+    letter-spacing: 0.3vw;
+    word-spacing: 0.8vw;
+    font-family: 'Kanit';
+    /* 以空格分辨單字，並調整間距大小 */
+
+
+}
+
+
+.topboard-middle {
+    width: 40%;
+}
+
+.topboard-right {
+    width: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.TBR-items {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    line-height: 7vh;
+
+    font-weight: 700;
+    font-size: 18px;
+    color: #ffffff;
+    letter-spacing: 0.15vw;
+    text-decoration: none;
+
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.TBR-items:hover {
+    color: rgb(128, 128, 128);
+    background-color: #ffffff;
+
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 15%;
+    width: 15%;
+    background-color: #39b3afa5;
+    display: none;
+    z-index: 3;
+
+
+}
+
+.dropdown-menu a:hover {
+    background-color: #39b3af;
+
+}
+
+.dropdown-menu a {
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    z-index: 3;
+}
+
+.TBR-items:hover .dropdown-menu {
+    display: block;
+    color: #ffffff;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.indexmassage {
+    background-color: rgba(255, 0, 0, 0);
+    margin-left: 3vw;
+    height: 55vh;
+}
+
+.IM_title {
+    background-color: rgba(153, 205, 50, 0);
+    height: 7vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+
+    display: flex;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.IM_frontblock {
+    background-color: #39B3AE;
+    width: 1vw;
+    height: 120%;
+
+}
+
+.IM_title_txt {
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.IM_contant {
+    background-color: rgba(0, 255, 255, 0);
+    width: 85%;
+    margin-left: 7vw;
+
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 0.2vw;
+    line-height: 1.5;
+
+}
+
+.IM_contant p {
+    margin: 8px;
+}
+
+.photohighlights {
+
+    width: 90%;
+    margin-left: 5vw;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.photohighlight {
+    display: inline-block;
+    width: 24vw;
+    height: 200px;
+    /* 這裡示意使用 200px，你可以根據需要調整高度 */
+    background-color: #ccc;
+    /* 這裡示意使用灰色背景，你可以插入你的圖片或內容 */
+    margin-right: 10px;
+    /* 這裡示意使用 10px 的右邊間距，你可以根據需要調整間距 */
+
+    background-size: cover;
+    /* 或者使用 contain */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.photobtn_left,
+.photobtn_right {
+    background-color: rgba(232, 249, 255, 0.5);
+    width: 3vw;
+    height: 180px;
+    position: absolute;
+    top: 17vh;
+
+    font-size: 24px;
+    font-weight: bolder;
+
+    text-align: center;
+    line-height: 25vh;
+    user-select: none;
+
+
+}
+
+.photobtn_left {
+    left: 5vw;
+}
+
+.photobtn_right {
+    right: 4.5vw;
+}
+
+
+#photohighlights {
+    /* 自訂捲軸顏色 */
+    scrollbar-color: #dddddd #f0f0f0;
+}
+
+/* Webkit 瀏覽器（例如 Chrome 和 Safari）自訂捲軸樣式 */
+#photohighlights::-webkit-scrollbar {
+    width: 8px;
+}
+
+#photohighlights::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+    border-radius: 4px;
+}
+
+#photohighlights::-webkit-scrollbar-thumb:hover {
+    background-color: #b0b0b0;
+}
+
+/* Firefox 瀏覽器自訂捲軸樣式 */
+#photohighlights {
+    scrollbar-width: thin;
+}
+
+#photohighlights::-moz-scrollbar {
+    width: 8px;
+}
+
+#photohighlights::-moz-scrollbar-thumb {
+    background-color: #dddddd;
+    border-radius: 4px;
+}
+
+#photohighlights::-moz-scrollbar-thumb:hover {
+    background-color: #b0b0b0;
+}

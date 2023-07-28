@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMedindex.css">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMed2022.css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+
+    <title>AvatarMedicine</title>
+</head>
+
+<style>
+    body {
+        overflow: hidden;
+
+    }
+</style>
+
+
+<body>
+    <div class="topboard">
+        <div class="topboard-left">
+
+            <div class="topboard-left-1">替身醫療論壇</div>
+            <div class="topboard-left-2">Avatar Medicine Forum</div>
+
+        </div>
+        <div class="topboard-middle"></div>
+        <div class="topboard-right">
+            <a href="index.html" class="TBR-items">繁體中文</a>
+            <a href="indexEN.html" class="TBR-items">English</a>
+            <div class="TBR-items" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
+                歷年活動
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="Forum2021.html">2021</a>
+                    <a href="Forum2022.html">2022</a>
+                    <a href="Forum2023.html">2023</a>
+                </div>
+            </div>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">聯絡我們</a>
+        </div>
+    </div>
+
+    <div style="height: 21vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
+
+    <!--Contant-->
+    <div class="IM_title">
+        <div class="IM_frontblock"></div>
+        <div class="IM_title_txt" id="titletxt"></div>
+        <div id="titlename"></div>
+    </div>
+    <div class="flexcontant" id="flexcontant">
+        <div id="videocontant">
+            <div id="videoblock">
+                <div class="buttons">
+                    <button style="transform: scaleY(2);" onclick="prevContent()">&lt;</button>
+                </div>
+                <div id="mainvideo">
+                    <iframe id="ytScreen" width=100% height=100% src="https://www.youtube.com/embed/AsaTfOncxUk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="buttons">
+                    <button style="transform: scaleY(2);" onclick="nextContent()">&gt;</button>
+                </div>
+            </div>
+            <div id="listvideo">
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+            </div>
+        </div>
+        <div id="videointro">
+            <p id="introtitle"></p>
+            <p id="introtxt"></p>
+        </div>
+    </div>
+
+
+    <script>
+        function showDropdownMenu() {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.style.display = 'block';
+        }
+
+        function hideDropdownMenu() {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.style.display = 'none';
+        }
+
+
+        //random backgroun-color
+        function getRandomColor() {
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function setRandomBackgroundColor(elementId) {
+            const element = document.getElementById(elementId);
+            const randomColor = getRandomColor();
+            element.style.backgroundColor = randomColor;
+            element.style.opacity = 0.9; // 設置透明度
+            element.style.borderStyle = "solid"
+        }
+
+        const ids = ["flexcontant", "videoblock", "titlename", "videocontant", "mainvideo", "listvideo", "videointro", "introtitle", "introtxt", "titletxt"];
+        //ids.forEach(id => setRandomBackgroundColor(id));
+        //random backgroun-color
+
+        const contents = [
+            {
+                title: "國家衛生研究院院長",
+                name: "梁賡義",
+                videosrc: "https://www.youtube.com/embed/sz2RNs72bek",
+                introtitle: "開幕及貴賓致詞",
+                description: `國衛院與新創產業聯手，邀請超過10位產官學研講者分享，
+                推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢：
+                1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。
+                2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。`,
+            },
+            {
+                title: "張榮發慈善基金會董事長",
+                name: "吳景明​",
+                videosrc: "https://www.youtube.com/embed/IvYbJ-MfU2Q",
+                introtitle: "開幕及貴賓致詞",
+                description: `國衛院與新創產業聯手，邀請超過10位產官學研講者分享，
+                推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢：
+                1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。
+                2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。`,
+            },
+            {
+                title: "經濟部中小企業處副處長",
+                name: "胡貝蒂​",
+                videosrc: "https://www.youtube.com/embed/aJVhpxb2eBE",
+                introtitle: "開幕及貴賓致詞",
+                description: `國衛院與新創產業聯手，邀請超過10位產官學研講者分享，
+                推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢：
+                1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。
+                2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。`,
+            },
+            {
+                title: "精拓生技執行長",
+                name: "陳柏翰",
+                videosrc: "https://www.youtube.com/embed/DHlMQ93u_-I",
+                introtitle: "液態切片 塑造替身",
+                description: `以腫瘤分身實現多元應用`,
+            },
+            {
+                title: " 國家動物中心主任​",
+                name: "秦咸靜",
+                videosrc: "https://www.youtube.com/embed/rw0aIIhym1o",
+                introtitle: "動物模型 突破異種",
+                description: `癌症病患及他們的阿凡達鼠`,
+            },
+            {
+                title: "國衛院分子與基因醫學研究所 ",
+                name: "孫以瀚所長",
+                videosrc: "https://www.youtube.com/embed/VorebIMTWIQ",
+                introtitle: "果然可以 蠅領試藥",
+                description: `以果蠅做藥物篩檢`,
+            },
+            {
+                title: "syGlass共同創辦人暨執行長",
+                name: "Michael Morehead",
+                videosrc: "https://www.youtube.com/embed/akJeqgBMS_M",
+                introtitle: "The new medium for 3D data exploration, clooaboration & communication",
+                description: ` `,
+            },
+            {
+                title: "台灣聯合抗癌協會理事長",
+                name: "張永聲",
+                videosrc: "https://www.youtube.com/embed/Gi9rSCg0wfc",
+                introtitle: "醫療進步 破除恐懼",
+                description: `《建立有溫度的癌症輔助平台》Part1`,
+            },
+            {
+                title: "台灣褐藻醣膠發展協會秘書長",
+                name: "顏明德",
+                videosrc: "https://www.youtube.com/embed/eiNhWIncbEk",
+                introtitle: "醫療進步 破除恐懼",
+                description: `《建立有溫度的癌症輔助平台》Part2`,
+            },
+            {
+                title: "台灣聯合抗癌協會理事長",
+                name: "張永聲",
+                videosrc: "https://www.youtube.com/embed/M8zZf1Ylnm8",
+                introtitle: "醫療進步 破除恐懼",
+                description: `《建立有溫度的癌症輔助平台》Part3`,
+            },
+            {
+                title: "台北醫學大學附設醫院院長​",
+                name: "邱仲峰",
+                videosrc: "https://www.youtube.com/embed/U4zRlJjlNvM",
+                introtitle: "接軌國際 提高療效",
+                description: `新境、新競、心靜 創新癌症治療的北醫經驗`,
+            },
+            {
+                title: "台北市  副市長",
+                name: "黃珊珊​",
+                videosrc: "https://www.youtube.com/embed/8romOErwPME",
+                introtitle: "閉幕致詞​",
+                description: `國衛院聯手新創產業，力邀超過 10 位產官學研重量級講者進行精彩分享，
+                大力推動替身醫療進程，期望翻轉精準醫療，為醫療齒輪添加新動力。`,
+            },
+            // 添加其他內容
+        ];
+
+        const speakerunit = document.getElementById("titletxt")
+        const speakername = document.getElementById("titlename")
+        const speakerpatch = document.getElementById("introtitle")
+        const speakerintro = document.getElementById("introtxt")
+        const speakerscreen = document.getElementById("ytScreen")
+        let currentIndex = 0;
+        function displayContent() {
+            const content = contents[currentIndex];
+            speakerunit.textContent = content.title;
+            speakername.textContent = content.name;
+            speakerpatch.textContent = content.introtitle;
+            speakerintro.textContent = content.description;
+            speakerscreen.src = content.videosrc
+        }
+        function prevContent() {
+            currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+            displayContent();
+        }
+
+        function nextContent() {
+            currentIndex = (currentIndex + 1) % contents.length;
+            displayContent();
+        }
+        displayContent();
+
+        const listvideo = document.getElementById("listvideo");
+
+        listvideo.addEventListener("wheel", (event) => {
+            const scrollSpeed = 40; // 調整滾動速度
+            event.preventDefault();
+            listvideo.scrollLeft += event.deltaY > 0 ? scrollSpeed : -scrollSpeed;
+        });
+
+
+        // 生成並插入多個 iframe
+        const listVideoElement = document.getElementById("listvideo");
+        listVideoElement.innerHTML = ""; // 清空原先的內容
+
+        function getYouTubeVideoID(url) {
+            const regex = /(?:\/embed\/|watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+            const match = url.match(regex);
+            return match ? match[1] : null;
+        }
+
+        // 定義點擊後觸發的函式
+        function handleClick(i) {
+            currentIndex = i;
+            displayContent();
+        }
+
+        // 透過迴圈創建 listunit 區塊並添加點擊事件監聽器
+        for (let i = 0; i < contents.length; i++) {
+            const content = contents[i];
+            const YouTubeVideoID = getYouTubeVideoID(content.videosrc);
+            const YTimagesrc = `https://img.youtube.com/vi/${YouTubeVideoID}/default.jpg`;
+            const iconUrl = "./images/YTicon16.png"
+
+            const listUnitElement = document.createElement("div");
+            listUnitElement.classList.add("listunit");
+            listUnitElement.style.backgroundImage = `url(${YTimagesrc})`;
+
+            // 添加 ICON
+            const iconElement = document.createElement("img");
+            iconElement.src = iconUrl;
+            iconElement.classList.add("icon");
+            listUnitElement.appendChild(iconElement);
+
+            // 添加點擊事件監聽器，注意此處只傳遞函式名稱，不要呼叫
+            listUnitElement.addEventListener("click", function () {
+                handleClick(i);
+            });
+
+            listVideoElement.appendChild(listUnitElement);
+        }
+
+
+
+
+
+
+
+
+        // const iframeElement = document.createElement("iframe");
+        // iframeElement.width = "100%";
+        // iframeElement.height = "100%";
+        // iframeElement.src = content.videosrc;
+        // iframeElement.title = "YouTube video player";
+        // iframeElement.frameBorder = "0";
+        // iframeElement.allow =
+        //     "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        // iframeElement.allowfullscreen = true;
+
+        // listUnitElement.appendChild(iframeElement);
+        //listVideoElement.appendChild(listUnitElement);
+        
+        //生成listunit
+    </script>
+
+</body>
+
+
+
+</html>

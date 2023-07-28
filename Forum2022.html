@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMedindex.css">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMed2022.css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+
+    <title>AvatarMedicine</title>
+</head>
+
+<style>
+    body {
+        overflow: hidden;
+
+    }
+</style>
+
+
+<body>
+    <div class="topboard">
+        <div class="topboard-left">
+
+            <div class="topboard-left-1">替身醫療論壇</div>
+            <div class="topboard-left-2">Avatar Medicine Forum</div>
+
+        </div>
+        <div class="topboard-middle"></div>
+        <div class="topboard-right">
+            <a href="index.html" class="TBR-items">繁體中文</a>
+            <a href="indexEN.html" class="TBR-items">English</a>
+            <div class="TBR-items" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
+                歷年活動
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="Forum2021.html">2021</a>
+                    <a href="Forum2022.html">2022</a>
+                    <a href="Forum2023.html">2023</a>
+                </div>
+            </div>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">聯絡我們</a>
+        </div>
+    </div>
+
+    <div style="height: 21vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
+
+    <!--Contant-->
+    <div class="IM_title">
+        <div class="IM_frontblock"></div>
+        <div class="IM_title_txt" id="titletxt"></div>
+        <div id="titlename"></div>
+    </div>
+    <div class="flexcontant" id="flexcontant">
+        <div id="videocontant">
+            <div id="videoblock">
+                <div class="buttons">
+                    <button style="transform: scaleY(2);" onclick="prevContent()">&lt;</button>
+                </div>
+                <div id="mainvideo">
+                    <iframe id="ytScreen" width=100% height=100% src=""
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="buttons">
+                    <button style="transform: scaleY(2);" onclick="nextContent()">&gt;</button>
+                </div>
+            </div>
+            <div id="listvideo">
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+            </div>
+        </div>
+        <div id="videointro">
+            <p id="introtitle"></p>
+            <p id="introtxt"></p>
+        </div>
+    </div>
+
+
+    <script>
+        function showDropdownMenu() {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.style.display = 'block';
+        }
+
+        function hideDropdownMenu() {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.style.display = 'none';
+        }
+
+
+        //random backgroun-color
+        function getRandomColor() {
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function setRandomBackgroundColor(elementId) {
+            const element = document.getElementById(elementId);
+            const randomColor = getRandomColor();
+            element.style.backgroundColor = randomColor;
+            element.style.opacity = 0.9; // 設置透明度
+            element.style.borderStyle = "solid"
+        }
+
+        const ids = ["flexcontant", "videoblock", "titlename", "videocontant", "mainvideo", "listvideo", "videointro", "introtitle", "introtxt", "titletxt"];
+        //ids.forEach(id => setRandomBackgroundColor(id));
+        //random backgroun-color
+
+        const contents = [
+            {
+                title: "立法院 社會福利及衛生環境委員會",
+                name: "莊競程 委員​",
+                videosrc: "https://www.youtube.com/embed/8aMcAMqGNkM",
+                introtitle: "開幕及貴賓致詞",
+                description: `大家好，我是莊競程，台灣首位醫學工程背景的立法委員。
+                我們擁有領先的生技與醫療技術，但醫療管理制度卻相對保守。
+                政府應制定明確目標，投入資源並鬆綁法規，引領台灣醫療科技發展。
+                立法院是匯聚各界意見的平台，我樂意扮演角色，為台灣的醫療科技發
+                展助力。謝謝大家，祝論壇圓滿成功！`,
+            },
+            {
+                title: "柏克萊大學 公共衛生學院",
+                name: "Michael C. Lu 院長",
+                videosrc: "https://www.youtube.com/embed/AsaTfOncxUk",
+                introtitle: "開幕及貴賓致詞",
+                description: `大家早安，呷飽沒？我是加州大學伯克萊分校公共
+                衛生學院院長 Michael Lu。替身醫療具有拯救生命和改善健康的巨大
+                潛力。精拓生技將化療藥物測試應用於循環腫瘤細胞替身，而你們在
+                元宇宙與醫療交融的領域也有令人振奮的成果。從自閉症到癡呆症，
+                康復治療到心理治療，替身醫療在醫學的各個領域皆有潛在應用。你
+                們的工作正在引領醫療保健的未來，我感到無比興奮並為你們感到驕
+                傲。祝大家好運，加油！`,
+            },
+            {
+                title: "中央研究院​",
+                name: "彭汪嘉康 院士​",
+                videosrc: "https://www.youtube.com/embed/S9nBYsFEUNA",
+                introtitle: "開幕及貴賓致詞",
+                description: `60年前，彭汪嘉康 院士發現慢性骨髓性白血病細胞的染色體異常，
+                引領精準醫療之路。2013年，首個靶向治療藥物Imatinib出現，成就慢
+                性粒細胞白血病的治癒奇蹟。奧巴馬更提出精準醫療和治癌倡議。技術的
+                發展為抗癌武器注入強大力量。在本次研討會中，將探討這些技術如何為
+                個人化醫療做出貢獻，並探討倫理規範。希望各位開心，享受這裡的專題
+                演講。謝謝！`,
+            },
+            {
+                title: "中央研究院轉譯醫學中心​",
+                name: "陶秘華 執行長  ",
+                videosrc: " ",
+                introtitle: "小鼠替身 免疫治療",
+                description: `演講者陶秘華先生，中央研究院執行長兼優秀研究員。他強調
+                傳統抗癌治療的限制，並介紹免疫療法在特定患者中的積極成果。他專注於發
+                展新的免疫療法策略，利用PDX和HIS小鼠模型評估癌症免疫療法效果。研究
+                重點在探討巨噬細胞在癌症轉移中的角色，以及PDX和HIS小鼠在抗腫瘤藥物
+                篩選和免疫機制研究的價值。他的研究成果對改進癌症治療和免疫療法發展
+                至關重要。謝謝各位的聆聽！`,
+            },
+            {
+                title: " CLECELL Co., Ltd.​",
+                name: "채수윤 行銷總監",
+                videosrc: "https://www.youtube.com/embed/u-DQ_M8ZDYY",
+                introtitle: "腫瘤替身 三維列印",
+                description: `Shawn Chae是CLECELL韓國公司的行銷總監。CLECELL主要業務
+                是生物3D列印平台。他們開發了一種3D生物列印機，並專注於先進抗癌藥物敏感
+                性測試。他們的方法使用不同的交聯方式，提供更多材料選擇。目前，他們致力
+                於創建更複雜的癌症類器官。這是個開創性的初期階段，他們希望能與其他研究
+                人員合作，共同探索這個領域的潛力。謝謝大家的聆聽。`,
+            },
+            {
+                title: "台北附醫細胞治療中心 ",
+                name: "呂隆昇 主任",
+                videosrc: "https://www.youtube.com/embed/0wi3RkH23qg",
+                introtitle: "腫瘤替身 臨床實務",
+                description: `這位演講者是台北醫學大學附設醫院的呂醫生。他創建了腫瘤
+                替身模型，測
+                試不同藥物對腫瘤的反應，這有助於預測患者的治療結果。腫瘤替身技術有望幫
+                助提供新穎的治療方案和更好的治療結果。他們正在與製藥公司合作，共同尋找
+                更有效的治療藥物。他相信這種替身醫療的方法將改變癌症治療的新範式，實現
+                個體化、精準化、數據驅動的治療方式，以期達到最佳治療效果。`,
+            },
+            {
+                title: "商圖策智能科技有限公司​",
+                name: "林清詠 執行長 ",
+                videosrc: " ",
+                introtitle: "數據替身 人工智慧  ",
+                description: `這位演講者是Graphen公司的CEO，林清詠。他分享了Graphen基
+                因學的數位趨勢。他們利用數位趨勢做個人化醫療，將人體數位化，以預測、診
+                斷和優化治療方案。Graphen提供基因組分析、蛋白質組測試等，並利用人工智
+                慧技術提供精確的藥物劑量、治療效果預測等。這項技術有望幫助人們更好地了
+                解自己的健康情況，並做出更明智的治療決策。`,
+            },
+            {
+                title: "方舟智慧股份有限公司​",
+                name: "林俊宏 執行長",
+                videosrc: "https://www.youtube.com/embed/Xi40XTILPdA",
+                introtitle: "三維替身 虛實整合",
+                description: `
+                方舟集團的創辦人Ray。他們開發了
+                3D影像設備，讓求美者可以透過遠程醫療服務與醫生討論並預覽未來
+                可能的外貌。他們的目標是為那些有想法但不知如何開始的人提供服
+                務，並在全球布局跨境醫療服務。Ray強調了Digital Twin在Metave
+                rse世界的應用，以及未來可能在數位分身方面發展的潛力。他們的
+                核心技術是高解析柱的3D影像取得，他希望能找到合作夥伴推動這個
+                領域的發展。`,
+            },
+            {
+                title: "FITION INC.​",
+                name: "謝賀祥 執行長",
+                videosrc: "https://www.youtube.com/embed/H6r9kty8m6g",
+                introtitle: "虛擬替身 遊戲復健",
+                description: `FITzOn團隊在過去七年致力於身體和時尚數位化技術
+                的開發，來自多元的專業領域，包括時尚產業、3D視覺和3D傳感技術。
+                他們建立了一套3D人體掃描器和AI技術，用於自動檢測人體骨骼並取得
+                全身量測數據，並為客戶提供價值增值的服務。FITzOn的平台結合了3
+                D NFT和線上健身體驗，透過遊戲化的方式提供更加身歷其境的健身體驗
+                ，並激勵用戶持之以恆地保持健康活躍的生活方式。他們相信未來的世
+                界將是虛擬和實體的融合。`,
+            },
+            {
+                title: "數位經濟暨產業發展協會​",
+                name: "詹婷怡 副理事長​",
+                videosrc: " ",
+                introtitle: "閉幕致詞​",
+                description: ``,
+            },
+            // 添加其他內容
+        ];
+
+        const speakerunit = document.getElementById("titletxt")
+        const speakername = document.getElementById("titlename")
+        const speakerpatch = document.getElementById("introtitle")
+        const speakerintro = document.getElementById("introtxt")
+        const speakerscreen = document.getElementById("ytScreen")
+        let currentIndex = 0;
+        function displayContent() {
+            const content = contents[currentIndex];
+            speakerunit.textContent = content.title;
+            speakername.textContent = content.name;
+            speakerpatch.textContent = content.introtitle;
+            speakerintro.textContent = content.description;
+            speakerscreen.src = content.videosrc
+        }
+        function prevContent() {
+            currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+            displayContent();
+        }
+
+        function nextContent() {
+            currentIndex = (currentIndex + 1) % contents.length;
+            displayContent();
+        }
+        displayContent();
+
+        const listvideo = document.getElementById("listvideo");
+
+        listvideo.addEventListener("wheel", (event) => {
+            const scrollSpeed = 40; // 調整滾動速度
+            event.preventDefault();
+            listvideo.scrollLeft += event.deltaY > 0 ? scrollSpeed : -scrollSpeed;
+        });
+
+
+        // 生成並插入多個 iframe
+        const listVideoElement = document.getElementById("listvideo");
+        listVideoElement.innerHTML = ""; // 清空原先的內容
+
+        function getYouTubeVideoID(url) {
+            const regex = /(?:\/embed\/|watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+            const match = url.match(regex);
+            return match ? match[1] : null;
+        }
+
+        // 定義點擊後觸發的函式
+        function handleClick(i) {
+            currentIndex = i;
+            displayContent();
+        }
+
+        // 透過迴圈創建 listunit 區塊並添加點擊事件監聽器
+        for (let i = 0; i < contents.length; i++) {
+            const content = contents[i];
+            const YouTubeVideoID = getYouTubeVideoID(content.videosrc);
+            const YTimagesrc = `https://img.youtube.com/vi/${YouTubeVideoID}/default.jpg`;
+            const iconUrl = "./images/YTicon16.png"
+
+            const listUnitElement = document.createElement("div");
+            listUnitElement.classList.add("listunit");
+            listUnitElement.style.backgroundImage = `url(${YTimagesrc})`;
+
+            // 添加 ICON
+            const iconElement = document.createElement("img");
+            iconElement.src = iconUrl;
+            iconElement.classList.add("icon");
+            listUnitElement.appendChild(iconElement);
+
+            // 添加點擊事件監聽器，注意此處只傳遞函式名稱，不要呼叫
+            listUnitElement.addEventListener("click", function () {
+                handleClick(i);
+            });
+
+            listVideoElement.appendChild(listUnitElement);
+        }
+
+
+
+
+
+
+
+
+        // const iframeElement = document.createElement("iframe");
+        // iframeElement.width = "100%";
+        // iframeElement.height = "100%";
+        // iframeElement.src = content.videosrc;
+        // iframeElement.title = "YouTube video player";
+        // iframeElement.frameBorder = "0";
+        // iframeElement.allow =
+        //     "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        // iframeElement.allowfullscreen = true;
+
+        // listUnitElement.appendChild(iframeElement);
+        //listVideoElement.appendChild(listUnitElement);
+        
+        //生成listunit
+    </script>
+
+</body>
+
+
+
+</html>
