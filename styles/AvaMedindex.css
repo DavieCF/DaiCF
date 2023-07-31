@@ -142,7 +142,7 @@ img {
 .indexmassage {
     background-color: rgba(255, 0, 0, 0);
     margin-left: 3vw;
-    height: 55vh;
+    height: auto;
 }
 
 .IM_title {
