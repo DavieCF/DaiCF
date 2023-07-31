@@ -64,8 +64,7 @@ img {
     word-spacing: 0.8vw;
     font-family: 'Kanit';
     /* 以空格分辨單字，並調整間距大小 */
-
-
+    white-space: nowrap;
 }
 
 
@@ -92,6 +91,8 @@ img {
     color: #ffffff;
     letter-spacing: 0.15vw;
     text-decoration: none;
+
+    white-space: nowrap;
 
 
     transition: background-color 0.5s ease, color 0.5s ease;
