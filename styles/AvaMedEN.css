@@ -1,6 +1,6 @@
 .ENTL2 {
     text-align: center;
-    transform: scaleX(1.3);
+    transform: scaleX(1);
 }
 
 #introtitle {
@@ -22,4 +22,17 @@
 
 .IM_contant p {
     margin: 4px;
+}
+
+.topboard {
+    justify-content: flex-end
+}
+
+.topboard-left-1 {
+    text-align: justify;
+    font-weight: 500;
+}
+
+.topboard-left-2 {
+    letter-spacing: 0.45vw;
 }
