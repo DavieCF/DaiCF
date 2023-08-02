@@ -5,6 +5,7 @@ img {
     margin: 0.01px;
     padding: 0.01px;
     font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'REM', sans-serif;
 }
 
 .testboard {
@@ -45,7 +46,7 @@ img {
     height: auto;
     width: 20vw;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 300;
     background-color: rgba(0, 255, 0, 0);
     letter-spacing: 0.15vw;
 
@@ -65,6 +66,7 @@ img {
     font-family: 'Kanit';
     /* 以空格分辨單字，並調整間距大小 */
     white-space: nowrap;
+
 }
 
 
@@ -86,7 +88,7 @@ img {
     text-align: center;
     line-height: 7vh;
 
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
     color: #ffffff;
     letter-spacing: 0.15vw;
@@ -176,7 +178,7 @@ img {
     width: 85%;
     margin-left: 7vw;
 
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     text-align: left;
     letter-spacing: 0.2vw;

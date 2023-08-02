@@ -10,3 +10,16 @@
 .flexcontant {
     margin-top: 2vh;
 }
+
+.IM_title {
+    font-weight: 900;
+}
+
+.IM_contant {
+    margin-top: 4vh;
+    text-align: justify;
+}
+
+.IM_contant p {
+    margin: 4px;
+}
