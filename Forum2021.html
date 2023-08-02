@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/AvaMedindex.css">
     <link rel="stylesheet" type="text/css" href="./styles/AvaMed2022.css">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMedEN.css">
+
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,30 +26,36 @@
 
 
 <body>
+    <!--top-->
     <div class="topboard">
         <div class="topboard-left">
 
-            <div class="topboard-left-1">替身醫療論壇</div>
-            <div class="topboard-left-2">Avatar Medicine Forum</div>
+            <div class="topboard-left-1">Avatar Medicine </div>
+            <div class="topboard-left-2 ENTL2">Forum</div>
 
         </div>
         <div class="topboard-middle"></div>
         <div class="topboard-right">
-            <a href="index.html" class="TBR-items">繁體中文</a>
-            <a href="indexEN.html" class="TBR-items">English</a>
+            <a href="indextw.html" class="TBR-items">
+                <div>Chinese</div>
+            </a>
+            <a href="index.html" class="TBR-items">
+                <div>English</div>
+            </a>
             <div class="TBR-items" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
-                歷年活動
+                Past Events
                 <div class="dropdown-menu" id="dropdown-menu">
                     <a href="Forum2021.html">2021</a>
                     <a href="Forum2022.html">2022</a>
                     <a href="Forum2023.html">2023</a>
                 </div>
             </div>
-            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">聯絡我們</a>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
+                <div>Contact Us</div>
+            </a>
         </div>
     </div>
-
-    <div style="height: 21vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
+    <div style="height: 20vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
 
     <!--Contant-->
     <div class="IM_title">
@@ -125,98 +133,90 @@
 
         const contents = [
             {
-                title: "國家衛生研究院院長",
-                name: "梁賡義",
+                title: "Opening Remarks and Guest Speech",
+                name: "",
                 videosrc: "https://www.youtube.com/embed/sz2RNs72bek",
-                introtitle: "開幕及貴賓致詞",
-                description: `國衛院與新創產業聯手，邀請超過10位產官學研講者分享，
-                推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢：
-                1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。
-                2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。`,
+                introtitle: "Liang Gang-Yi",
+                description: `Director of National Health Research Institutes`,
             },
             {
-                title: "張榮發慈善基金會董事長",
-                name: "吳景明​",
+                title: "Opening Remarks and Guest Speech",
+                name: "",
                 videosrc: "https://www.youtube.com/embed/IvYbJ-MfU2Q",
-                introtitle: "開幕及貴賓致詞",
-                description: `國衛院與新創產業聯手，邀請超過10位產官學研講者分享，
-                推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢：
-                1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。
-                2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。`,
+                introtitle: "Wu Jingming",
+                description: `Chairman of Zhang Rong Fa Charity Foundation`,
             },
             {
-                title: "經濟部中小企業處副處長",
-                name: "胡貝蒂​",
+                title: "Opening Remarks and Guest Speech",
+                name: "",
                 videosrc: "https://www.youtube.com/embed/aJVhpxb2eBE",
-                introtitle: "開幕及貴賓致詞",
-                description: `國衛院與新創產業聯手，邀請超過10位產官學研講者分享，
-                推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢：
-                1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。
-                2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。`,
+                introtitle: "Hu Beidi",
+                description: `Deputy Director-General of Small and Medium Enterprise 
+                Administration, Ministry of Economic Affairs`,
             },
             {
-                title: "精拓生技執行長",
-                name: "陳柏翰",
+                title: "Liquid Biopsy: Shaping Avatars",
+                name: "",
                 videosrc: "https://www.youtube.com/embed/DHlMQ93u_-I",
-                introtitle: "液態切片 塑造替身",
-                description: `以腫瘤分身實現多元應用`,
+                introtitle: "Chen Po-Han",
+                description: `CEO of CancerFree Biotech`,
             },
             {
-                title: " 國家動物中心主任​",
-                name: "秦咸靜",
+                title: "Animal Models: Breaking Through Cross-Species Boundaries",
+                name: "",
                 videosrc: "https://www.youtube.com/embed/rw0aIIhym1o",
-                introtitle: "動物模型 突破異種",
-                description: `癌症病患及他們的阿凡達鼠`,
+                introtitle: "Qin Xianjing",
+                description: `Director of National Animal Center`,
             },
             {
-                title: "國衛院分子與基因醫學研究所 ",
-                name: "孫以瀚所長",
+                title: "As Expected: Fruit Flies Leading Drug Trials ",
+                name: "",
                 videosrc: "https://www.youtube.com/embed/VorebIMTWIQ",
-                introtitle: "果然可以 蠅領試藥",
-                description: `以果蠅做藥物篩檢`,
+                introtitle: "Sun Yi-Han",
+                description: `Director of Institute of Molecular and Genomic Medicine, 
+                National Health Research Institutes`,
             },
             {
-                title: "syGlass共同創辦人暨執行長",
-                name: "Michael Morehead",
+                title: "The new medium for 3D data exploration, clooaboration & communication",
+                name: "",
                 videosrc: "https://www.youtube.com/embed/akJeqgBMS_M",
-                introtitle: "The new medium for 3D data exploration, clooaboration & communication",
-                description: ` `,
+                introtitle: "Michael Morehead",
+                description: `Co-Founder and CEO of syGlass`,
             },
             {
-                title: "台灣聯合抗癌協會理事長",
-                name: "張永聲",
+                title: "Medical Advancements: Breaking the Barriers of Fear",
+                name: "I",
                 videosrc: "https://www.youtube.com/embed/Gi9rSCg0wfc",
-                introtitle: "醫療進步 破除恐懼",
-                description: `《建立有溫度的癌症輔助平台》Part1`,
+                introtitle: "Zhang Yongsheng",
+                description: `Chairman of Taiwan Anti-Cancer Association`,
             },
             {
-                title: "台灣褐藻醣膠發展協會秘書長",
-                name: "顏明德",
+                title: "Medical Advancements: Breaking the Barriers of Fear",
+                name: "II",
                 videosrc: "https://www.youtube.com/embed/eiNhWIncbEk",
-                introtitle: "醫療進步 破除恐懼",
-                description: `《建立有溫度的癌症輔助平台》Part2`,
+                introtitle: "Yan Mingde",
+                description: `Secretary-General of Taiwan Alginates Development Association`,
             },
             {
-                title: "台灣聯合抗癌協會理事長",
-                name: "張永聲",
+                title: "Medical Advancements: Breaking the Barriers of Fear",
+                name: "III",
                 videosrc: "https://www.youtube.com/embed/M8zZf1Ylnm8",
-                introtitle: "醫療進步 破除恐懼",
-                description: `《建立有溫度的癌症輔助平台》Part3`,
+                introtitle: "Zhang Yongsheng",
+                description: `Chairman of Taiwan Anti-Cancer Association`,
             },
             {
-                title: "台北醫學大學附設醫院院長​",
-                name: "邱仲峰",
+                title: "Connecting Globally, Improving Efficacy",
+                name: "",
                 videosrc: "https://www.youtube.com/embed/U4zRlJjlNvM",
-                introtitle: "接軌國際 提高療效",
-                description: `新境、新競、心靜 創新癌症治療的北醫經驗`,
+                introtitle: "Qiu Zhongfeng",
+                description: `President of Taipei Medical University Hospital`,
             },
             {
-                title: "台北市  副市長",
-                name: "黃珊珊​",
+                title: "Closing Remarks",
+                name: "",
                 videosrc: "https://www.youtube.com/embed/8romOErwPME",
-                introtitle: "閉幕致詞​",
-                description: `國衛院聯手新創產業，力邀超過 10 位產官學研重量級講者進行精彩分享，
-                大力推動替身醫療進程，期望翻轉精準醫療，為醫療齒輪添加新動力。`,
+                introtitle: "Huang Shanshan",
+                description: `Deputy Mayor of Taipei City`,
             },
             // 添加其他內容
         ];

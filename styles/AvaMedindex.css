@@ -275,3 +275,9 @@ img {
 #photohighlights::-moz-scrollbar-thumb:hover {
     background-color: #b0b0b0;
 }
+
+
+.ENTL2 {
+    text-align: center;
+    transform: scaleX(1.3);
+}

@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/AvaMedindex.css">
     <link rel="stylesheet" type="text/css" href="./styles/AvaMed2022.css">
-    <link rel="stylesheet" type="text/css" href="./styles/AvaMedEN.css">
-
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,36 +24,30 @@
 
 
 <body>
-    <!--top-->
     <div class="topboard">
         <div class="topboard-left">
 
-            <div class="topboard-left-1">Avatar Medicine </div>
-            <div class="topboard-left-2 ENTL2">Forum</div>
+            <div class="topboard-left-1">替身醫療論壇</div>
+            <div class="topboard-left-2">Avatar Medicine Forum</div>
 
         </div>
         <div class="topboard-middle"></div>
         <div class="topboard-right">
-            <a href="indextw.html" class="TBR-items">
-                <div>Chinese</div>
-            </a>
-            <a href="index.html" class="TBR-items">
-                <div>English</div>
-            </a>
+            <a href="indextw.html" class="TBR-items">繁體中文</a>
+            <a href="index.html" class="TBR-items">English</a>
             <div class="TBR-items" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
-                Past Events
+                歷年活動
                 <div class="dropdown-menu" id="dropdown-menu">
-                    <a href="Forum2021.html">2021</a>
-                    <a href="Forum2022.html">2022</a>
-                    <a href="Forum2023.html">2023</a>
+                    <a href="Forum2021tw.html">2021</a>
+                    <a href="Forum2022tw.html">2022</a>
+                    <a href="Forum2023tw.html">2023</a>
                 </div>
             </div>
-            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
-                <div>Contact Us</div>
-            </a>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">聯絡我們</a>
         </div>
     </div>
-    <div style="height: 20vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
+
+    <div style="height: 21vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
 
     <!--Contant-->
     <div class="IM_title">
@@ -70,7 +62,7 @@
                     <button style="transform: scaleY(2);" onclick="prevContent()">&lt;</button>
                 </div>
                 <div id="mainvideo">
-                    <iframe id="ytScreen" width=100% height=100% src=""
+                    <iframe id="ytScreen" width=100% height=100% src="https://www.youtube.com/embed/AsaTfOncxUk"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -133,87 +125,99 @@
 
         const contents = [
             {
-                title: "Opening Remarks and Guest Speech",
-                name: "",
-                videosrc: "https://www.youtube.com/embed/8aMcAMqGNkM",
-                introtitle: "Zhuang Jingcheng",
-                description: `Legislative Yuan, Social Welfare and 
-                Environmental `,
+                title: "國家衛生研究院院長",
+                name: "梁賡義",
+                videosrc: "https://www.youtube.com/embed/sz2RNs72bek",
+                introtitle: "開幕及貴賓致詞",
+                description: `國衛院與新創產業聯手，邀請超過10位產官學研講者分享，
+                推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢：
+                1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。
+                2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。`,
             },
             {
-                title: "Opening Remarks and Guest Speech",
-                name: "",
-                videosrc: "https://www.youtube.com/embed/AsaTfOncxUk",
-                introtitle: "Michael C. Lu",
-                description: `Dean of the School of Public Health, University of 
-                California, Berkeley`,
+                title: "張榮發慈善基金會董事長",
+                name: "吳景明​",
+                videosrc: "https://www.youtube.com/embed/IvYbJ-MfU2Q",
+                introtitle: "開幕及貴賓致詞",
+                description: `國衛院與新創產業聯手，邀請超過10位產官學研講者分享，
+                推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢：
+                1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。
+                2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。`,
             },
             {
-                title: "Opening Remarks and Guest Speech",
-                name: "彭汪嘉康 院士​",
-                videosrc: "https://www.youtube.com/embed/S9nBYsFEUNA",
-                introtitle: "Peng Wang-Jiakang",
-                description: `Academician of Academia Sinica`,
-            },
-            // {
-            //     title: "中央研究院轉譯醫學中心​",
-            //     name: "陶秘華 執行長  ",
-            //     videosrc: " ",
-            //     introtitle: "小鼠替身 免疫治療",
-            //     description: `演講者陶秘華先生，中央研究院執行長兼優秀研究員。他強調
-            //     傳統抗癌治療的限制，並介紹免疫療法在特定患者中的積極成果。他專注於發
-            //     展新的免疫療法策略，利用PDX和HIS小鼠模型評估癌症免疫療法效果。研究
-            //     重點在探討巨噬細胞在癌症轉移中的角色，以及PDX和HIS小鼠在抗腫瘤藥物
-            //     篩選和免疫機制研究的價值。他的研究成果對改進癌症治療和免疫療法發展
-            //     至關重要。謝謝各位的聆聽！`,
-            // },
-            {
-                title: "Tumor Avatars: 3D Printing",
-                name: "Chae Soo-Yoon",
-                videosrc: "https://www.youtube.com/embed/u-DQ_M8ZDYY",
-                introtitle: "Chae Soo-Yoon",
-                description: `CLECELL Co., Ltd,\n Marketing Director.`,
+                title: "經濟部中小企業處副處長",
+                name: "胡貝蒂​",
+                videosrc: "https://www.youtube.com/embed/aJVhpxb2eBE",
+                introtitle: "開幕及貴賓致詞",
+                description: `國衛院與新創產業聯手，邀請超過10位產官學研講者分享，
+                推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢：
+                1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。
+                2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。`,
             },
             {
-                title: "Tumor Avatars: Clinical Practice",
-                name: "呂隆昇 主任",
-                videosrc: "https://www.youtube.com/embed/0wi3RkH23qg",
-                introtitle: "Lu Longsheng",
-                description: `Director of Cell Therapy Center, Taipei
-                Medical University Hospital`,
-            },
-            // {
-            //     title: "商圖策智能科技有限公司​",
-            //     name: "林清詠 執行長 ",
-            //     videosrc: " ",
-            //     introtitle: "數據替身 人工智慧  ",
-            //     description: `這位演講者是Graphen公司的CEO，林清詠。他分享了Graphen基
-            //     因學的數位趨勢。他們利用數位趨勢做個人化醫療，將人體數位化，以預測、診
-            //     斷和優化治療方案。Graphen提供基因組分析、蛋白質組測試等，並利用人工智
-            //     慧技術提供精確的藥物劑量、治療效果預測等。這項技術有望幫助人們更好地了
-            //     解自己的健康情況，並做出更明智的治療決策。`,
-            // },
-            {
-                title: "3D Avatars: Integration of Virtual and Reality",
-                name: "",
-                videosrc: "https://www.youtube.com/embed/Xi40XTILPdA",
-                introtitle: "Lin Junhong",
-                description: `CEO of Ark Intelligence Co., Ltd.`,
+                title: "精拓生技執行長",
+                name: "陳柏翰",
+                videosrc: "https://www.youtube.com/embed/DHlMQ93u_-I",
+                introtitle: "液態切片 塑造替身",
+                description: `以腫瘤分身實現多元應用`,
             },
             {
-                title: "Virtual Avatars: Game-based Rehabilitation",
-                name: "",
-                videosrc: "https://www.youtube.com/embed/H6r9kty8m6g",
-                introtitle: "Xie Hexiang",
-                description: `CEO of FITION INC.`,
+                title: " 國家動物中心主任​",
+                name: "秦咸靜",
+                videosrc: "https://www.youtube.com/embed/rw0aIIhym1o",
+                introtitle: "動物模型 突破異種",
+                description: `癌症病患及他們的阿凡達鼠`,
             },
-            // {
-            //     title: "數位經濟暨產業發展協會​",
-            //     name: "詹婷怡 副理事長​",
-            //     videosrc: " ",
-            //     introtitle: "閉幕致詞​",
-            //     description: ``,
-            // },
+            {
+                title: "國衛院分子與基因醫學研究所 ",
+                name: "孫以瀚所長",
+                videosrc: "https://www.youtube.com/embed/VorebIMTWIQ",
+                introtitle: "果然可以 蠅領試藥",
+                description: `以果蠅做藥物篩檢`,
+            },
+            {
+                title: "syGlass共同創辦人暨執行長",
+                name: "Michael Morehead",
+                videosrc: "https://www.youtube.com/embed/akJeqgBMS_M",
+                introtitle: "The new medium for 3D data exploration, clooaboration & communication",
+                description: ` `,
+            },
+            {
+                title: "台灣聯合抗癌協會理事長",
+                name: "張永聲",
+                videosrc: "https://www.youtube.com/embed/Gi9rSCg0wfc",
+                introtitle: "醫療進步 破除恐懼",
+                description: `《建立有溫度的癌症輔助平台》Part1`,
+            },
+            {
+                title: "台灣褐藻醣膠發展協會秘書長",
+                name: "顏明德",
+                videosrc: "https://www.youtube.com/embed/eiNhWIncbEk",
+                introtitle: "醫療進步 破除恐懼",
+                description: `《建立有溫度的癌症輔助平台》Part2`,
+            },
+            {
+                title: "台灣聯合抗癌協會理事長",
+                name: "張永聲",
+                videosrc: "https://www.youtube.com/embed/M8zZf1Ylnm8",
+                introtitle: "醫療進步 破除恐懼",
+                description: `《建立有溫度的癌症輔助平台》Part3`,
+            },
+            {
+                title: "台北醫學大學附設醫院院長​",
+                name: "邱仲峰",
+                videosrc: "https://www.youtube.com/embed/U4zRlJjlNvM",
+                introtitle: "接軌國際 提高療效",
+                description: `新境、新競、心靜 創新癌症治療的北醫經驗`,
+            },
+            {
+                title: "台北市  副市長",
+                name: "黃珊珊​",
+                videosrc: "https://www.youtube.com/embed/8romOErwPME",
+                introtitle: "閉幕致詞​",
+                description: `國衛院聯手新創產業，力邀超過 10 位產官學研重量級講者進行精彩分享，
+                大力推動替身醫療進程，期望翻轉精準醫療，為醫療齒輪添加新動力。`,
+            },
             // 添加其他內容
         ];
 

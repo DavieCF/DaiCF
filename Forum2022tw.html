@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/AvaMedindex.css">
     <link rel="stylesheet" type="text/css" href="./styles/AvaMed2022.css">
-    <link rel="stylesheet" type="text/css" href="./styles/AvaMedEN.css">
-
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,36 +24,30 @@
 
 
 <body>
-    <!--top-->
     <div class="topboard">
         <div class="topboard-left">
 
-            <div class="topboard-left-1">Avatar Medicine </div>
-            <div class="topboard-left-2 ENTL2">Forum</div>
+            <div class="topboard-left-1">替身醫療論壇</div>
+            <div class="topboard-left-2">Avatar Medicine Forum</div>
 
         </div>
         <div class="topboard-middle"></div>
         <div class="topboard-right">
-            <a href="indextw.html" class="TBR-items">
-                <div>Chinese</div>
-            </a>
-            <a href="index.html" class="TBR-items">
-                <div>English</div>
-            </a>
+            <a href="indextw.html" class="TBR-items">繁體中文</a>
+            <a href="index.html" class="TBR-items">English</a>
             <div class="TBR-items" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
-                Past Events
+                歷年活動
                 <div class="dropdown-menu" id="dropdown-menu">
-                    <a href="Forum2021.html">2021</a>
-                    <a href="Forum2022.html">2022</a>
-                    <a href="Forum2023.html">2023</a>
+                    <a href="Forum2021tw.html">2021</a>
+                    <a href="Forum2022tw.html">2022</a>
+                    <a href="Forum2023tw.html">2023</a>
                 </div>
             </div>
-            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
-                <div>Contact Us</div>
-            </a>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">聯絡我們</a>
         </div>
     </div>
-    <div style="height: 20vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
+
+    <div style="height: 21vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
 
     <!--Contant-->
     <div class="IM_title">
@@ -133,27 +125,40 @@
 
         const contents = [
             {
-                title: "Opening Remarks and Guest Speech",
-                name: "",
+                title: "立法院 社會福利及衛生環境委員會",
+                name: "莊競程 委員​",
                 videosrc: "https://www.youtube.com/embed/8aMcAMqGNkM",
-                introtitle: "Zhuang Jingcheng",
-                description: `Legislative Yuan, Social Welfare and 
-                Environmental `,
+                introtitle: "開幕及貴賓致詞",
+                description: `大家好，我是莊競程，台灣首位醫學工程背景的立法委員。
+                我們擁有領先的生技與醫療技術，但醫療管理制度卻相對保守。
+                政府應制定明確目標，投入資源並鬆綁法規，引領台灣醫療科技發展。
+                立法院是匯聚各界意見的平台，我樂意扮演角色，為台灣的醫療科技發
+                展助力。謝謝大家，祝論壇圓滿成功！`,
             },
             {
-                title: "Opening Remarks and Guest Speech",
-                name: "",
+                title: "柏克萊大學 公共衛生學院",
+                name: "Michael C. Lu 院長",
                 videosrc: "https://www.youtube.com/embed/AsaTfOncxUk",
-                introtitle: "Michael C. Lu",
-                description: `Dean of the School of Public Health, University of 
-                California, Berkeley`,
+                introtitle: "開幕及貴賓致詞",
+                description: `大家早安，呷飽沒？我是加州大學伯克萊分校公共
+                衛生學院院長 Michael Lu。替身醫療具有拯救生命和改善健康的巨大
+                潛力。精拓生技將化療藥物測試應用於循環腫瘤細胞替身，而你們在
+                元宇宙與醫療交融的領域也有令人振奮的成果。從自閉症到癡呆症，
+                康復治療到心理治療，替身醫療在醫學的各個領域皆有潛在應用。你
+                們的工作正在引領醫療保健的未來，我感到無比興奮並為你們感到驕
+                傲。祝大家好運，加油！`,
             },
             {
-                title: "Opening Remarks and Guest Speech",
+                title: "中央研究院​",
                 name: "彭汪嘉康 院士​",
                 videosrc: "https://www.youtube.com/embed/S9nBYsFEUNA",
-                introtitle: "Peng Wang-Jiakang",
-                description: `Academician of Academia Sinica`,
+                introtitle: "開幕及貴賓致詞",
+                description: `60年前，彭汪嘉康 院士發現慢性骨髓性白血病細胞的染色體異常，
+                引領精準醫療之路。2013年，首個靶向治療藥物Imatinib出現，成就慢
+                性粒細胞白血病的治癒奇蹟。奧巴馬更提出精準醫療和治癌倡議。技術的
+                發展為抗癌武器注入強大力量。在本次研討會中，將探討這些技術如何為
+                個人化醫療做出貢獻，並探討倫理規範。希望各位開心，享受這裡的專題
+                演講。謝謝！`,
             },
             // {
             //     title: "中央研究院轉譯醫學中心​",
@@ -168,19 +173,27 @@
             //     至關重要。謝謝各位的聆聽！`,
             // },
             {
-                title: "Tumor Avatars: 3D Printing",
-                name: "Chae Soo-Yoon",
+                title: " CLECELL Co., Ltd.​",
+                name: "채수윤 行銷總監",
                 videosrc: "https://www.youtube.com/embed/u-DQ_M8ZDYY",
-                introtitle: "Chae Soo-Yoon",
-                description: `CLECELL Co., Ltd,\n Marketing Director.`,
+                introtitle: "腫瘤替身 三維列印",
+                description: `Shawn Chae是CLECELL韓國公司的行銷總監。CLECELL主要業務
+                是生物3D列印平台。他們開發了一種3D生物列印機，並專注於先進抗癌藥物敏感
+                性測試。他們的方法使用不同的交聯方式，提供更多材料選擇。目前，他們致力
+                於創建更複雜的癌症類器官。這是個開創性的初期階段，他們希望能與其他研究
+                人員合作，共同探索這個領域的潛力。謝謝大家的聆聽。`,
             },
             {
-                title: "Tumor Avatars: Clinical Practice",
+                title: "台北附醫細胞治療中心 ",
                 name: "呂隆昇 主任",
                 videosrc: "https://www.youtube.com/embed/0wi3RkH23qg",
-                introtitle: "Lu Longsheng",
-                description: `Director of Cell Therapy Center, Taipei
-                Medical University Hospital`,
+                introtitle: "腫瘤替身 臨床實務",
+                description: `這位演講者是台北醫學大學附設醫院的呂醫生。他創建了腫瘤
+                替身模型，測
+                試不同藥物對腫瘤的反應，這有助於預測患者的治療結果。腫瘤替身技術有望幫
+                助提供新穎的治療方案和更好的治療結果。他們正在與製藥公司合作，共同尋找
+                更有效的治療藥物。他相信這種替身醫療的方法將改變癌症治療的新範式，實現
+                個體化、精準化、數據驅動的治療方式，以期達到最佳治療效果。`,
             },
             // {
             //     title: "商圖策智能科技有限公司​",
@@ -194,26 +207,39 @@
             //     解自己的健康情況，並做出更明智的治療決策。`,
             // },
             {
-                title: "3D Avatars: Integration of Virtual and Reality",
-                name: "",
+                title: "方舟智慧股份有限公司​",
+                name: "林俊宏 執行長",
                 videosrc: "https://www.youtube.com/embed/Xi40XTILPdA",
-                introtitle: "Lin Junhong",
-                description: `CEO of Ark Intelligence Co., Ltd.`,
+                introtitle: "三維替身 虛實整合",
+                description: `
+                方舟集團的創辦人Ray。他們開發了
+                3D影像設備，讓求美者可以透過遠程醫療服務與醫生討論並預覽未來
+                可能的外貌。他們的目標是為那些有想法但不知如何開始的人提供服
+                務，並在全球布局跨境醫療服務。Ray強調了Digital Twin在Metave
+                rse世界的應用，以及未來可能在數位分身方面發展的潛力。他們的
+                核心技術是高解析柱的3D影像取得，他希望能找到合作夥伴推動這個
+                領域的發展。`,
             },
             {
-                title: "Virtual Avatars: Game-based Rehabilitation",
-                name: "",
+                title: "FITION INC.​",
+                name: "謝賀祥 執行長",
                 videosrc: "https://www.youtube.com/embed/H6r9kty8m6g",
-                introtitle: "Xie Hexiang",
-                description: `CEO of FITION INC.`,
+                introtitle: "虛擬替身 遊戲復健",
+                description: `FITzOn團隊在過去七年致力於身體和時尚數位化技術
+                的開發，來自多元的專業領域，包括時尚產業、3D視覺和3D傳感技術。
+                他們建立了一套3D人體掃描器和AI技術，用於自動檢測人體骨骼並取得
+                全身量測數據，並為客戶提供價值增值的服務。FITzOn的平台結合了3
+                D NFT和線上健身體驗，透過遊戲化的方式提供更加身歷其境的健身體驗
+                ，並激勵用戶持之以恆地保持健康活躍的生活方式。他們相信未來的世
+                界將是虛擬和實體的融合。`,
             },
-            // {
-            //     title: "數位經濟暨產業發展協會​",
-            //     name: "詹婷怡 副理事長​",
-            //     videosrc: " ",
-            //     introtitle: "閉幕致詞​",
-            //     description: ``,
-            // },
+            {
+                title: "數位經濟暨產業發展協會​",
+                name: "詹婷怡 副理事長​",
+                videosrc: " ",
+                introtitle: "閉幕致詞​",
+                description: ``,
+            },
             // 添加其他內容
         ];
 
