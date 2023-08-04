@@ -1,61 +1,22 @@
-.ENTL2 {
-    text-align: center;
-    transform: scaleX(1);
-}
-
-#introtitle {
-    margin-top: 20px;
-}
-
-.flexcontant {
-    margin-top: 2vh;
-}
-
-.IM_title {
-    font-weight: 900;
-}
-
-.IM_contant {
-    margin-top: 4vh;
-    text-align: justify;
-}
-
-.IM_contant p {
-    margin: 4px;
-}
-
-.topboard {
-    justify-content: flex-end
-}
-
-.topboard-left-1 {
-    text-align: justify;
-    font-weight: 500;
-}
-
-.topboard-left-2 {
-    letter-spacing: 5px;
-
-}
-
-.PhoneBr {
-    display: none;
-}
-
-
 @media (max-width: 768px) {
     .topboard {
         justify-content: flex-start;
     }
 
+    .topboard-left {
+        margin-top: -2vh;
+    }
+
     .topboard-left-1 {
-        font-size: 20px;
+        font-size: 5vmin;
         white-space: normal;
         font-weight: 700;
     }
 
     .topboard-left-2 {
-        display: none;
+        font-size: 2vmin;
+        transform: scaleY(0.8);
+        white-space: normal;
     }
 
     .topboard-middle {
@@ -70,6 +31,10 @@
     .topboard-right div {
         font-weight: 300;
         box-shadow: inset 0 0 5px rgba(95, 158, 160, 0.4);
+    }
+
+    .topboardblock {
+        height: 18vh;
     }
 
     .IM_title_txt {
@@ -87,10 +52,6 @@
     .IM_contant {
         letter-spacing: normal;
         font-weight: 300;
-    }
-
-    .phoneBr {
-        width: 1vw;
     }
 
     .photobtn_left {
@@ -128,5 +89,10 @@
         margin-top: 3vh;
         width: 95%;
     }
+
+    .IM_title_txt {
+        width: 43vw;
+    }
+
 
 }
