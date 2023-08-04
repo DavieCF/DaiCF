@@ -53,6 +53,10 @@
         height: 18vh;
     }
 
+    .IM_title {
+        margin-left: 3vw;
+    }
+
     .IM_contant {
         letter-spacing: normal;
         font-weight: 300;

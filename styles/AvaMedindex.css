@@ -8,6 +8,11 @@ img {
     font-family: 'REM', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
+
 .testboard {
     height: 99vh;
     width: 100%;
