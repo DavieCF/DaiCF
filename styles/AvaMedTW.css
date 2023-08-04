@@ -94,5 +94,9 @@
         width: 43vw;
     }
 
+    #titlename {
+        display: none;
+    }
+
 
 }
