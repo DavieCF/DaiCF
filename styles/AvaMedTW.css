@@ -39,10 +39,14 @@
 
     .IM_title_txt {
         font-size: 22px;
+        width: 75vw;
+        white-space: nowrap;
+        margin-left: 3vw;
     }
 
     .IM_frontblock {
         width: 4vw;
+        height: 100%;
     }
 
     .topboardblock {
@@ -75,9 +79,9 @@
         width: 30%;
     }
 
-    #videointro {
+    /* #videointro {
         display: none;
-    }
+    } */
 
     #videocontant {
         height: 35vh;
@@ -85,18 +89,28 @@
     }
 
     .flexcontant {
+        display: block;
         margin: 1vw;
         margin-top: 3vh;
         width: 95%;
-    }
-
-    .IM_title_txt {
-        width: 43vw;
     }
 
     #titlename {
         display: none;
     }
 
+    .buttons {
+        display: none;
+    }
 
+    #mainvideo {
+        width: 100%;
+    }
+
+    #videointro {
+        background-color: #39b3af54;
+        width: 84vw;
+        padding: 3vw;
+        margin: 3vw;
+    }
 }
