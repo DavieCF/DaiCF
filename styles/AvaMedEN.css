@@ -146,5 +146,15 @@
         margin: 3vw;
     }
 
+    .vh15-2023 {
+        display: none;
+    }
+
+    .AMcontain {
+        margin-top: 0vh;
+        height: auto;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
 
 }
