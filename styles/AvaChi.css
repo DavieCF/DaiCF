@@ -1,0 +1,583 @@
+html,
+body,
+div,
+img {
+    margin: 0.01px;
+    padding: 0.01px;
+    font-family: 'Noto Sans TC', sans-serif;
+    /* scroll-behavior: smooth; */
+}
+W
+html,
+body,
+div,
+img:lang(en) {
+    margin: 0.01px;
+    padding: 0.01px;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.topboard {
+    height: 15vh;
+    width: 100vw;
+    margin: 0.1px;
+    padding: 0.1vw;
+    background: linear-gradient(to right, #244250 20%, #6097BE 60%);
+    box-shadow: 0px 5px 10px #D9D9D9;
+
+    position: fixed;
+    top: 0%;
+
+    display: flex;
+}
+
+.topboard-left {
+    width: 30%;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    user-select: none;
+
+    margin-left: 3vw;
+}
+
+.topboard-left-1 {
+    height: auto;
+    width: 100%;
+    font-size: 3vw;/*36px*/
+    font-weight: 700;
+    background-color: rgba(0, 255, 0, 0);
+    letter-spacing: 0.15vw;
+
+    white-space: nowrap;
+}
+
+.topboard-left-2 {
+    height: 25%;
+    width: 100%;
+    font-size: 1vw;/*12px*/
+    font-weight: lighter;
+    background-color: rgba(0, 0, 255, 0);
+
+    /* transform: scale(0.9); */
+    letter-spacing: 0.3vw;
+    word-spacing: 0.8vw;
+    font-family: 'Kanit';
+    /* 以空格分辨單字，並調整間距大小 */
+}
+
+.topboard-middle {
+    width: 0%;
+}
+
+
+.topboard-right {
+    width: 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.TBR-items {
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    line-height: 7vh;
+
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: #ffffff;
+    letter-spacing: 0.15vw;
+    text-decoration: none;
+
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.TBR-items:hover {
+    color: rgb(128, 128, 128);
+    background-color: #ffffff;
+}
+
+.TBR-items-NULL {
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    line-height: 7vh;
+
+    font-weight: 700;
+    font-size: 1.5vw;
+    color: #ffffff;
+    letter-spacing: 0.15vw;
+    text-decoration: none;
+
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 15%;
+    width: 15%;
+    background-color: #39b3afa5;
+    display: none;
+    z-index: 3;
+}
+
+.dropdown-menu a:hover {
+    background-color: #39b3af;
+
+}
+
+.dropdown-menu a {
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+    z-index: 3;
+}
+
+.TBR-items:hover .dropdown-menu {
+    display: block;
+    color: #ffffff;
+}
+
+.dropdown-menu a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.topboard-coverd{
+    height: 15vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.imageKV {
+    background-image: url('../2023_images/替身醫療主視覺.png'); /* 將圖片路徑添加到此處 */
+    background-size: cover; 
+    background-repeat: no-repeat; /* 這將防止圖片重複 */
+    width: 100vw; /* 使元素寬度等於視窗寬度 */
+    height: 56vw;
+}
+
+.gradient-background {
+    background: linear-gradient(to bottom right, #244250, #ffffff);
+    width: 100%;  /* 根據需求調整寬度 */
+    height: auto; /* 根據需求調整高度 */
+    overflow: auto; /*添加這一行來清除浮動 */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.white-background {
+    width: 100%;  /* 根據需求調整寬度 */
+    height: auto; /* 根據需求調整高度 */
+    overflow: auto; /*添加這一行來清除浮動 */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/*================================= session ======================================*/
+.session {
+    /* width: 95vw; */
+
+    background-color: rgba(255, 0, 0, 0);
+    margin: 0 auto;
+    /* overflow: hidden; */
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 1.5vw;
+    padding-top: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.session_title {
+    background-color: rgba(153, 205, 50, 0);
+    height: 5vw;
+    width: 100%;
+    margin-right: 0vw;
+    margin-left: 0vw; 
+
+    flex-wrap: wrap;
+
+
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+
+.session_title_txt {
+    text-align: left;
+    vertical-align: top;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.IM_contant {
+    background-color: rgba(0, 255, 255, 0);
+    width: 85vw;
+    margin-left: 1vw;
+    /* display: flex; */
+
+    font-weight: 600;
+    font-size: 1.5vw;
+    text-align: left;
+    letter-spacing: 0.2vw;
+    line-height: 1.0;
+}
+
+.IM_contant p {
+    margin-left: 1.5vw;
+}
+
+/*================================= vip ======================================*/
+
+.vip_intro {
+    height: auto;
+    width: 80vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+
+    display: flex;
+    align-items: center; 
+    flex-direction: row;
+}
+.vip_intro.reverse-direction {
+    flex-direction: row-reverse;
+}
+
+/* 對於正常方向，設定左邊邊距 */
+.vip_intro.normal-direction .vip_margin {
+    margin-left: 3vw;
+    margin-right: 0px;
+}
+
+/* 對於反方向，設定右邊邊距 */
+.vip_intro.reverse-direction .vip_margin {
+    margin-right: 3vw;
+    margin-left: 0px;
+}
+
+/* 反方向的名稱和標題右對齊 */
+.vip_intro.reverse-direction .vip_name,
+.vip_intro.reverse-direction .vip_title {
+    text-align: right;
+}
+
+.vip_photo img {
+    border-radius: 50%;  /* 將圖片裁剪為圓形 */
+    width: 20vw;        /* 調整這個值來改變圖片的大小 */
+    height: 20vw;       /* 確保這個值與 width 的值相等以保持圖片的圓形 */
+    object-fit: cover;   /* 確保圖片以適當的比例填充容器，但可能會有部分被裁切 */
+
+    margin-top: 0.5vw;
+}
+
+.vip_margin {
+    margin-left: 3vw;  /* 在圖片和文字之間添加一些間隔 */
+    margin-right: 0px;
+}
+.vip_intro:nth-child(odd) .vip_margin{
+    margin-left: 0px;  /* 在圖片和文字之間添加一些間隔 */
+    margin-right: 3vw;
+}
+
+.vip_intro:nth-child(odd) .vip_name,
+.vip_intro:nth-child(odd) .vip_title {
+    text-align: right;
+}
+
+.vip_name {
+    font-weight: bold;
+    font-size: 2.5vw;
+}
+
+.vip_title{
+    font-size: 1.5vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0px;
+}
+
+.vip_description {
+    /* height: 40vh; */
+    margin-top: 0px;
+    margin-bottom: 0.5vw;
+
+    padding-top: 0.25vw;
+    padding-bottom: 0.5vw;
+}
+
+.vip_description p {
+    font-size: 1.5vw;
+
+    margin-bottom: 0.5vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*================================= faq ======================================*/
+
+.faq{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 3vw;
+    width: 100%;
+    height: 65vw;
+
+    /* justify-content: center; */
+}
+
+.question {
+    cursor: pointer;
+}
+
+.answer {
+    display: none;
+}
+
+/* 伸縮FAQ */
+.faq-item{
+    margin-left: -5vw;
+    width: 100vw;
+    display: flex;
+}
+
+
+.faq-item ul {
+    list-style: none;
+    width: 70%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    margin: 0 auto;  
+}
+
+.qa-title {
+    background: #244250;
+    padding: 1vw 1.5vw;
+    border-radius: 0.5vw;
+    margin-bottom: 0.5vw;
+    cursor: pointer;
+
+    color: #fff;
+    font-size: 2.5.vw;
+
+    display: flex;
+    justify-content: center
+}
+
+.qa-title.on {
+    background: #244250;
+}
+
+.qa-content {
+    display: none;
+    background: #ffffff;
+    padding: 2vw;
+    border-radius: 0.5vw;
+    margin: 0.5vw 0;
+    font-size: 2vw;
+    color: #000;
+
+    text-align: justify;
+}
+
+
+/*================================= img ======================================*/
+
+.portal{
+    width: 90vw;
+    height: 25vw;;
+
+    display: flex;
+    justify-content: center
+}
+
+.portal-left{
+    width: 50%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.portal-left img{
+    background-color: #fff;
+
+    width: 35vw;
+    height: auto;
+}
+
+.portal-right{
+    width: 50%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.portal-right img{
+    background-color: #fff;
+
+    width: 35vw;
+    height: auto;
+}
+
+.organizer {
+    /* background-color: #000; */
+    width: 80vw;
+    /* height: 10vw; */
+
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.organizer img{
+    /* background-color: #fff; */
+
+    width: 60vw;
+    height: auto;
+}
+
+.sponsor {
+    /* background-color: #000; */
+    width: 80vw;
+    /* height: 25vw;; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.sponsor img{
+    /* background-color: #fff; */
+
+    width: 60vw;
+    height: auto;
+}
+
+/*================================= endboard ======================================*/
+.endboard {
+    height: 15vh;
+    width: 100vw;
+    margin: 0.1px;
+    
+    background: linear-gradient(to right, #244250 20%, #6097BE 60%);
+    box-shadow: 0px 5px 10px #D9D9D9;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.endboard-up{
+    width: 100%;
+    height: 50%;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    display: flex;
+    align-items: center;
+}
+
+.contact_us{
+    width: 100%;
+
+    font-size: 2.5vw;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.endboard-down{
+    width: 100vw;
+    height: 50%;
+
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.phone{
+    width: 40%;
+    height: 100%;
+
+    font-size: 2vw;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.address{
+    width: 60%;
+    height: 100%;
+
+    font-size: 2vw;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+}
+
+/*========================= icon ==============================*/
+
+.lefticon {
+    background-image: url("../2023_images/bioHomo.png");
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 1px;
+    left: 1px;
+    border-radius: 10px;
+}
+
+.go-top {
+    background-image: url("../2023_images/up-arrow.png");
+    background-size: cover;
+    width: 45px;
+    height: 45px;
+    border: 3px;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    border-radius: 10px;
+}
+
+.dogicon {
+    background-image: url("../2023_images/dog.png");
+    background-size: cover;
+    width: 56px;
+    height: 60px;
+    border: 3px;
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    border-radius: 5px;
+}

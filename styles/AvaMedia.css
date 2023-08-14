@@ -1,0 +1,189 @@
+@media (max-width: 768px){
+    .topboard-left{
+        width: 35%;
+    }
+
+    .topboard-left-1 {
+        font-size: 4.5vw;
+    }
+    
+    .topboard-left-2 {
+        font-size: 2.5vw;
+    }
+
+    .topboard-right{
+        width: 65%;
+    }
+
+    .TBR-items {
+        font-size: 2.5vw;
+    }
+
+    .TBR-items-NULL {
+        font-size: 2.5vw;
+    }
+
+    .session_title {
+        font-size: 6vw;
+    }
+
+    .IM_contant {
+        font-size: 3vw;
+    }
+
+    /*============================== vip ==================================*/
+    .vip_intro {
+        margin-bottom: 10vw;
+
+        display: flex;
+        flex-direction: column
+    }
+
+    .vip_photo img {
+        width: 40vw;
+        height: 40vw;
+        
+        margin-top: 10vw;
+    }
+
+    .vip_intro.reverse-direction {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* 對於反方向，設定右邊邊距 */
+    .vip_intro.reverse-direction .vip_margin {
+        margin-right: 3vw;
+        margin-left: 0;
+    }
+
+    /* 反方向的名稱和標題右對齊 */
+    .vip_intro.reverse-direction .vip_name,
+    .vip_intro.reverse-direction .vip_title {
+        text-align: left;
+    }
+
+    .vip_name {
+        font-size: 5vw;
+    }
+
+    .vip_title{
+        font-size: 3vw;
+    }
+
+    .vip_description p {
+        font-size: 3vw;
+    }
+
+    /*============================ faq =================================*/
+    .faq-item ul {
+        width: 80%; 
+    }
+
+    .qa-title {
+        font-size: 5vw;
+    }
+
+    .qa-content {
+        font-size: 4vw;
+    }
+
+    .contact_us{
+        font-size: 5vw;
+    }
+
+    .phone{
+        font-size: 4vw;
+    }
+
+    .address{
+        font-size: 4vw;
+    }
+
+    .faq{
+        height: 130vw;
+    }
+
+    /*================================= img ======================================*/
+    .portal{
+        height: 60vw;;
+        flex-direction: column;
+
+        margin-top: 10vw;
+    }
+
+    .portal-left{
+        width: 75%;
+
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+    
+    .portal-left img{
+        background-color: #fff;
+    
+        width: 70vw;
+        height: auto;
+    }
+    
+    .portal-right{
+        width: 75%;
+
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
+    .portal-right img{
+        background-color: #fff;
+    
+        width: 60vw;
+        height: auto;
+    }
+
+    .organizer {
+        width: 80vw;
+        height: 20vw;
+    }
+
+    .organizer img{
+        width: 60vw;
+    }
+
+    .sponsor {
+        width: 80vw;
+        height: 50vw;;
+    }
+
+    .sponsor img{
+        width: 60vw;
+    }
+
+    /*================================== endboard ===============================*/
+    .endboard-down{
+        flex-direction: column;
+    }
+
+    .phone{
+        width: 100vw;
+        height: 50%;
+    
+        font-size: 4vw;
+        color: #ffffff;
+    
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .address{
+        width: 100vw;
+        height: 50%;
+    
+        font-size: 4vw;
+        color: #ffffff;
+    
+        display: flex;
+        align-items: center;
+    }
+}

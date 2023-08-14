@@ -40,7 +40,7 @@
                 <div class="dropdown-menu" id="dropdown-menu">
                     <a href="Forum2021.html">2021</a>
                     <a href="Forum2022.html">2022</a>
-                    <a href="Forum2023.html">2023</a>
+                    <a href="ForumEN.html">2023</a>
                 </div>
             </div>
             <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">Contact Us</a>
@@ -58,17 +58,51 @@
             <span style="font-size: 48px;text-align: center;">COMING SOON</span>
         </div>
         <div class="vh15-2023" style="height: 15vh;"></div>
+        <div class="registrationPage" id="registrationPage"></div>
         <div class="video-container;" style="font-size:14px;text-align: center;">
-            We respectfully invite your sponsorship and co-organization<br><br>
-            Contact Information:<br>
-            medicineavatar@gmail.com
+            Contact Information: medicineavatar@gmail.com
         </div>
     </div>
     <!--contant-->
 
 
 </body>
+<script>
+    const contents = [
+        {
+            BKimage: "./images/Accupass_icon.png",
+            link: "https://www.accupass.com/go/Avatar2023",
+        },
+        {
+            BKimage: "./images/eventbrite_icon.png",
+            link: "https://www.eventbrite.com/e/avatar-medicine-forum-2023-tickets-697936054527?aff=oddtdtcreator",
 
+        },
+        // {
+        //     BKimage: "./images/CFBiocn2.png",
+        //     linK: "Forum.html",
+        // },
+    ]
+
+    const avatar2023_container = document.getElementById("registrationPage");
+    avatar2023_container.innerHTML = ""; // 清空原先的內容
+
+    for (let i = 0; i < contents.length; i++) {
+        const content = contents[i];
+
+        const avatar2023_A = document.createElement("a");
+        avatar2023_A.href = content.link;
+
+        const avatar2023_div = document.createElement("div");
+        avatar2023_div.classList.add("registrationItem");
+        avatar2023_div.style.backgroundImage = `url(${content.BKimage})`;
+
+
+        avatar2023_A.appendChild(avatar2023_div)
+        avatar2023_container.appendChild(avatar2023_A)
+    }
+
+</script>
 
 
 </html>

@@ -294,3 +294,28 @@ body {
     text-align: center;
     transform: scaleX(1.3);
 }
+
+.registrationPage {
+    width: 100%;
+    margin-left: 5vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: space-around;
+
+}
+
+.registrationItem {
+    display: inline-block;
+    width: 24vw;
+    height: 15vh;
+    /* 這裡示意使用 200px，你可以根據需要調整高度 */
+    background-color: #ccc;
+    /* 這裡示意使用灰色背景，你可以插入你的圖片或內容 */
+    margin-right: 5vw;
+    /* 這裡示意使用 10px 的右邊間距，你可以根據需要調整間距 */
+
+    background-size: 100%;
+    /* 或者使用 contain */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
