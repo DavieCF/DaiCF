@@ -297,10 +297,10 @@ body {
 
 .registrationPage {
     width: 100%;
-    margin-left: 5vw;
+    margin-left: 20vw;
+    margin-bottom: 10vh;
     overflow-x: auto;
     white-space: nowrap;
-    justify-content: space-around;
 
 }
 
@@ -309,7 +309,8 @@ body {
     width: 24vw;
     height: 15vh;
     /* 這裡示意使用 200px，你可以根據需要調整高度 */
-    background-color: #ccc;
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 255, 247, 0.255));
+    ;
     /* 這裡示意使用灰色背景，你可以插入你的圖片或內容 */
     margin-right: 5vw;
     /* 這裡示意使用 10px 的右邊間距，你可以根據需要調整間距 */
@@ -318,4 +319,19 @@ body {
     /* 或者使用 contain */
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+
+
+@media (max-width: 768px) {
+    .registrationItem {
+        display: block;
+        width: 80vw;
+        height: 20vh;
+    }
+
+    .registrationPage {
+        margin-left: 5vw;
+        margin-bottom: 0vh;
+    }
 }
