@@ -7,8 +7,8 @@ img {
     font-family: 'Noto Sans TC', sans-serif;
     /* scroll-behavior: smooth; */
 }
-W
-html,
+
+W html,
 body,
 div,
 img:lang(en) {
@@ -52,7 +52,8 @@ body {
 .topboard-left-1 {
     height: auto;
     width: 100%;
-    font-size: 3vw;/*36px*/
+    font-size: 3vw;
+    /*36px*/
     font-weight: 700;
     background-color: rgba(0, 255, 0, 0);
     letter-spacing: 0.15vw;
@@ -63,7 +64,8 @@ body {
 .topboard-left-2 {
     height: 25%;
     width: 100%;
-    font-size: 1vw;/*12px*/
+    font-size: 1vw;
+    /*12px*/
     font-weight: lighter;
     background-color: rgba(0, 0, 255, 0);
 
@@ -156,33 +158,42 @@ body {
     text-decoration: none;
 }
 
-.topboard-coverd{
+.topboard-coverd {
     height: 15vh;
     width: 100%;
     background-color: rgba(255, 255, 255, 0);
 }
 
 .imageKV {
-    background-image: url('../2023_images/替身醫療主視覺.png'); /* 將圖片路徑添加到此處 */
-    background-size: cover; 
-    background-repeat: no-repeat; /* 這將防止圖片重複 */
-    width: 100vw; /* 使元素寬度等於視窗寬度 */
+    background-image: url('../2023_images/替身醫療主視覺.png');
+    /* 將圖片路徑添加到此處 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* 這將防止圖片重複 */
+    width: 100vw;
+    /* 使元素寬度等於視窗寬度 */
     height: 56vw;
 }
 
 .gradient-background {
     background: linear-gradient(to bottom right, #244250, #ffffff);
-    width: 100%;  /* 根據需求調整寬度 */
-    height: auto; /* 根據需求調整高度 */
-    overflow: auto; /*添加這一行來清除浮動 */
+    width: 100%;
+    /* 根據需求調整寬度 */
+    height: auto;
+    /* 根據需求調整高度 */
+    overflow: auto;
+    /*添加這一行來清除浮動 */
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
 .white-background {
-    width: 100%;  /* 根據需求調整寬度 */
-    height: auto; /* 根據需求調整高度 */
-    overflow: auto; /*添加這一行來清除浮動 */
+    width: 100%;
+    /* 根據需求調整寬度 */
+    height: auto;
+    /* 根據需求調整高度 */
+    overflow: auto;
+    /*添加這一行來清除浮動 */
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -207,7 +218,7 @@ body {
     height: 5vw;
     width: 100%;
     margin-right: 0vw;
-    margin-left: 0vw; 
+    margin-left: 0vw;
 
     flex-wrap: wrap;
 
@@ -250,9 +261,10 @@ body {
     margin-bottom: 2vw;
 
     display: flex;
-    align-items: center; 
+    align-items: center;
     flex-direction: row;
 }
+
 .vip_intro.reverse-direction {
     flex-direction: row-reverse;
 }
@@ -276,20 +288,27 @@ body {
 }
 
 .vip_photo img {
-    border-radius: 50%;  /* 將圖片裁剪為圓形 */
-    width: 20vw;        /* 調整這個值來改變圖片的大小 */
-    height: 20vw;       /* 確保這個值與 width 的值相等以保持圖片的圓形 */
-    object-fit: cover;   /* 確保圖片以適當的比例填充容器，但可能會有部分被裁切 */
+    border-radius: 50%;
+    /* 將圖片裁剪為圓形 */
+    width: 20vw;
+    /* 調整這個值來改變圖片的大小 */
+    height: 20vw;
+    /* 確保這個值與 width 的值相等以保持圖片的圓形 */
+    object-fit: cover;
+    /* 確保圖片以適當的比例填充容器，但可能會有部分被裁切 */
 
     margin-top: 0.5vw;
 }
 
 .vip_margin {
-    margin-left: 3vw;  /* 在圖片和文字之間添加一些間隔 */
+    margin-left: 3vw;
+    /* 在圖片和文字之間添加一些間隔 */
     margin-right: 0px;
 }
-.vip_intro:nth-child(odd) .vip_margin{
-    margin-left: 0px;  /* 在圖片和文字之間添加一些間隔 */
+
+.vip_intro:nth-child(odd) .vip_margin {
+    margin-left: 0px;
+    /* 在圖片和文字之間添加一些間隔 */
     margin-right: 3vw;
 }
 
@@ -303,7 +322,7 @@ body {
     font-size: 2.5vw;
 }
 
-.vip_title{
+.vip_title {
     font-size: 1.5vw;
     margin-top: 0.5vw;
     margin-bottom: 0px;
@@ -328,10 +347,10 @@ body {
 
 /*================================= faq ======================================*/
 
-.faq{
+.faq {
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     margin-top: 3vw;
     width: 100%;
     height: 65vw;
@@ -348,7 +367,7 @@ body {
 }
 
 /* 伸縮FAQ */
-.faq-item{
+.faq-item {
     margin-left: -5vw;
     width: 100vw;
     display: flex;
@@ -360,7 +379,7 @@ body {
     width: 70%;
     padding-left: 3vw;
     padding-right: 3vw;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .qa-title {
@@ -396,32 +415,33 @@ body {
 
 /*================================= img ======================================*/
 
-.portal{
+.portal {
     width: 90vw;
-    height: 25vw;;
+    height: 25vw;
+    ;
 
     display: flex;
     justify-content: center
 }
 
-.portal-left{
+.portal-left {
     width: 50%;
     padding-left: 10vw;
-    padding-right: 10vw;
+    padding-right: 15vw;
 
     display: flex;
     align-items: center;
     justify-content: center
 }
 
-.portal-left img{
+.portal-left img {
     background-color: #fff;
 
     width: 35vw;
     height: auto;
 }
 
-.portal-right{
+.portal-right {
     width: 50%;
     padding-left: 10vw;
     padding-right: 10vw;
@@ -431,7 +451,7 @@ body {
     justify-content: center
 }
 
-.portal-right img{
+.portal-right img {
     background-color: #fff;
 
     width: 35vw;
@@ -451,7 +471,7 @@ body {
     justify-content: center
 }
 
-.organizer img{
+.organizer img {
     /* background-color: #fff; */
 
     width: 60vw;
@@ -468,7 +488,7 @@ body {
     justify-content: center
 }
 
-.sponsor img{
+.sponsor img {
     /* background-color: #fff; */
 
     width: 60vw;
@@ -480,7 +500,7 @@ body {
     height: 15vh;
     width: 100vw;
     margin: 0.1px;
-    
+
     background: linear-gradient(to right, #244250 20%, #6097BE 60%);
     box-shadow: 0px 5px 10px #D9D9D9;
 
@@ -488,7 +508,7 @@ body {
     padding-bottom: 1vh;
 }
 
-.endboard-up{
+.endboard-up {
     width: 100%;
     height: 50%;
 
@@ -499,7 +519,7 @@ body {
     align-items: center;
 }
 
-.contact_us{
+.contact_us {
     width: 100%;
 
     font-size: 2.5vw;
@@ -510,7 +530,7 @@ body {
 }
 
 
-.endboard-down{
+.endboard-down {
     width: 100vw;
     height: 50%;
 
@@ -522,7 +542,7 @@ body {
     align-items: center;
 }
 
-.phone{
+.phone {
     width: 40%;
     height: 100%;
 
@@ -534,7 +554,7 @@ body {
 }
 
 
-.address{
+.address {
     width: 60%;
     height: 100%;
 
