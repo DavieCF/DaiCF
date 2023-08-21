@@ -35,21 +35,25 @@
             <a href="ForumEN.html" class="TBR-items">
                 <div>English</div>
             </a>
-            <a href="#forum" class="TBR-items">
-                <div>論壇介紹</div>
-            </a>
-            <a href="#VIP" class="TBR-items">
-                <div>貴賓介紹</div>
-            </a>
-            <a href="#talker" class="TBR-items">
-                <div>講者介紹</div>
-            </a>
-            <a href="#agenda" class="TBR-items">
-                <div>活動議程</div>
-            </a>
-            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
-                <div>聯絡我們</div>
-            </a>
+            <!-- 下拉選單觸發器 -->
+            <div class="dropdown-trigger">選單</div>
+            <div class="dropdown-menu">
+                <a href="#forum" class="TBR-items">
+                    <div>論壇介紹</div>
+                </a>
+                <a href="#VIP" class="TBR-items">
+                    <div>貴賓</div>
+                </a>
+                <a href="#talker" class="TBR-items">
+                    <div>演講者</div>
+                </a>
+                <a href="#agenda" class="TBR-items">
+                    <div>活動議程</div>
+                </a>
+                <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
+                    <div>聯絡我們</div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="topboard-coverd"></div>
@@ -64,19 +68,11 @@
             </div>
             <div class="IM_contant", style="color: aliceblue;">
                 <p>
-                    替身醫療論壇主要推廣虛擬和實體替身應用於患者治療之上的概念，讓大家瞭解替身醫療可能降低其在治療過程中所需承擔的風險，並且可以跨越距離及時間的限制。​
+                    替身醫療論壇主要推廣虛擬和實體替身應用於患者治療之上的概念，讓大家瞭解替身醫療可能降低其在治療過程中所需承擔的風險，並且可以跨越距離及時間的限制。​​推廣技術層面包含類器官、模式生物、大數據、元宇宙...等，讓一般大眾用新的角度了解目前這些技術開發有潛力替代病患本身並降低醫療上的風險，同時串聯學界及產業界，讓有潛力的技術或產品可以曝光。 
                 </p>
                 <p>&#20;</p>
                 <p>
-                    推廣技術層面包含類器官、模式生物、大數據、元宇宙...等，讓一般大眾用新的角度了解目前這些技術開發有潛力替代病患本身並降低醫療上的風險，同時串聯學界及產業界，讓有潛力的技術或產品可以曝光。​
-                </p>
-                <p>&#20;</p>
-                <p>
-                    此次論壇邀請到產官學研重量級講者來與我們分享後疫情時代所帶來的替身醫療的改變及發展。​
-                </p>
-                <p>&#20;</p>
-                <p>
-                    以期在不久的將來，透過大數據、AI、AR/VR/XR或NFT就可以讓虛擬替身實現於臨床及教學上。
+                    此次論壇邀請到產官學研重量級講者來與我們分享後疫情時代所帶來的替身醫療的改變及發展。以期在不久的將來，透過大數據、AI、AR/VR/XR或NFT就可以讓虛擬替身實現於臨床及教學上。 
                 </p>
                 <p>&#20;</p>
             </div>
@@ -85,7 +81,7 @@
 
         <div class="session">
             <div class="session_title">
-                <div class="session_title_txt", id="VIP", style="color: aliceblue;">貴賓介紹</div>
+                <div class="session_title_txt", id="VIP", style="color: aliceblue;">貴賓</div>
             </div>
             
 
@@ -93,7 +89,7 @@
 
         <div class="session">
             <div class="session_title">
-                <div class="session_title_txt", id="talker", style="color: #000000;">講者介紹</div>
+                <div class="session_title_txt", id="talker", style="color: #000000;">演講者</div>
             </div>
             <div class="vip_intro normal-direction">
                 <div class="vip_photo">
@@ -174,9 +170,12 @@
 
         </div>
 
-        <div class="session">
+        <div class="session", style="height: 85vw";>
             <div class="session_title">
                 <div class="session_title_txt", id="agenda", style="color: black;">活動議程</div>
+                <div class="agenda">
+                    <img src="./2023_images/agendaEng.png" alt="agendaEng.png">
+                </div>
             </div>
         </div>
 
@@ -189,33 +188,29 @@
                         <ul>
                             <li>    
                                 <div class="qa-title">何謂替身醫療 </div>
-                                <div class="qa-content">替身醫療 (Avatar
-                                替身醫療 (Avatar Medicine)旨在運用一個虛擬或實體的替身來代替病患本身
-                                來降低其在治療過程中所需承擔的風險，並且可以避免距離或時間的限制。
+                                <div class="qa-content">
+                                    替身醫療 (Avatar Medicine)旨在運用一個虛擬或實體的替身來代替病患本身來降低其在治療過程中所需承擔的風險，並且可以避免距離或時間的限制。
                                 </div>
                             </li>
 
                             <li>
                                 <div class="qa-title">什麼是實體替身 </div>
-                                <div class="qa-content">透過來自人體的檢體或是與人體相似的
-                                模式生物，模擬一部份人體的疾病狀況，透過外界刺激觀察生物性反
-                                應，進而執行研究開發、檢測診斷以及治療協助。​
+                                <div class="qa-content">
+                                    透過來自人體的檢體或是與人體相似的模式生物，模擬一部份人體的疾病狀況，透過外界刺激觀察生物性反應，進而執行研究開發、檢測診斷以及治療協助。​ 
                                 </div>
                             </li>
 
                             <li>
                                 <div class="qa-title">什麼是虛擬替身 </div>
                                 <div class="qa-content">
-                                「虛擬替身」是透過來自人體的數據，在虛擬世界模擬出影像或模型，
-                                再透過運算進行預測，進而執行臨床諮詢、檢測診斷以及治療協助。
+                                    「虛擬替身」是透過來自人體的數據，在虛擬世界模擬出影像或模型，再透過運算進行預測，進而執行臨床諮詢、檢測診斷以及治療協助。 
                                 </div>
                             </li>
 
                             <li>
                                 <div class="qa-title">什麼是元宇宙 </div>
                                 <div class="qa-content">
-                                一個由人工智能、虛擬實境、5G、大數據、數字資產和虛擬身份組成的世界。
-                                你可以在這個空間隸面工作、娛樂、購物、和玩遊戲….。
+                                    一個由人工智能、虛擬實境、5G、大數據、數字資產和虛擬身份組成的世界。你可以在這個空間隸面工作、娛樂、購物、和玩遊戲….。 
                                 </div>
                             </li>
 
@@ -232,6 +227,43 @@
                                     只要上活動頁面連結網址，留下您的聯絡方式就可以囉!!
                                 </div>
                             </li>
+
+                            <li>
+                                <div class="qa-title">NFT 是什麼</div>
+                                <div class="qa-content">
+                                    NFT全名為Non-Fungible Token，中文意思為非同質化代幣。意思是「貨品或是人物具有可以直接與對方交換的特質。」 
+                                    簡單來說，NFT就是將數位作品給他一個專屬代碼，當你購買這一個數位作品時，會連同代碼一起買下，即便你一次擁有多個同樣的作品(例如圖片、影像等)，也會因為代碼的不同，而被當作不同作品。 
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="qa-title">如何取得NFT</div>
+                                <div class="qa-content">
+                                    首先您必須要有一個錢包來支付交易手續費。並且參加本年度的論壇， 掃描畫面中出現的QR code，就可以Free Mint獲得限量NFT。 
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="qa-title">如何取得錢包</div>
+                                <div class="qa-content">
+                                    錢包可以將它想像成虛擬世界的護照，目前在以太坊區塊鏈上最主流的錢包，俗稱小狐狸錢包。 
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="qa-title">發行張數</div>
+                                <div class="qa-content">
+                                    5000張；一人限領1張。 
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="qa-title">NFT可以做什麼用</div>
+                                <div class="qa-content">
+                                    追蹤精拓生技Facebook及Twitter(@CancerFreeBio)留意每月抽獎活動訊息，就可憑本年度的論壇所獲得的NFT參加抽獎活動。 
+                                    本NFT 2級市場所得的收入，將作為捐贈兒童癌症病童免費使用精拓生技EVA Select服務或相關治療。 
+                                </div>
+                            </li>
                         </ul>
 
                     </div>
@@ -246,16 +278,16 @@
                 <div class="session_title_txt", style="color: black;">報名連結</div>
             </div>
             <div class="portal">
-                    <div class="portal-left">
-                        <a href="https://www.accupass.com/go/Avatar2023">
-                            <img src="./2023_images/Accupass_icon.png" alt="Accupass_icon.png">
-                        </a>
-                    </div>
-                    <div class="portal-right">
-                        <a href="https://www.eventbrite.com/e/avatar-medicine-forum-2023-tickets-697936054527?aff=oddtdtcreator">
-                            <img src="./2023_images/eventbrite_icon.png" alt="eventbrite_icon.png">
-                        </a>
-                    </div>
+                <div class="portal-left">
+                    <a href="https://www.accupass.com/go/Avatar2023">
+                        <img src="./2023_images/Accupass_icon.png" alt="Accupass_icon.png">
+                    </a>
+                </div>
+                <div class="portal-right">
+                    <a href="https://www.eventbrite.com/e/avatar-medicine-forum-2023-tickets-697936054527?aff=oddtdtcreator">
+                        <img src="./2023_images/eventbrite_icon.png" alt="eventbrite_icon.png">
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -322,6 +354,23 @@
         }
     });
     });
+
+    /*禁止手機用戶左右活動*/
+    document.addEventListener('touchstart', function(e) {
+    let startX = e.touches[0].pageX;
+    let startY = e.touches[0].pageY;
+    
+    document.addEventListener('touchmove', function(e) {
+        let moveX = e.touches[0].pageX;
+        let moveY = e.touches[0].pageY;
+        
+        // Check if horizontal move is larger than vertical move
+        if (Math.abs(moveX - startX) > Math.abs(moveY - startY)) {
+            e.preventDefault();
+        }
+        }, { passive: false });
+    }, { passive: false });
+
 
 
 </script>

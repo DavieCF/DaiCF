@@ -1,26 +1,69 @@
 @media (max-width: 768px){
+    html,
+    body,
+    div,
+    img:lang(en) {
+        margin: -0.5px;
+        padding: 0px;
+        font-family: 'Kanit', sans-serif;
+    }
+
     .topboard-left{
-        width: 35%;
+        display: none;
+        /* width: 50%; */
     }
 
     .topboard-left-1 {
-        font-size: 4.5vw;
+        font-size: 6vw;
     }
     
     .topboard-left-2 {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
-
+    
     .topboard-right{
-        width: 65%;
+        width: 100%;
     }
+    /* ============================================= .dropdown-menu ================================= */
+    /* 初始隱藏下拉選單觸發器 */
+    /* .dropdown-trigger {
+        width: 100%;
+        height: 50%;
+        padding-right: 10vw;
+
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        color: #ffffff;
+    } */
+    /* .dropdown-menu{
+        display: block;
+        width: 40vw;
+        margin-right: -15vw;
+    } */
+    /* 隱藏下拉選單 */
+    /* .dropdown-menu .TBR-items{
+        display: none;
+        background-color: #6097BE;
+        
+        width: 100%;
+    } */
+
+    /* 顯示下拉選單，當觸發器被點擊或懸停 */
+    /* .dropdown-trigger:hover + .dropdown-menu .TBR-items, 
+    .dropdown-trigger:focus + .dropdown-menu .TBR-items {
+        display: block;
+    } */
 
     .TBR-items {
-        font-size: 2.5vw;
+        font-size: 3.2vw;
+        width: 20%;
     }
 
     .TBR-items-NULL {
         font-size: 2.5vw;
+        width: 20%;
     }
 
     .session_title {
@@ -77,6 +120,12 @@
     }
 
     /*============================ faq =================================*/
+    /* 伸縮FAQ */
+    .faq-item{
+        margin-left: -5vw;
+        width: 95vw;
+        display: flex;
+    }
     .faq-item ul {
         width: 80%; 
     }
@@ -102,15 +151,16 @@
     }
 
     .faq{
-        height: 130vw;
+        height: 220vw;
     }
 
     /*================================= img ======================================*/
     .portal{
         height: 60vw;;
-        flex-direction: column;
-
         margin-top: 10vw;
+
+        flex-direction: column;
+        align-items: center;
     }
 
     .portal-left{
@@ -141,6 +191,16 @@
         height: auto;
     }
 
+    .agenda{
+        width: 100vw;
+        height: 60vw;
+    }
+
+    .agenda img{
+        width: 100vw;
+    }
+
+
     .organizer {
         width: 80vw;
         height: 20vw;
@@ -168,7 +228,7 @@
         width: 100vw;
         height: 50%;
     
-        font-size: 4vw;
+        font-size: 3vw;
         color: #ffffff;
     
         display: flex;
@@ -180,10 +240,18 @@
         width: 100vw;
         height: 50%;
     
-        font-size: 4vw;
+        font-size: 2.5vw;
         color: #ffffff;
     
         display: flex;
         align-items: center;
+    }
+
+    .go-top {
+        right: 16vw;
+    }
+    
+    .dogicon {
+        right: 14vw;
     }
 }
