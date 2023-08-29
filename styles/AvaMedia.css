@@ -25,37 +25,6 @@
         width: 100%;
     }
     /* ============================================= .dropdown-menu ================================= */
-    /* 初始隱藏下拉選單觸發器 */
-    /* .dropdown-trigger {
-        width: 100%;
-        height: 50%;
-        padding-right: 10vw;
-
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        color: #ffffff;
-    } */
-    /* .dropdown-menu{
-        display: block;
-        width: 40vw;
-        margin-right: -15vw;
-    } */
-    /* 隱藏下拉選單 */
-    /* .dropdown-menu .TBR-items{
-        display: none;
-        background-color: #6097BE;
-        
-        width: 100%;
-    } */
-
-    /* 顯示下拉選單，當觸發器被點擊或懸停 */
-    /* .dropdown-trigger:hover + .dropdown-menu .TBR-items, 
-    .dropdown-trigger:focus + .dropdown-menu .TBR-items {
-        display: block;
-    } */
-
     .TBR-items {
         font-size: 3.2vw;
         width: 20%;
@@ -191,13 +160,19 @@
         height: auto;
     }
 
+    .session-agenda{
+        height: 75vw;
+    }
+    
+
     .agenda{
-        width: 100vw;
-        height: 60vw;
+        width: 99vw;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .agenda img{
-        width: 100vw;
+        width: 80vw;
     }
 
 

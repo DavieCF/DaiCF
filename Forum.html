@@ -29,17 +29,17 @@
             <div class="TBR-items-NULL"></div>
             <div class="TBR-items-NULL"></div>
             <div class="TBR-items-NULL"></div>
-            <a href="Forum.html" class="TBR-items">
+            <a href="#Forum.html" class="TBR-items", onclick="changeLanguage('en')">
                 <div>繁體中文</div>
             </a>
-            <a href="ForumEN.html" class="TBR-items">
+            <a href="ForumEN.html" class="TBR-items", onclick="changeLanguage('zh-TW')">
                 <div>English</div>
             </a>
             <!-- 下拉選單觸發器 -->
             <div class="dropdown-trigger">選單</div>
             <div class="dropdown-menu">
                 <a href="#forum" class="TBR-items">
-                    <div>論壇介紹</div>
+                    <div data-i18n="[html]content.forum">論壇介紹</div>
                 </a>
                 <a href="#VIP" class="TBR-items">
                     <div>貴賓</div>
@@ -170,11 +170,15 @@
 
         </div>
 
-        <div class="session", style="height: 85vw";>
+        <div class="session-agenda">
             <div class="session_title">
                 <div class="session_title_txt", id="agenda", style="color: black;">活動議程</div>
                 <div class="agenda">
-                    <img src="./2023_images/agendaEng.png" alt="agendaEng.png">
+                    <picture>
+                        <!-- 寬度小於768使用agendaChi_media.png，否則使用agendaChi.png -->
+                        <source media="(max-width: 768px)" srcset="./2023_images/agendaChi_media.png">
+                        <img src="./2023_images/agendaChi.png" alt="agendaChi.png">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -328,51 +332,8 @@
 	<div class="dogicon"></div>
 </body>
 
-<script>
-    /*QA click*/
-    $(".qa-title").click(function () {
-        $(".qa-content").slideUp();
-        $(".qa-title.on").removeClass("on");
-        $(this).next().stop().slideDown();
-        $(this).stop().addClass("on");
-    });
-
-    /*移移動偏移往上*/ 
-    $(document).ready(function(){
-    $('a[href^="#"]').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
-
-        if(target.length) {
-            event.preventDefault();
-
-            // 滾動偏移量
-            var offset = 130; // 你可以調整這個值來改變滾動的偏移量，正數表示偏上，負數表示偏下
-
-            $('html, body').stop().animate({
-                scrollTop: target.offset().top - offset
-            }, 1000);
-        }
-    });
-    });
-
-    /*禁止手機用戶左右活動*/
-    document.addEventListener('touchstart', function(e) {
-    let startX = e.touches[0].pageX;
-    let startY = e.touches[0].pageY;
-    
-    document.addEventListener('touchmove', function(e) {
-        let moveX = e.touches[0].pageX;
-        let moveY = e.touches[0].pageY;
-        
-        // Check if horizontal move is larger than vertical move
-        if (Math.abs(moveX - startX) > Math.abs(moveY - startY)) {
-            e.preventDefault();
-        }
-        }, { passive: false });
-    }, { passive: false });
-
-
-
-</script>
-
+<script src='https://unpkg.com/vue/dist/vue.js&#39';></script>
+<script src='https://unpkg.com/vue-i18n/dist/vue-i18n.js&#39';></script>
+<script src="./javascript/script.js"></script>
+<script scr="./javascript/lang.js"></script>
 </html>

@@ -358,10 +358,20 @@
     });
 
     /*禁止手機用戶左右活動*/
+    document.addEventListener('touchstart', function(e) {
+    let startX = e.touches[0].pageX;
+    let startY = e.touches[0].pageY;
+    
     document.addEventListener('touchmove', function(e) {
-        e.preventDefault();
+        let moveX = e.touches[0].pageX;
+        let moveY = e.touches[0].pageY;
+        
+        // Check if horizontal move is larger than vertical move
+        if (Math.abs(moveX - startX) > Math.abs(moveY - startY)) {
+            e.preventDefault();
+        }
+        }, { passive: false });
     }, { passive: false });
-
 
 
 </script>
