@@ -1,4 +1,5 @@
-@media (max-width: 768px){
+@media (max-width: 768px) {
+
     html,
     body,
     div,
@@ -8,7 +9,11 @@
         font-family: 'Kanit', sans-serif;
     }
 
-    .topboard-left{
+    .topboard {
+        height: 10vh;
+    }
+
+    .topboard-left {
         display: none;
         /* width: 50%; */
     }
@@ -16,14 +21,15 @@
     .topboard-left-1 {
         font-size: 6vw;
     }
-    
+
     .topboard-left-2 {
         font-size: 3.5vw;
     }
-    
-    .topboard-right{
+
+    .topboard-right {
         width: 100%;
     }
+
     /* ============================================= .dropdown-menu ================================= */
     .TBR-items {
         font-size: 3.2vw;
@@ -54,7 +60,7 @@
     .vip_photo img {
         width: 40vw;
         height: 40vw;
-        
+
         margin-top: 10vw;
     }
 
@@ -80,7 +86,7 @@
         font-size: 5vw;
     }
 
-    .vip_title{
+    .vip_title {
         font-size: 3vw;
     }
 
@@ -90,13 +96,14 @@
 
     /*============================ faq =================================*/
     /* 伸縮FAQ */
-    .faq-item{
+    .faq-item {
         margin-left: -5vw;
         width: 95vw;
         display: flex;
     }
+
     .faq-item ul {
-        width: 80%; 
+        width: 80%;
     }
 
     .qa-title {
@@ -107,71 +114,72 @@
         font-size: 4vw;
     }
 
-    .contact_us{
+    .contact_us {
         font-size: 5vw;
     }
 
-    .phone{
+    .phone {
         font-size: 4vw;
     }
 
-    .address{
+    .address {
         font-size: 4vw;
     }
 
-    .faq{
+    .faq {
         height: 220vw;
     }
 
     /*================================= img ======================================*/
-    .portal{
-        height: 60vw;;
+    .portal {
+        height: 60vw;
+        ;
         margin-top: 10vw;
 
         flex-direction: column;
         align-items: center;
     }
 
-    .portal-left{
+    .portal-left {
         width: 75%;
 
         margin-top: 5vw;
         margin-bottom: 5vw;
     }
-    
-    .portal-left img{
+
+    .portal-left img {
         background-color: #fff;
-    
+
         width: 70vw;
         height: auto;
     }
-    
-    .portal-right{
+
+    .portal-right {
         width: 75%;
 
         margin-top: 5vh;
         margin-bottom: 5vh;
     }
-    
-    .portal-right img{
+
+    .portal-right img {
         background-color: #fff;
-    
+
         width: 60vw;
         height: auto;
     }
 
-    .session-agenda{
+    .session-agenda {
         height: 75vw;
     }
-    
 
-    .agenda{
+
+    .agenda {
         width: 99vw;
         justify-content: flex-start;
         align-items: flex-start;
     }
 
-    .agenda img{
+    .agenda img {
         width: 80vw;
     }
 
@@ -181,52 +189,61 @@
         height: 20vw;
     }
 
-    .organizer img{
+    .organizer img {
         width: 60vw;
     }
 
     .sponsor {
         width: 80vw;
-        height: 50vw;;
+        height: 50vw;
+        ;
     }
 
-    .sponsor img{
+    .sponsor img {
         width: 60vw;
     }
 
     /*================================== endboard ===============================*/
-    .endboard-down{
+    .endboard-down {
         flex-direction: column;
     }
 
-    .phone{
+    .phone {
         width: 100vw;
         height: 50%;
-    
+
         font-size: 3vw;
         color: #ffffff;
-    
+
         display: flex;
         align-items: center;
     }
-    
-    
-    .address{
+
+
+    .address {
         width: 100vw;
         height: 50%;
-    
+
         font-size: 2.5vw;
         color: #ffffff;
-    
+
         display: flex;
         align-items: center;
     }
 
     .go-top {
         right: 16vw;
+
     }
-    
+
     .dogicon {
         right: 14vw;
     }
-}
+
+    .endboard {
+        overflow-x: hidden;
+    }
+
+    .topboard-coverd {
+        height: 10vh;
+    }
