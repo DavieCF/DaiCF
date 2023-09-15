@@ -266,11 +266,15 @@
 
         </div>
 
-        <div class="session" , style="height: 85vw;">
+        <div class="session-agenda">
             <div class="session_title">
                 <div class="session_title_txt" , id="agenda" , style="color: black;">Agenda</div>
                 <div class="agenda">
-                    <img src="./2023_images/agendaEng.png" alt="agendaEng.png">
+                    <picture>
+                        <!-- 寬度小於768使用agendaChi_media.png，否則使用agendaChi.png -->
+                        <source media="(max-width: 768px)" srcset="./2023_images/agendaEng_media.png">
+                        <img src="./2023_images/agendaEng.png" alt="agendaChi.png">
+                    </picture>
                 </div>
             </div>
         </div>
