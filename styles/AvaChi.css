@@ -169,14 +169,14 @@ body {
     /* 這將防止圖片重複 */
     width: 100vw;
     /* 使元素寬度等於視窗寬度 */
-    height: 56vw;
+    height: 55.5vw;
 }
 
 .gradient-background {
     /* background: linear-gradient(to bottom right, #244250, #ffffff); */
-    background-image: url('../2023_images/網站背景.png');
+    background-image: url('../2023_images/n6.png');
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     /* 根據需求調整寬度 */
     height: auto;
     /* 根據需求調整高度 */
