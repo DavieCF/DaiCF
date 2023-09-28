@@ -175,7 +175,7 @@ body {
 .gradient-background {
     /* background: linear-gradient(to bottom right, #244250, #ffffff); */
     background-image: url('../2023_images/n6.png');
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100vw;
     /* 根據需求調整寬度 */
     height: auto;
