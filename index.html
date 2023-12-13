@@ -4,15 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/AvaChi.css">
-    <link rel="stylesheet" type="text/css" href="./styles/AvaMedia.css">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMedindex.css">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMedEN.css">
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@900&family=REM:ital,wght@0,100;0,300;0,500;0,900;1,700&display=swap"
+        rel="stylesheet">
+
     <title>AvatarMedicine</title>
+
+
 </head>
+<style>
+    body {
+        background-image: url(./images/centerBK1.png);
+        background-repeat: repeat-y;
+        background-size: 100%;
+    }
+</style>
 
 
 <body>
@@ -20,359 +32,189 @@
     <div class="topboard">
         <div class="topboard-left">
 
-            <div class="topboard-left-1">替身醫療論壇</div>
-            <div class="topboard-left-2">Avatar Medicine Forum</div>
+            <div class="topboard-left-1">
+                Avatar Medicine Forum<br>
+            </div>
+            <div class="topboard-left-2 ENTL2">
+                Reflection of oneself in the mirror
+            </div>
 
         </div>
         <div class="topboard-middle"></div>
         <div class="topboard-right">
-            <div class="TBR-items-NULL"></div>
-            <div class="TBR-items-NULL"></div>
-            <a href="#index.html" class="TBR-items" , onclick="changeLanguage('en')">
-                <div>繁體中文</div>
+            <a href="indextw.html" class="TBR-items">
+                <div>Chinese</div>
             </a>
-            <a href="ForumEN.html" class="TBR-items" , onclick="changeLanguage('zh-TW')">
+            <a href="index.html" class="TBR-items">
                 <div>English</div>
             </a>
-            <!-- 下拉選單觸發器 -->
-            <div class="dropdown-trigger">選單</div>
-            <div class="dropdown-menu">
-                <a href="#forum" class="TBR-items">
-                    <div data-i18n="[html]content.forum">論壇介紹</div>
-                </a>
-                <a href="#talker" class="TBR-items">
-                    <div>演講者</div>
-                </a>
-                <a href="#agenda" class="TBR-items">
-                    <div>活動議程</div>
-                </a>
-                <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
-                    <div>聯絡我們</div>
-                </a>
+            <div class="TBR-items" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
+                Past Events
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="Forum2021.html">2021</a>
+                    <a href="Forum2022.html">2022</a>
+                    <a href="Forum2023.html">2023</a>
+                </div>
             </div>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
+                <div>Contact Us</div>
+            </a>
         </div>
     </div>
-    <div class="topboard-coverd"></div>
-
+    <div class="topboardblock"></div>
 
     <!--Contant-->
-    <div class="imageKV">
+    <div class="indexmassage">
+        <div class="IM_title">
+            <div class="IM_frontblock"></div>
+            <div class="IM_title_txt">Towards the Metaverse: Avatar Medical Forum</div>
+        </div>
+        <div class="IM_contant">
+            <p>
+                The Avatar Medical Forum primarily advocates the concept of utilizing virtual
+                and physical avatars in patient treatment, aiming to raise awareness about the
+                potential of avatar-based healthcare to reduce risks associated with traditional
+                treatments. Additionally, it highlights the ability of avatar-based healthcare
+                to overcome limitations posed by distance and time constraints.
+            </p>
+            <p>&#20;</p>
+            <p>
+                The promotion at the technological level encompasses areas such as artificial
+                organs, bio-mimicry, big data, and the metaverse, among others. It aims to
+                provide the general public with a fresh perspective on how these technologies
+                hold the potential to replace the patient's own functions and mitigate risks
+                in medical treatments. Furthermore, it seeks to foster collaboration between
+                academia and industry, enabling promising technologies or products to gain
+                visibility and exposure. </p>
+            <p>&#20;</p>
+            <p>
+                This forum has invited influential speakers from industry, government,
+                academia, and research sectors to share insights on the transformative
+                changes and developments in avatar-based healthcare brought about by the
+                post-pandemic era. </p>
+            <p>&#20;</p>
+            <p>
+                With the integration of big data, AI, AR/VR/XR, or NFT, it is envisaged
+                that virtual avatars can soon be realized for clinical and educational
+                applications. </p>
+            <p>&#20;</p>
+        </div>
     </div>
-    <div class="gradient-background" id="gradient-background">
-        <div class="session">
-            <div class="session_title">
-                <div class="session_title_txt" , id="forum" , style="color: aliceblue;">論壇介紹</div>
-            </div>
-            <div class="IM_contant" , style="color: aliceblue;">
-                <p>
-                    替身醫療論壇主要推廣虛擬和實體替身應用於患者治療之上的概念，
-                    讓大家瞭解替身醫療可能降低其在治療過程中所需承擔的風險，並且可以跨越距離及時間的限制。​
-                    ​推廣技術層面包含類器官、模式生物、大數據、元宇宙...等，讓一般大眾用新的角度了解目前
-                    這些技術開發有潛力替代病患本身並降低醫療上的風險，同時串聯學界及產業界，讓有潛力的技術或產品可以曝光。
-                </p>
-                <p>&#20;</p>
-                <p>
-                    此次論壇邀請到產官學研重量級講者來與我們分享後疫情時代所帶來的替身醫療的改變及發展。以期在不久的將來，
-                    透過大數據、AI、AR/VR/XR或NFT就可以讓虛擬替身實現於臨床及教學上。
-                </p>
-                <p>&#20;</p>
-            </div>
+    <div class="indexmassage" style="position: relative;">
+
+        <div class="IM_title">
+            <div class="IM_frontblock"></div>
+            <div class="IM_title_txt phoneBr">Event Highlights</div>
         </div>
-
-
-        <!-- <div class="session">
-            <div class="session_title">
-                <div class="session_title_txt" , id="VIP" , style="color: aliceblue;">貴賓</div>
+        <p>&#20;</p>
+        <div class="photohighlights" id="photohighlights">
+            <div class="photobtn_left" id="photobtn_left">
+                <div style="transform: scaleY(2);">&lt;</div>
             </div>
- -->
-
-
-
-        <div class="session">
-            <div class="session_title">
-                <div class="session_title_txt" , id="talker" , style="color: #000000;">演講者</div>
-            </div>
-            <!--1-->
-            <div class="vip_intro normal-direction">
-                <div class="vip_photo">
-                    <img src="./2023_images/VIP_Miser.png" alt="VIP Photo">
-                </div>
-                <div class="vip_margin">
-                    <div class="vip_name">James S. Miser
-                    </div>
-                    <div class="vip_title">希望之城醫療中心前院長
-                    </div>
-                    <div class="vip_description">
-                        Dr.Miser是小兒血液學/腫瘤學領域的國際專家，致力於開創抗癌新療法。
-                        他除了目前擔任台北醫學大學的講座教授之外也曾擔任美國希望之城醫療中心院長。
-                        在癌症研究中，他仍在多個關鍵委員會中發揮領導作用，包括兒童癌症研究組及Wilms腫瘤監測委員會。
-                    </div>
-                </div>
+            <div class="photobtn_right" id="photobtn_right">
+                <div style="transform: scaleY(2);">&gt;</div>
             </div>
 
-            <div class="vip_intro reverse-direction">
-                <div class="vip_photo">
-                    <img src="./2023_images/VIP_Luke.png" alt="VIP Photo">
-                </div>
-                <div class="vip_margin">
-                    <div class="vip_name">Luke Dimasi</div>
-                    <div class="vip_title">Emulate Inc.資深產品管理總監
-                    </div>
-                    <div class="vip_description">
-                        Luke Dimasi是生命科學及生物技術領域的市場營銷和產品管理專家，
-                        有超過15年經驗。現任Emulate, Inc.的高級產品管理總監，他深刻理解客戶需求，
-                        將其轉化為成功策略，帶領團隊推出嶄新產品，提升科學研究。
-                        Dimasi擁有細胞和分子生物學背景，經驗涵蓋藥物發現、基因組學和幹細胞治療等範疇。
-                    </div>
-                </div>
-            </div>
-
-            <!--1-->
-            <div class="vip_intro normal-direction">
-                <div class="vip_photo">
-                    <img src="./2023_images/GCG.jpg" alt="VIP Photo">
-                </div>
-                <div class="vip_margin">
-                    <div class="vip_name">鍾尊智</div>
-                    <div class="vip_title">奈捷生物科技執行長</div>
-                    <div class="vip_description">
-                        鍾尊智先生是奈捷生物科技的執行長，具備豐富的生物科技經驗。他於2002年進入行業，曾在多家知名公司
-                        擔任關鍵職位，包括Illumina在台灣的Genetech biotech Co., Ltd。他也是Instant NanoBiosensors
-                        Co., Ltd.的共同創始人，並在2020年成為Merck KGaA的戰略合作夥伴。
-                        鍾尊智先生以卓越的領導風格和不懈的創新精神，推動著奈捷生物科技不斷前進，並致力於改善生物科技行業。
-                    </div>
-                </div>
-            </div>
-
-            <div class="vip_intro reverse-direction">
-                <div class="vip_photo">
-                    <img src="./2023_images/LLS.jpg" alt="VIP Photo">
-                </div>
-                <div class="vip_margin">
-                    <div class="vip_name">呂隆昇</div>
-                    <div class="vip_title">台北醫學大學附設醫院主治醫師</div>
-                    <div class="vip_description">
-                        呂隆昇博士是台北醫學大學副教授，同時兼任生醫材料暨組織工程研究所、
-                        生醫工程、再生醫學學程，並為台北醫學大學附設醫院主治醫師，並同時擔任細胞治療中心主任。
-                    </div>
-                </div>
-            </div>
-            <!--1-->
-            <div class="vip_intro normal-direction">
-                <div class="vip_photo">
-                    <img src="./2023_images/LEL.jpg" alt="VIP Photo">
-                </div>
-                <div class="vip_margin">
-                    <div class="vip_name">李彥樑</div>
-                    <div class="vip_title">精準醫學 NGS 資深基因技術專家</div>
-                    <div class="vip_description">
-                        李彥樑是台灣生技業界少數資歷深厚的基因技術專家，17年來致力於基因晶片及NGS技術在臨床的應用，
-                        推動台灣首套自動罕見疾病基因NGS篩查系統，整理羊水檢測數據，並分析多個癌症研究計畫的基因數據。
-                        他專業且熱情，連結台灣基因研究與醫學，為基因醫學的發展貢獻。
-                    </div>
-                </div>
-            </div>
-
-            <div class="vip_intro reverse-direction">
-                <div class="vip_photo">
-                    <img src="./2023_images/LES.jpg" alt="VIP Photo">
-                </div>
-                <div class="vip_margin">
-                    <div class="vip_name">劉逸軒</div>
-                    <div class="vip_title">台灣大學動物科學技術學系教授 </div>
-                    <div class="vip_description">
-                        劉逸軒教授，台灣大學動物科學技術學系及再生醫學研究中心成員，獸醫專業學院合聘，
-                        研究專注於動物胚胎發育、組織再生，並以基因編輯等技術探究幹細胞生理。
-                        他於北卡羅萊納州立大學取得博士學位，賓州大學進行博士後研究。研究關注胚胎細胞的分化、
-                        遷移、幹細胞生成及組織再生，以促進受創組織的長期恢復與功能重建。
-                    </div>
-                </div>
-            </div>
-            <!--1-->
-            <div class="vip_intro normal-direction">
-                <div class="vip_photo">
-                    <img src="./2023_images/WGL.jpg" alt="VIP Photo">
-                </div>
-                <div class="vip_margin">
-                    <div class="vip_name">吳佳倫</div>
-                    <div class="vip_title">優力勁聯股份有限公司營運長</div>
-                    <div class="vip_description">
-                        吳佳倫目前為優力勁聯股份有限公司營運長，曾經擔任台灣運動健身產業協會創新創業委
-                        員會前執行長及亞洲運動能量集團營運長。他領導Uniigym，致力於運動科技與健身內容的
-                        創新公司，融合遊戲化概念降低運動門檻，以互動體感健身APP為主，引領健康生活方式。
-                    </div>
-                </div>
-            </div>
-
-            <div class="vip_intro reverse-direction">
-                <div class="vip_photo">
-                    <img src="./2023_images/LER.jpg" alt="VIP Photo">
-                </div>
-                <div class="vip_margin">
-                    <div class="vip_name">劉彥麟</div>
-                    <div class="vip_title">台北醫學大學附設醫院主治醫師</div>
-                    <div class="vip_description">
-                        劉彥麟醫師現任臺北醫學大學附設醫院小兒腫瘤科主任，並在臺北醫學大學助理教授。
-                        專攻神經母細胞瘤、兒童腫瘤和小兒血液學，同時在造血幹細胞移植領域有豐富經驗。
-                        曾就讀成功大學醫學士，後於臺灣大學取得轉譯醫學博士學位。
-                    </div>
-                </div>
-            </div>
-
-            <!--1-->
-            <div class="vip_intro normal-direction">
-                <div class="vip_photo">
-                    <img src="./2023_images/CGF.png" alt="VIP Photo">
-                </div>
-                <div class="vip_margin">
-                    <div class="vip_name">邱仲峯</div>
-                    <div class="vip_title">台灣放射腫瘤學會理事長</div>
-                    <div class="vip_description">
-                        邱仲峯理事長是一位在腫瘤學和醫學教育領域備受尊敬的專家。他擁有國防醫學院醫學科學研究所的博士學位，
-                        並在臺北醫學大學擔任優秀的教授，專注於放射治療、癌症研究和創新治療。他的領導履歷包括醫院院長和專業主任。
-                        並且他曾獲得多個獎項，包括傑出研究計畫獎和優良教師獎，他在推動癌症護理、免疫療法和分子生物學方面的承諾，
-                        使他成為腫瘤學領域的重要人物。
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="session-agenda">
-            <div class="session_title">
-                <div class="session_title_txt" , id="agenda" , style="color: black;">活動議程</div>
-                <div class="agenda">
-                    <picture>
-                        <!-- 寬度小於768使用agendaChi_media.png，否則使用agendaChi.png -->
-                        <source media="(max-width: 768px)" srcset="./2023_images/agendaChi_media.png">
-                        <img src="./2023_images/agendaChi.png" alt="agendaChi.png">
-                    </picture>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="session">
-            <div class="faq">
-                <div class="session_title">
-                    <div class="session_title_txt" , style="color: black;">FAQ</div>
-                    <div class="faq-item">
-                        <ul>
-                            <li>
-                                <div class="qa-title">何謂替身醫療 </div>
-                                <div class="qa-content">
-                                    替身醫療 (Avatar Medicine)旨在運用一個虛擬或實體的替身來代替病患本身來降低其在治療過程中所需承擔的風險，並且可以避免距離或時間的限制。
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="qa-title">什麼是實體替身 </div>
-                                <div class="qa-content">
-                                    透過來自人體的檢體或是與人體相似的模式生物，模擬一部份人體的疾病狀況，透過外界刺激觀察生物性反應，進而執行研究開發、檢測診斷以及治療協助。​
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="qa-title">什麼是虛擬替身 </div>
-                                <div class="qa-content">
-                                    「虛擬替身」是透過來自人體的數據，在虛擬世界模擬出影像或模型，再透過運算進行預測，進而執行臨床諮詢、檢測診斷以及治療協助。
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="qa-title">參加替身醫療論壇需要多少費用? </div>
-                                <div class="qa-content">
-                                    不需花費任何費用。只需花費您的2個小時的時間而已!!
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="qa-title">如何報名?</div>
-                                <div class="qa-content">
-                                    只要上活動頁面連結網址，留下您的聯絡方式就可以囉!!
-                                </div>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="session">
-            <div class="session_title">
-                <div class="session_title_txt" , style="color: black;">報名連結</div>
-            </div>
-            <div class="portal">
-                <div class="portal-left">
-                    <a href="https://www.accupass.com/go/Avatar2023">
-                        <img src="./2023_images/Accupass_icon.png" alt="Accupass_icon.png">
-                    </a>
-                </div>
-                <div class="portal-right">
-                    <a
-                        href="https://www.eventbrite.com/e/avatar-medicine-forum-2023-tickets-697936054527?aff=oddtdtcreator">
-                        <img src="./2023_images/eventbrite_icon.png" alt="eventbrite_icon.png">
-                    </a>
-                </div>
-            </div>
         </div>
 
     </div>
-    <div class="white-board">
 
-
-        <div class="session" style="padding-top: 0;margin-top: 0;padding-bottom: 0;padding-bottom: 0;">
-            <div class="session_title">
-                <div class="session_title_txt" , style="color: black;">主辦單位</div>
-            </div>
-            <div class="organizer">
-                <img src="./2023_images/organizer.png" alt="organizer.png">
-            </div>
-        </div>
-
-        <div class="session" style="padding-top: 0;margin-top: 0;padding-bottom: 0;padding-bottom: 0;">
-            <div class="session_title">
-                <div class="session_title_txt" , style="color: black;">協辦單位</div>
-            </div>
-            <div class="organizer">
-                <img src="./2023_images/gendaini.png" alt="organizer.png">
-            </div>
-        </div>
-
-        <div class="session" style="padding-top: 0;margin-top: 0;padding-bottom: 0;padding-bottom: 0;">
-            <div class="session_title">
-                <div class="session_title_txt" , style="color: black;">贊助單位</div>
-            </div>
-            <div class="sponsor">
-                <img src="./2023_images/sponsor.png" alt="sponsor.png">
-            </div>
-        </div>
-    </div>
-
-    <div class="endboard">
-        <div class="endboard-up">
-            <div class="contact_us">聯絡我們</div>
-        </div>
-        <div class="endboard-down">
-            <div class="phone">電話: +886-2-27322701</div>
-            <div class="address">地址: 台北市內湖區瑞光路258巷56號3樓之2</div>
-        </div>
-    </div>
-
-    <!--xxxxxxxxxxxxxxxxxx-->
-    <a href="#top">
-        <div class=go-top></div>
-    </a>
-    <div class="lefticon"></div>
-    <!-- <div class="dogicon"></div> -->
 </body>
 
-<script src='https://unpkg.com/vue/dist/vue.js&#39' ;></script>
-<script src='https://unpkg.com/vue-i18n/dist/vue-i18n.js&#39' ;></script>
-<script src="./javascript/script.js"></script>
-<script scr="./javascript/lang.js"></script>
-<!-- <script src="./javascript/changebk.js" defer></script> -->
+<script>
+    function showDropdownMenu() {
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        dropdownMenu.style.display = 'block';
+    }
+
+    function hideDropdownMenu() {
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        dropdownMenu.style.display = 'none';
+    }
+    //<!--捲軸-->
+    const containerR = document.getElementById("photobtn_right");
+    const containerL = document.getElementById("photobtn_left");
+    const scrollingDiv = document.getElementById("photohighlights");
+
+    let scrollSpeed = 3; // 初始速度
+    let scrollIncrement = 0.01; // 每次增加的速度
+    let interval;
+
+    containerR.addEventListener("mouseover", () => {
+        interval = setInterval(scrollRight, 10); // 每10毫秒執行一次scrollRight函式
+    });
+
+    containerR.addEventListener("mouseout", () => {
+        clearInterval(interval); // 停止捲軸的連續滾動
+    });
+
+    containerL.addEventListener("mouseover", () => {
+        interval = setInterval(scrollLeft, 10); // 每10毫秒執行一次scrollRight函式
+    });
+
+    containerL.addEventListener("mouseout", () => {
+        clearInterval(interval); // 停止捲軸的連續滾動
+    });
+
+
+    function scrollRight() {
+        scrollingDiv.scrollLeft += scrollSpeed;
+        scrollSpeed += scrollIncrement; // 增加速度
+    }
+    function scrollLeft() {
+        scrollingDiv.scrollLeft -= scrollSpeed;
+        scrollSpeed -= scrollIncrement; // 增加速度
+    }
+    const contents = [
+        {
+            hyperlink: "https://www.cancerfree.io/zh-tw/index",
+            image: "./images/EVHIJPG/EventHighlights01.jpg",
+        },
+        {
+            hyperlink: "",
+            image: "./images/EVHIJPG/EventHighlights02.jpg",
+        },
+        {
+            hyperlink: "",
+            image: "./images/EVHIJPG/EventHighlights03.jpg",
+        },
+        {
+            hyperlink: "",
+            image: "./images/EVHIJPG/EventHighlights04.jpg",
+        },
+        {
+            hyperlink: "",
+            image: "./images/EVHIJPG/EventHighlights05.jpg",
+        },
+        {
+            hyperlink: "",
+            image: "./images/EVHIJPG/EventHighlights06.jpg",
+        },
+        {
+            hyperlink: "",
+            image: "./images/EVHIJPG/EventHighlights07.jpg",
+        },
+        // {
+        //     hyperlink: "",
+        //     image: "",
+        // },
+    ]
+
+    const photohighlightsElement = document.getElementById("photohighlights")
+    for (let i = 0; i < contents.length; i++) {
+        const content = contents[i];
+
+        const photohighlightA = document.createElement("a");
+        photohighlightA.href = content.hyperlink;
+
+        const photohighlightUnit = document.createElement("div");
+        photohighlightUnit.classList.add("photohighlight");
+        photohighlightUnit.style.backgroundImage = `url(${content.image})`;
+
+        photohighlightA.appendChild(photohighlightUnit)
+        photohighlightsElement.appendChild(photohighlightA)
+    }
+</script>
+
 
 </html>
