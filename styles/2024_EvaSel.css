@@ -1,0 +1,93 @@
+html,
+body,
+div,
+img {
+    margin: 0.01px;
+    padding: 0.01px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'REM', sans-serif;
+}
+
+header,
+nav,
+aside,
+main,
+article,
+figure,
+p,
+section,
+footer,
+div {
+    border-width: 0px;
+    border-color: black;
+    border-style: solid;
+
+    width: 100%;
+    height: auto;
+    min-height: 3vh;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    /* 或您想要的任何顏色 */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+}
+
+nav a {
+    border-radius: 5%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    border: none;
+    min-width: calc(100vw / 8.5);
+}
+
+.navdiv {
+    text-align: center;
+    line-height: 7vh;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+nav a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    transition: background-color 0.8s ease;
+    transition: color 1s ease;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    background-color: black;
+    transition: width 0.5s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    /* 在原始顏色上添加20%的白色 */
+}
+
+nav a:hover::after {
+    width: 100%;
+}
