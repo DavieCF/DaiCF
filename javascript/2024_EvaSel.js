@@ -5,37 +5,37 @@ const webconfig = {
 const navbarEN = [
     {
         txt: "Intro",
-        a: "#Intro",
+        a: "#intro",
 
     },
     {
         txt: "Agenda",
-        a: "#Agenda",
+        a: "#agenda",
 
     },
     {
         txt: "Honored Guest",
-        a: "#HonoredGuest",
+        a: "#honoredhuest",
 
     },
     {
         txt: "Speakers",
-        a: "#Speakers",
+        a: "#speakers",
 
     },
     {
         txt: "FAQ",
-        a: "#FAQ",
+        a: "#faq",
 
     },
     {
         txt: "Organizer",
-        a: "#Organizer",
+        a: "#organizer",
 
     },
     {
         txt: "Contact",
-        a: "#Contact",
+        a: "#contact",
 
     },
     {
@@ -46,15 +46,21 @@ const navbarEN = [
 
 
 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const bodyElements = document.getElementById("webbody");
     bodyElements.style.backgroundImage = `url(${webconfig.body_BG})`;
 
-    const tags = ["header", "nav", "aside", "main", "article", "figure", "p", "section", "footer"];
+    const tags = ["header", "nav", "aside", "article", "figure", "p", "section", "footer"];
     const _elements = {}; // 定义一个空对象
     tags.forEach(tag => {
         const elements = document.getElementsByTagName(tag);
+        for (let element of elements) {
+            element.style.backgroundColor = `hsla(${Math.random() * 360}, 30%, 80%, 30%)`;
+        }
         _elements[tag] = elements;
     });
 
@@ -89,11 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-    //randombackground
-    tags.forEach(tag => {
-        const elements = document.getElementsByTagName(tag);
-        for (let element of elements) {
-            element.style.backgroundColor = `hsl(${Math.random() * 360}, 30 %, 80 %)`;
-        }
-    });
+    // //randombackground
+    // tags.forEach(tag => {
+    //     const bgelements = document.getElementsByTagName(tag);
+    //     for (let bgelement of bgelements) {
+    //         bgelement.style.backgroundColor = `hsl(${Math.random() * 360}, 30 %, 80 %)`;
+    //     }
+    // });
 });

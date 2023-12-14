@@ -9,7 +9,7 @@ img {
 }
 
 header,
-nav,
+/* nav, */
 aside,
 main,
 article,
@@ -18,12 +18,10 @@ p,
 section,
 footer,
 div {
-    border-width: 0px;
+    border-width: 1px;
     border-color: black;
     border-style: solid;
-
     width: 100%;
-    height: auto;
     min-height: 3vh;
 }
 
@@ -40,11 +38,56 @@ a:active {
     /* 或您想要的任何顏色 */
 }
 
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0.1rem 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    padding-left: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+    padding-left: 40px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-style: italic;
+    padding-left: 60px;
+}
+
+section {
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+}
+
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 8vh;
+
+    width: 100vw;
+    margin: 0.1px;
+    padding: 0.1px;
+    background: linear-gradient(to right, #30282d 30%, #4b7487 50%, #5c879a 60%, #dbd2ca 90%);
+    box-shadow: 0px 5px 10px #30282d;
+    position: fixed;
+    top: 0%;
+    z-index: 2;
 }
 
 nav a {
@@ -55,20 +98,13 @@ nav a {
     min-width: calc(100vw / 8.5);
 }
 
-.navdiv {
-    text-align: center;
-    line-height: 7vh;
-    font-weight: 700;
-    font-size: 1.5vw;
-}
-
 nav a {
     position: relative;
     color: white;
     text-decoration: none;
     background-color: transparent;
     transition: background-color 0.8s ease;
-    transition: color 1s ease;
+    transition: color 0.5s ease;
 }
 
 nav a::after {
@@ -90,4 +126,81 @@ nav a:hover {
 
 nav a:hover::after {
     width: 100%;
+}
+
+.navdiv {
+    text-align: center;
+    line-height: 5vh;
+    font-weight: 700;
+    font-size: 1.5vw;
+    border: none;
+}
+
+.header {
+    height: 100vh;
+}
+
+#intro {
+    color: white;
+
+}
+
+#intro h4 {
+    margin-top: 9vh;
+    text-align: justify;
+}
+
+#speakers {
+    width: 100w;
+    height: 120vh;
+}
+
+#speakers main {
+    --b: .5em;
+    /* border width */
+    --c: 3em;
+    /* corner size */
+    --r: 2em;
+    /* corner rounding */
+    position: relative;
+    border: solid var(--b) transparent;
+    padding: 0px;
+    font: 1.25em ubuntu, sans-serif;
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        inset: calc(-1*var(--b));
+        border: inherit;
+        border-radius: var(--r);
+        background: linear-gradient(#dbd2ca, #6aa1bb, #3f7d99) border-box;
+        --corner:
+            conic-gradient(from -90deg at var(--c) var(--c), red 25%, #0000 0) 0 0/ calc(100% - var(--c)) calc(100% - var(--c)) border-box;
+        --inner: conic-gradient(red 0 0) padding-box;
+        -webkit-mask: var(--corner), var(--inner);
+        -webkit-mask-composite: source-out;
+        mask: var(--corner) subtract, var(--inner);
+        content: ''
+    }
+}
+
+
+
+#speakers main {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    margin-left: -3vw;
+}
+
+#speakers div {
+    width: 45%;
+    height: 49%;
+    background-color: black;
+
 }
