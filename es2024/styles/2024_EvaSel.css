@@ -14,14 +14,12 @@ aside,
 main,
 article,
 figure,
-p,
 section,
 footer,
 div {
     border-width: 1px;
     border-color: black;
     border-style: solid;
-    width: 100%;
     min-height: 3vh;
 }
 
@@ -47,27 +45,27 @@ h4 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4vw;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3.5vw;
     padding-left: 20px;
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 3vw;
     padding-left: 40px;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 2.5vw;
     font-style: italic;
     padding-left: 60px;
 }
 
 h5 {
-    margin: 12px;
+    margin: 2vw;
     padding-left: 24px;
 }
 
@@ -158,8 +156,12 @@ nav a:hover::after {
 }
 
 #speakers {
+    word-wrap: break-word;
+    /* 舊版瀏覽器支持 */
+    overflow-wrap: break-word;
+    /* 標準方式 */
     width: 100w;
-    height: 120vh;
+    height: 110vh;
 }
 
 #speakers main {
@@ -191,7 +193,7 @@ nav a:hover::after {
     }
 }
 
-#speakers,
+#speakers p,
 #speakers div,
 #speakers main {
     border: none;
@@ -206,7 +208,7 @@ nav a:hover::after {
     justify-content: space-evenly;
     align-content: space-around;
     align-items: center;
-    margin-left: -3vw;
+    margin-left: -2vw;
 }
 
 
@@ -229,24 +231,52 @@ nav a:hover::after {
     flex: 0 0 auto;
 }
 
-.sb_txt {}
 
 .sb_txt h3,
-.sb_txt h4 {
+.sb_txt h5,
+.sb_txt p {
+    width: 22vw;
+    word-wrap: break-word;
+    /* 舊版瀏覽器支持 */
+    overflow-wrap: break-word;
+    /* 標準方式 */
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.sb_txt h3,
+.sb_txt p {
     padding-left: 24px;
-    padding-top: 8px;
+    padding-top: 2px;
     margin: 0;
 
 }
 
 .sb_txt h3 {
     color: black;
+    font-size: 2vw;
 }
 
 .sb_txt h5 {
     color: chocolate;
+    font-size: 1.2vw;
 }
 
 .sb_txt {
     color: cadetblue;
+    font-size: 1.4vw;
+}
+
+#agenda {
+    height: 120vh;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.agenda_img {
+    height: auto;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    width: 90%;
+
 }

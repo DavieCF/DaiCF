@@ -8,19 +8,19 @@ const navbarEN = [
         a: "#intro",
 
     },
-    {
-        txt: "Agenda",
-        a: "#agenda",
+    // {
+    //     txt: "Honored Guest",
+    //     a: "#honoredhuest",
 
-    },
-    {
-        txt: "Honored Guest",
-        a: "#honoredhuest",
-
-    },
+    // },
     {
         txt: "Speakers",
         a: "#speakers",
+
+    },
+    {
+        txt: "Agenda",
+        a: "#agenda",
 
     },
     {
@@ -35,7 +35,7 @@ const navbarEN = [
     },
     {
         txt: "Contact",
-        a: "#contact",
+        a: "https://www.cancerfree.io/zh-tw/index",
 
     },
     {
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const bodyElements = document.getElementById("webbody");
     bodyElements.style.backgroundImage = `url(${webconfig.body_BG})`;
 
-    const tags = ["header", "nav", "aside", "article", "figure", "p", "section", "footer"];
+    const tags = ["nav", "aside", "article", "figure", "footer"];
     const _elements = {}; // 定义一个空对象
     tags.forEach(tag => {
         const elements = document.getElementsByTagName(tag);
