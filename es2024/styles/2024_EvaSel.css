@@ -47,23 +47,28 @@ h4 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding-left: 20px;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding-left: 40px;
 }
 
 h4 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-style: italic;
     padding-left: 60px;
+}
+
+h5 {
+    margin: 12px;
+    padding-left: 24px;
 }
 
 section {
@@ -71,6 +76,11 @@ section {
     padding-right: 8vw;
     padding-top: 10vh;
     padding-bottom: 8vh;
+}
+
+#webbody {
+    background-size: cover;
+    color: white;
 }
 
 
@@ -140,10 +150,7 @@ nav a:hover::after {
     height: 100vh;
 }
 
-#intro {
-    color: white;
-
-}
+#intro {}
 
 #intro h4 {
     margin-top: 9vh;
@@ -184,7 +191,11 @@ nav a:hover::after {
     }
 }
 
-
+#speakers,
+#speakers div,
+#speakers main {
+    border: none;
+}
 
 #speakers main {
     position: absolute;
@@ -192,15 +203,50 @@ nav a:hover::after {
     height: 80%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-content: space-around;
     align-items: center;
     margin-left: -3vw;
 }
 
-#speakers div {
-    width: 45%;
-    height: 49%;
-    background-color: black;
 
+.speaker_box {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    width: 45%;
+    height: 40%;
+    padding: 12px;
+    border-radius: 10% 25%;
+}
+
+.sb_img {
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+    background-image: url('../images/LEL.jpg');
+    background-size: contain;
+    margin-bottom: 10vw;
+    flex: 0 0 auto;
+}
+
+.sb_txt {}
+
+.sb_txt h3,
+.sb_txt h4 {
+    padding-left: 24px;
+    padding-top: 8px;
+    margin: 0;
+
+}
+
+.sb_txt h3 {
+    color: black;
+}
+
+.sb_txt h5 {
+    color: chocolate;
+}
+
+.sb_txt {
+    color: cadetblue;
 }
