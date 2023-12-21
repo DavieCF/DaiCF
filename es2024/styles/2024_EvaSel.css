@@ -59,9 +59,9 @@ h3 {
 }
 
 h4 {
-    font-size: 2.5vw;
+    font-size: 2.1vw;
     font-style: italic;
-    padding-left: 60px;
+    padding-left: 0px;
 }
 
 h5 {
@@ -332,8 +332,8 @@ nav a:hover::after {
 }
 
 #organizer img {
-    width: 20%;
-    aspect-ratio: 3/1;
+    width: 13%;
+    aspect-ratio: 4/1;
     object-fit: contain;
     mix-blend-mode: color-burn;
     filter: saturate(0);

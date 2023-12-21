@@ -46,19 +46,23 @@ const navbarEN = [
 
 const introEN = [
     {
-        txt: `The Avatar Medicine Forum promotes the concept of virtual and physical avatars for patient therapy. Let
-        everyone understand that avatar medicine may reduce the risks that patients need to bear during the
-        treatment process, and it can overcome the limitations of distance and time. The advanced technologies
-        include organoids, model organisms, big data, metaverse, etc. The general public can understand from a new
-        perspective that these technologies have the potential to replace patients themselves and reduce medical
-        risks. At the same time, the forum connects academic and industrial circles, so that potential technologies
-        and products can be demonstrated.`
+        txt: `掌握未來醫療趨勢—EVA Select Webinar 精準醫療為協助癌症病友的關鍵角色`
     },
     {
-        txt: `This forum invites heavyweight speakers from industry, government, academia, and research circles to share
-        with us the changes and evolution of avatar medicine brought by the post-epidemic era. It is hoped that in
-        the near future, through big data, AI, AR/VR/XR or NFT, virtual avatars can be realized in clinical and
-        teaching.`
+        txt: `掌握未來醫療趨勢—EVA Select Webinar 精準醫療為協助癌症病友的關鍵角色尊敬的醫療界同仁
+            及對臨床精準醫療深感興趣的朋友，當前醫學科技的進步正為困難癌症病人帶來前所未有的希望。 
+            您是否好奇其中的奧秘？ 我們誠摯邀請您參與EVA Select Webinar，這場將深入探討EVA Select在臨床中的實際應用的論壇，
+            與業界領袖共同探討未來醫療的發展方向，激盪思維，共創更美好的醫療未來。 `
+    },
+    {
+        txt: `掌握精準醫療的前沿知識，跟上未來醫學科技的步伐。 為患者提供更智慧、更人性化的醫療服務，成為改變的引領者。 
+            快來參與EVA Select Webinar，透過這場盛會，一同引領醫學科技的未來，為未來帶來更多希望！ `
+    },
+    {
+        txt: `請即點擊[報名連結]立即參與！`
+    },
+    {
+        txt: `期待您的蒞臨，一同迎接醫療科技的嶄新時代！`
     }
 ]
 
