@@ -1,5 +1,5 @@
 const webconfig = {
-    body_BG: "./2023_images/n6.png",
+    body_BG: "./es2024/images/evasbk.png",
 }
 
 const navbarEN = [
@@ -38,10 +38,10 @@ const navbarEN = [
         a: "https://www.cancerfree.io/zh-tw/index",
 
     },
-    {
-        txt: "中文",
-        a: "index.html",
-    },
+    // {
+    //     txt: "中文",
+    //     a: "index.html",
+    // },
 ]
 
 const introEN = [
@@ -49,7 +49,7 @@ const introEN = [
         txt: `掌握未來醫療趨勢—EVA Select Webinar 精準醫療為協助癌症病友的關鍵角色`
     },
     {
-        txt: `掌握未來醫療趨勢—EVA Select Webinar 精準醫療為協助癌症病友的關鍵角色尊敬的醫療界同仁
+        txt: `尊敬的醫療界同仁
             及對臨床精準醫療深感興趣的朋友，當前醫學科技的進步正為困難癌症病人帶來前所未有的希望。 
             您是否好奇其中的奧秘？ 我們誠摯邀請您參與EVA Select Webinar，這場將深入探討EVA Select在臨床中的實際應用的論壇，
             與業界領袖共同探討未來醫療的發展方向，激盪思維，共創更美好的醫療未來。 `
@@ -68,29 +68,36 @@ const introEN = [
 
 const speakersEN = [
     {
+        sp_image: "./es2024/images/CCC.jpg",
+        sp_name: "謝瑞坤",
+        sp_title: "Sunday first Sunday first",
+        sp_discript: `Sunday first Sunday first Sunday first Sunday first Sunday first `
+    },
+    {
         sp_image: "./es2024/images/LEL.jpg",
-        sp_name: "Sunday first",
+        sp_name: "劉彥麟",
         sp_title: "Sunday first Sunday first",
         sp_discript: `Sunday first Sunday first Sunday first Sunday first Sunday first `
     },
     {
-        sp_image: "./es2024/images/LER.jpg",
-        sp_name: "Sunday first",
-        sp_title: "Sunday first Sunday first",
-        sp_discript: `Sunday first Sunday first Sunday first Sunday first Sunday first `
-    },
-    {
-        sp_image: "./es2024/images/LES.jpg",
-        sp_name: "Sunday first",
+        sp_image: "./es2024/images/LML.jpg",
+        sp_name: "梁慕理",
         sp_title: "Sunday first Sunday first",
         sp_discript: `Sunday first Sunday first Sunday first Sunday first Sunday first `
     },
     {
         sp_image: "./es2024/images/LLL.jpg",
-        sp_name: "Sunday first",
+        sp_name: "呂隆昇",
         sp_title: "Sunday first Sunday first",
         sp_discript: `Sunday first Sunday first Sunday first Sunday first Sunday first `
     },
+    {
+        sp_image: "./es2024/images/LUM.jpg",
+        sp_name: "廖優美",
+        sp_title: "Sunday first Sunday first",
+        sp_discript: `Sunday first Sunday first Sunday first Sunday first Sunday first `
+    },
+
 ]
 
 const agendaEN = './es2024/images/agendaEN.png';

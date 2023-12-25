@@ -78,7 +78,7 @@ section {
 
 #webbody {
     background-size: cover;
-    color: white;
+    color: black;
 }
 
 
@@ -91,8 +91,8 @@ nav {
     width: 100vw;
     margin: 0.1px;
     padding: 0.1px;
-    background: linear-gradient(to right, #30282d 30%, #4b7487 50%, #5c879a 60%, #dbd2ca 90%);
-    box-shadow: 0px 5px 10px #30282d;
+    background: linear-gradient(to right, #e0aaa6 10%, #232343 50%, #232343 60%, #78b4b5 90%);
+    box-shadow: 0px 5px 10px #f5eae1;
     position: fixed;
     top: 0%;
     z-index: 2;
@@ -161,7 +161,7 @@ nav a:hover::after {
     overflow-wrap: break-word;
     /* 標準方式 */
     width: 100w;
-    height: 110vh;
+    height: 135vh;
 }
 
 #speakers main {
@@ -202,7 +202,7 @@ nav a:hover::after {
 #speakers main {
     position: absolute;
     width: 90%;
-    height: 80%;
+    height: 115vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -216,7 +216,7 @@ nav a:hover::after {
     background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     width: 45%;
-    height: 40%;
+    height: 33vh;
     padding: 12px;
     border-radius: 10% 25%;
 }
@@ -226,7 +226,7 @@ nav a:hover::after {
     height: 14vw;
     border-radius: 50%;
     background-image: url('../images/LEL.jpg');
-    background-size: contain;
+    background-size: cover;
     margin-bottom: 10vw;
     flex: 0 0 auto;
 }
@@ -299,7 +299,7 @@ nav a:hover::after {
 }
 
 .faq-section {
-    border: 1px solid #ddd;
+    border: 1px solid #232343;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
