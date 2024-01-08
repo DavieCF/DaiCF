@@ -53,3 +53,9 @@ body {
 .AMcontain {
     font-weight: 900;
 }
+
+@media (max-width: 768px) {
+    #videointro {
+        background-color: #9BA9BF;
+    }
+}
