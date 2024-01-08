@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/AvaMedindex.css">
     <link rel="stylesheet" type="text/css" href="./styles/AvaMed2022.css">
-    <link rel="stylesheet" type="text/css" href="./styles/AvaMed2021.css">
     <link rel="stylesheet" type="text/css" href="./styles/AvaMedEN.css">
+    <link rel="stylesheet" type="text/css" href="./styles/AvaMed2023.css">
 
     <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,8 @@
 
 
 
-<body>
+<body style="background-color: aliceblue; background-image: none;">
+    <!--top-->
     <div class="topboard">
         <div class="topboard-left">
 
@@ -33,8 +34,12 @@
         </div>
         <div class="topboard-middle"></div>
         <div class="topboard-right">
-            <a href="indextw.html" class="TBR-items">Chinese</a>
-            <a href="index.html" class="TBR-items">English</a>
+            <a href="indextw.html" class="TBR-items">
+                <div>Chinese</div>
+            </a>
+            <a href="index.html" class="TBR-items">
+                <div>English</div>
+            </a>
             <div class="TBR-items" onmouseover="showDropdownMenu()" onmouseout="hideDropdownMenu()">
                 Past Events
                 <div class="dropdown-menu" id="dropdown-menu">
@@ -43,67 +48,266 @@
                     <a href="Forum2023.html">2023</a>
                 </div>
             </div>
-            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">Contact Us</a>
+            <a href="https://www.cancerfree.io/zh-tw/index" class="TBR-items">
+                <div>Contact Us</div>
+            </a>
+        </div>
+    </div>
+    <div style="height: 20vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
+
+    <!--Contant-->
+    <div class="IM_title">
+        <div class="IM_frontblock"></div>
+        <div class="IM_title_txt" id="titletxt"></div>
+        <div id="titlename"></div>
+    </div>
+    <div class="flexcontant" id="flexcontant">
+        <div id="videocontant">
+            <div id="videoblock">
+                <div class="buttons">
+                    <button style="transform: scaleY(2);" onclick="prevContent()">&lt;</button>
+                </div>
+                <div id="mainvideo">
+                    <iframe id="ytScreen" width=100% height=100% src=""
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="buttons">
+                    <button style="transform: scaleY(2);" onclick="nextContent()">&gt;</button>
+                </div>
+            </div>
+            <div id="listvideo">
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+                <div class="listunit"></div>
+            </div>
+        </div>
+        <div id="videointro">
+            <p id="introtitle"></p>
+            <p id="introtxt"></p>
         </div>
     </div>
 
-    <div style="height: 21vh;width: 100%;background-color: rgba(255, 255, 255, 0);"></div>
-    <div id="content" class="AMcontain">
-        <div class="vh15-2023" style="height: 10vh;"></div>
-        <div style="text-align: center;">
-            <span style="font-size: 30px;text-align: center;">
-                <strong>AvatarMedicine 2023</strong>
-            </span>
-            <br><br>
-            <span style="font-size: 48px;text-align: center;">COMING SOON</span>
-        </div>
-        <div class="vh15-2023" style="height: 15vh;"></div>
-        <div class="registrationPage" id="registrationPage"></div>
-        <div class="video-container;" style="font-size:14px;text-align: center;">
-            Contact Information: medicineavatar@gmail.com
-        </div>
-    </div>
-    <!--contant-->
 
+    <script>
+        function showDropdownMenu() {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.style.display = 'block';
+        }
+
+        function hideDropdownMenu() {
+            const dropdownMenu = document.getElementById('dropdown-menu');
+            dropdownMenu.style.display = 'none';
+        }
+
+
+        //random backgroun-color
+        function getRandomColor() {
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function setRandomBackgroundColor(elementId) {
+            const element = document.getElementById(elementId);
+            const randomColor = getRandomColor();
+            element.style.backgroundColor = randomColor;
+            element.style.opacity = 0.9; // 設置透明度
+            element.style.borderStyle = "solid"
+        }
+
+        const ids = ["flexcontant", "videoblock", "titlename", "videocontant", "mainvideo", "listvideo", "videointro", "introtitle", "introtxt", "titletxt"];
+        //ids.forEach(id => setRandomBackgroundColor(id));
+        //random backgroun-color
+
+        const contents = [
+            {
+                title: "Opening Remark",
+                name: "",
+                videosrc: "https://www.youtube.com/embed/cyzng83oSls",
+                introtitle: "Dr. Miser",
+                description: `Former Director, <br>City of Hope National Medical Center, USA.` ,
+            },
+            {
+                title: "Cancer organ-on-chip​",
+                name: "",
+                videosrc: "https://www.youtube.com/embed/V5cA2egx_48",
+                introtitle: "Luke Dimasi ",
+                description: `Senior Director, <br>Product Management Emulate, Inc. `
+            },
+            {
+                title: "Clinical Application",
+                name: "",
+                videosrc: "https://www.youtube.com/embed/QdBh5qCVsbQ",
+                introtitle: "Long-Sheng Lu",
+                description: `Attending physician Taipei Medical University Hospital`
+            },
+            {
+                title: "Genomics & Avatar Medicine",
+                name: "",
+                videosrc: "https://www.youtube.com/embed/n9KPnHwHhfk",
+                introtitle: "Tony Chung",
+                description: `CEO Instant NanoBiosensors Co., Ltd.` ,
+            },
+            {
+                title: "Clinical Application",
+                name: "",
+                videosrc: "https://www.youtube.com/embed/IgHJucJUS-M",
+                introtitle: "Yen-Lin Liu",
+                description: `Attending physician <br>Taipei Medical University Hospital` ,
+            },
+            {
+                title: "Zebrafish & Avatar Medicine",
+                name: "",
+                videosrc: "https://www.youtube.com/embed/bKH2aK7EHCI",
+                introtitle: "I-Hsuan Liu",
+                description: `Professor 
+                <br>Department of Animal Science and Technology, National Taiwan University` ,
+            },
+            {
+                title: "Genomics & Avatar Medicine",
+                name: "",
+                videosrc: "https://www.youtube.com/embed/0D-Cdp_GA50",
+                introtitle: "Jack Lee",
+                description: `Senior Genetic Technology Expert
+                <br>NGS Technical Instructor` ,
+            },
+            {
+                title: "Fitness & AR/VR",
+                name: "",
+                videosrc: "https://www.youtube.com/embed/w2QaEII5Bfc",
+                introtitle: "Rock Wu",
+                description: `COO
+                <br>Uniigym Co.,Ltd.` ,
+            },
+            {
+                title: "Closing Remark",
+                name: "",
+                videosrc: "https://www.youtube.com/embed/cjq5EUrFwL8",
+                introtitle: "Jeng-Fong Chiou",
+                description: `President
+                <br>Taiwan Society for Therapeutic Radiation and Oncology ` ,
+            },
+
+            // {
+            //     title: "數位經濟暨產業發展協會​",
+            //     name: "詹婷怡 副理事長​",
+            //     videosrc: " ",
+            //     introtitle: "閉幕致詞​",
+            //     description: ``,
+            // },
+            // 添加其他內容
+        ];
+
+        const speakerunit = document.getElementById("titletxt")
+        const speakername = document.getElementById("titlename")
+        const speakerpatch = document.getElementById("introtitle")
+        const speakerintro = document.getElementById("introtxt")
+        const speakerscreen = document.getElementById("ytScreen")
+        let currentIndex = 0;
+        function displayContent() {
+            const content = contents[currentIndex];
+            speakerunit.textContent = content.title;
+            speakername.textContent = content.name;
+            speakerpatch.textContent = content.introtitle;
+            speakerintro.innerHTML = content.description;
+            speakerscreen.src = content.videosrc
+        }
+        function prevContent() {
+            currentIndex = (currentIndex - 1 + contents.length) % contents.length;
+            displayContent();
+        }
+
+        function nextContent() {
+            currentIndex = (currentIndex + 1) % contents.length;
+            displayContent();
+        }
+        displayContent();
+
+        const listvideo = document.getElementById("listvideo");
+
+        listvideo.addEventListener("wheel", (event) => {
+            const scrollSpeed = 40; // 調整滾動速度
+            event.preventDefault();
+            listvideo.scrollLeft += event.deltaY > 0 ? scrollSpeed : -scrollSpeed;
+        });
+
+
+        // 生成並插入多個 iframe
+        const listVideoElement = document.getElementById("listvideo");
+        listVideoElement.innerHTML = ""; // 清空原先的內容
+
+        function getYouTubeVideoID(url) {
+            const regex = /(?:\/embed\/|watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+            const match = url.match(regex);
+            return match ? match[1] : null;
+        }
+
+        // 定義點擊後觸發的函式
+        function handleClick(i) {
+            currentIndex = i;
+            displayContent();
+        }
+
+        // 透過迴圈創建 listunit 區塊並添加點擊事件監聽器
+        for (let i = 0; i < contents.length; i++) {
+            const content = contents[i];
+            const YouTubeVideoID = getYouTubeVideoID(content.videosrc);
+            const YTimagesrc = `https://img.youtube.com/vi/${YouTubeVideoID}/default.jpg`;
+            const iconUrl = "./images/YTicon16.png"
+
+            const listUnitElement = document.createElement("div");
+            listUnitElement.classList.add("listunit");
+            listUnitElement.style.backgroundImage = `url(${YTimagesrc})`;
+
+            // 添加 ICON
+            const iconElement = document.createElement("img");
+            iconElement.src = iconUrl;
+            iconElement.classList.add("icon");
+            listUnitElement.appendChild(iconElement);
+
+            // 添加點擊事件監聽器，注意此處只傳遞函式名稱，不要呼叫
+            listUnitElement.addEventListener("click", function () {
+                handleClick(i);
+            });
+
+            listVideoElement.appendChild(listUnitElement);
+        }
+
+
+
+
+
+
+
+
+        // const iframeElement = document.createElement("iframe");
+        // iframeElement.width = "100%";
+        // iframeElement.height = "100%";
+        // iframeElement.src = content.videosrc;
+        // iframeElement.title = "YouTube video player";
+        // iframeElement.frameBorder = "0";
+        // iframeElement.allow =
+        //     "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+        // iframeElement.allowfullscreen = true;
+
+        // listUnitElement.appendChild(iframeElement);
+        //listVideoElement.appendChild(listUnitElement);
+        
+        //生成listunit
+    </script>
 
 </body>
-<script>
-    const contents = [
-        {
-            BKimage: "./images/eventbrite_icon.png",
-            link: "https://www.eventbrite.com/e/avatar-medicine-forum-2023-tickets-697936054527?aff=oddtdtcreator",
 
-        },
-        {
-            BKimage: "./images/Accupass_icon.png",
-            link: "https://www.accupass.com/go/Avatar2023",
-        },
-
-        // {
-        //     BKimage: "./images/CFBiocn2.png",
-        //     linK: "Forum.html",
-        // },
-    ]
-
-    const avatar2023_container = document.getElementById("registrationPage");
-    avatar2023_container.innerHTML = ""; // 清空原先的內容
-
-    for (let i = 0; i < contents.length; i++) {
-        const content = contents[i];
-
-        const avatar2023_A = document.createElement("a");
-        avatar2023_A.href = content.link;
-
-        const avatar2023_div = document.createElement("div");
-        avatar2023_div.classList.add("registrationItem");
-        avatar2023_div.style.backgroundImage = `url(${content.BKimage})`;
-
-
-        avatar2023_A.appendChild(avatar2023_div)
-        avatar2023_container.appendChild(avatar2023_A)
-    }
-
-</script>
 
 
 </html>
