@@ -3,6 +3,6 @@ aaa.py
 ap/__pycache__/database.cpython-310.pyc
 *test.html
 oldpage
-# 產生器輸出（由 GitHub Actions 建置部署）
+# 稽核與預覽用的產生結果；正式成品直接輸出在根目錄（node scripts/build.mjs --out .）
 dist/
 __pycache__/

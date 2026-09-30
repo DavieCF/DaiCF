@@ -376,7 +376,7 @@ function homePage(lang) {
 function notFoundPage() {
   const lang = "zh";
   return head({ lang, year: null, title: `404 | ${tr(HOME.brand.name, lang)}`, description: "", noindex: true }).replace(/href="(?!https?:|#)([^"]*)"/g, 'href="/$1"')
-    + `\n<body>` + header({ lang, year: null, nav: [] }).replace(/href="(?!https?:|#)([^"]*)"/g, 'href="/$1"')
+    + `\n<body>` + header({ lang, year: null, nav: [] }).replace(/href="(?!https?:|#|tel:)([^"]*)"/g, 'href="/$1"')
     + `\n<main id="main" class="container not-found"><h1>404</h1><p>${esc(ui("notFound", "zh"))} · ${esc(ui("notFound", "en"))}</p><p><a class="btn btn-primary" href="/">${esc(tr(HOME.brand.name, "zh"))}</a> <a class="btn btn-ghost" href="/en/">${esc(tr(HOME.brand.name, "en"))}</a></p></main>`
     + footer({ lang, year: null }).replace(/(href|src)="(?!https?:|#|tel:)([^"]*)"/g, '$1="/$2"');
 }

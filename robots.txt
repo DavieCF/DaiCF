@@ -1,0 +1,49 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+
+Sitemap: https://avatarmedicine.xyz/sitemap.xml
+
+# --- AI search / answer engines: allowed so the site can be cited in AI search results (AEO, Davie decision 2026-09-30) ---
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+User-agent: YouBot
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+# --- AI training / bulk-collection crawlers: blanket disallow (FlightPath template, owner decision 2026-09-10) ---
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: TikTokSpider
+User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: Google-CloudVertexBot
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: FacebookBot
+User-agent: Meta-ExternalAgent
+User-agent: Diffbot
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: omgili
+User-agent: omgilibot
+User-agent: webzio-extended
+User-agent: Timpibot
+User-agent: ImagesiftBot
+User-agent: PetalBot
+User-agent: PanguBot
+User-agent: ICC-Crawler
+User-agent: img2dataset
+Disallow: /
