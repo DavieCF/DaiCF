@@ -1,0 +1,89 @@
+/* 主題：醫學期刊風（2026-09-29 選定）。白底、襯線標題、細線、青綠點綴。 */
+:root {
+  --font-display: "Noto Serif TC", "Source Serif 4", Georgia, serif;
+  --font-body: "Noto Sans TC", Inter, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  --display-weight: 600;
+  --bg: #FBFAF6; --surface: #FFFFFF;
+  --text: #1B1F23; --text-muted: #5F666D;
+  --line: #E6E3DA; --line-strong: #CFCBC0;
+  --accent: #1E8C86; --accent-2: #B0642F; --on-accent: #fff;
+  --header-bg: rgba(251,250,246,.88); --header-bg-solid: #FBFAF6; --nav-hover: #EFEDE6;
+  --radius: 6px; --radius-lg: 6px; --radius-btn: 4px; --photo-radius: 4px;
+  --footer-bg: #1B1F23; --footer-text: #D7D3C9; --footer-head: #fff;
+  --max: 1080px;
+}
+body { font-feature-settings: "palt"; }
+.brand-name { font-size: 19px; letter-spacing: .02em; }
+.site-nav a { font-size: 14px; letter-spacing: .02em; }
+.btn { letter-spacing: .02em; }
+.btn-primary:hover { background: #17706B; }
+
+/* hero：左文右圖，圖片有一圈細框與偏移陰影，像期刊圖版 */
+.hero { border-bottom: 1px solid var(--line); }
+.hero-inner { padding: 48px 0 56px; }
+.hero-media { position: relative; }
+.hero-media img { border: 1px solid var(--line-strong); }
+.hero-media::after { content: ""; position: absolute; inset: 12px -12px -12px 12px; border: 1px solid var(--line); z-index: -1; }
+.eyebrow { font-family: var(--font-mono); font-weight: 500; letter-spacing: .18em; }
+.hero h1 { font-weight: 700; letter-spacing: 0; }
+.hero-theme { font-family: var(--font-display); font-style: italic; color: var(--text); }
+.hero-meta { font-family: var(--font-mono); font-size: 13px; }
+
+/* 章節：上緣一條細線，編號用等寬字 */
+.section-head { border-top: 1px solid var(--text); padding-top: 18px; }
+.section-num::before { content: "No. "; }
+.section-head h2 { font-weight: 700; }
+
+/* 論壇介紹：三支柱不做卡片，用上緣色線 */
+.prose { font-size: 17px; line-height: 1.9; }
+.prose-more { background: transparent; border-left: 0; padding: 0; border-top: 1px dashed var(--line-strong); padding-top: 14px; }
+.pillar { background: transparent; border: 0; border-top: 2px solid var(--accent); border-radius: 0; padding: 18px 0 0; }
+.pillar h3 { font-size: 20px; }
+
+/* 講者：兩欄清單、無卡片、細線分隔、照片低彩度，滑過恢復原色 */
+.speakers { grid-template-columns: repeat(2, 1fr); gap: 0 48px; }
+.speaker { flex-direction: row; gap: 20px; padding: 22px 0; background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; }
+.speaker-photo img, .speaker-placeholder { width: 88px; height: 88px; }
+.speaker-photo img { filter: saturate(.35) contrast(1.02); transition: filter .4s; }
+.speaker:hover .speaker-photo img, .speaker:focus-within .speaker-photo img { filter: none; }
+@media (hover: none) { .speaker-photo img { filter: saturate(.7); } }
+.speaker-name { font-size: 21px; }
+.speaker-title { color: var(--accent-2); font-weight: 500; }
+.speaker-bio summary::before { border-radius: 0; }
+
+/* 議程：時間欄等寬字，像期刊目錄 */
+.session { grid-template-columns: 170px 1fr; }
+.session-time { font-size: 14px; }
+.session-body h3 { font-size: 21px; }
+.talk a { padding: 8px 0; border-radius: 0; border-bottom: 1px dotted var(--line); }
+.talk a:hover { background: transparent; }
+.talk a:hover .talk-title { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+
+/* 影片：方角、細框 */
+.video-thumb, .video-frame { border-radius: 2px; border: 1px solid var(--line-strong); }
+.play { background: rgba(27,31,35,.85); }
+.play::after { border-left-color: #fff; }
+.video-title { font-size: 18px; }
+
+/* FAQ / 合作單位 / 卡片 */
+.faq-item summary { font-family: var(--font-display); font-size: 18px; }
+.partner-group img { filter: grayscale(1); opacity: .8; transition: .3s; }
+.partner-group img:hover { filter: none; opacity: 1; }
+.card { border-radius: 2px; }
+.card:hover { box-shadow: none; border-color: var(--text); }
+.card h3 { font-size: 18px; }
+.archive-card { border-radius: 2px; }
+.archive-card img { border-radius: 2px; filter: grayscale(.4); }
+
+.year-menu summary { border-radius: 4px; font-family: var(--font-mono); }
+.year-menu ul { border-radius: 4px; }
+.speaker-placeholder { border-radius: 4px; }
+
+.site-footer { border-top: 4px solid var(--accent); }
+.footer-col h3 { font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+
+@media (max-width: 900px) {
+  .speakers { grid-template-columns: 1fr; }
+  .hero-media::after { display: none; }
+}

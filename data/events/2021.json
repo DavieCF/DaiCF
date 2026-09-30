@@ -1,0 +1,519 @@
+{
+  "id": "2021",
+  "edition": 1,
+  "status": "past",
+  "title": {
+    "zh": "患者替身醫療論壇 2021",
+    "en": "Avatar Medicine for Patient Forum 2021"
+  },
+  "theme": {
+    "zh": "精準檢測 新時代",
+    "en": "ACCURATE DETECTION NEW ERA"
+  },
+  "date": {
+    "start": "2021-09-25",
+    "end": "2021-09-25",
+    "display": {
+      "zh": "2021/9/25",
+      "en": "2021/9/25"
+    }
+  },
+  "format": {
+    "zh": "",
+    "en": ""
+  },
+  "location": {
+    "type": "unknown"
+  },
+  "hero": {
+    "image": "images/bk2021.png",
+    "ogImage": "images/bk2021.png"
+  },
+  "registration": [],
+  "intro": {
+    "zh": [
+      "國衛院與新創產業聯手，邀請超過10位產官學研講者分享，推動替身醫療，翻轉精準醫療，為醫療注入新動力。替身醫療兩大趨勢： 1. 生物模擬替身 - 透過資料庫、計算機塑造生物模型，模擬人類細胞/模型生物。 2. 資訊模擬替身 - 硬體與程式結合，AI智能推估個體性特徵，達到虛擬替身目的。"
+    ],
+    "en": []
+  },
+  "speakers": [
+    {
+      "id": "liang-gang-yi",
+      "role": "speaker",
+      "name": {
+        "zh": "梁賡義",
+        "en": "Liang Gang-Yi"
+      },
+      "title": {
+        "zh": "國家衛生研究院院長",
+        "en": "Director of National Health Research Institutes"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "wu-jingming",
+      "role": "speaker",
+      "name": {
+        "zh": "吳景明",
+        "en": "Wu Jingming"
+      },
+      "title": {
+        "zh": "張榮發慈善基金會董事長",
+        "en": "Chairman of Zhang Rong Fa Charity Foundation"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "hu-beidi",
+      "role": "speaker",
+      "name": {
+        "zh": "胡貝蒂",
+        "en": "Hu Beidi"
+      },
+      "title": {
+        "zh": "經濟部中小企業處副處長",
+        "en": "Deputy Director-General of Small and Medium Enterprise Administration, Ministry of Economic Affairs"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "chen-po-han",
+      "role": "speaker",
+      "name": {
+        "zh": "陳柏翰",
+        "en": "Chen Po-Han"
+      },
+      "title": {
+        "zh": "精拓生技執行長",
+        "en": "CEO of CancerFree Biotech"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "qin-xianjing",
+      "role": "speaker",
+      "name": {
+        "zh": "秦咸靜",
+        "en": "Qin Xianjing"
+      },
+      "title": {
+        "zh": "國家動物中心主任",
+        "en": "Director of National Animal Center"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "sun-yi-han",
+      "role": "speaker",
+      "name": {
+        "zh": "孫以瀚所長",
+        "en": "Sun Yi-Han"
+      },
+      "title": {
+        "zh": "國衛院分子與基因醫學研究所",
+        "en": "Director of Institute of Molecular and Genomic Medicine, National Health Research Institutes"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "michael-morehead",
+      "role": "speaker",
+      "name": {
+        "zh": "Michael Morehead",
+        "en": "Michael Morehead"
+      },
+      "title": {
+        "zh": "syGlass共同創辦人暨執行長",
+        "en": "Co-Founder and CEO of syGlass"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "zhang-yongsheng",
+      "role": "speaker",
+      "name": {
+        "zh": "張永聲",
+        "en": "Zhang Yongsheng"
+      },
+      "title": {
+        "zh": "台灣聯合抗癌協會理事長",
+        "en": "Chairman of Taiwan Anti-Cancer Association"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "yan-mingde",
+      "role": "speaker",
+      "name": {
+        "zh": "顏明德",
+        "en": "Yan Mingde"
+      },
+      "title": {
+        "zh": "台灣褐藻醣膠發展協會秘書長",
+        "en": "Secretary-General of Taiwan Alginates Development Association"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "qiu-zhongfeng",
+      "role": "speaker",
+      "name": {
+        "zh": "邱仲峰",
+        "en": "Qiu Zhongfeng"
+      },
+      "title": {
+        "zh": "台北醫學大學附設醫院院長",
+        "en": "President of Taipei Medical University Hospital"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    },
+    {
+      "id": "huang-shanshan",
+      "role": "speaker",
+      "name": {
+        "zh": "黃珊珊",
+        "en": "Huang Shanshan"
+      },
+      "title": {
+        "zh": "台北市 副市長",
+        "en": "Deputy Mayor of Taipei City"
+      },
+      "org": {
+        "zh": "",
+        "en": ""
+      },
+      "bio": {
+        "zh": "",
+        "en": ""
+      },
+      "photo": null,
+      "links": {},
+      "_source": "Forum2021tw.html / Forum2021.html 影片清單"
+    }
+  ],
+  "agenda": [
+    {
+      "time": null,
+      "session": {
+        "zh": "演講影片",
+        "en": "Talks"
+      },
+      "talks": [
+        {
+          "id": "liang-gang-yi-sz2RNs72bek",
+          "speaker": "liang-gang-yi",
+          "title": {
+            "zh": "開幕及貴賓致詞",
+            "en": "Opening Remarks and Guest Speech"
+          },
+          "video": {
+            "id": "sz2RNs72bek"
+          }
+        },
+        {
+          "id": "wu-jingming-IvYbJ-MfU2Q",
+          "speaker": "wu-jingming",
+          "title": {
+            "zh": "開幕及貴賓致詞",
+            "en": "Opening Remarks and Guest Speech"
+          },
+          "video": {
+            "id": "IvYbJ-MfU2Q"
+          }
+        },
+        {
+          "id": "hu-beidi-aJVhpxb2eBE",
+          "speaker": "hu-beidi",
+          "title": {
+            "zh": "開幕及貴賓致詞",
+            "en": "Opening Remarks and Guest Speech"
+          },
+          "video": {
+            "id": "aJVhpxb2eBE"
+          }
+        },
+        {
+          "id": "chen-po-han-DHlMQ93u_-I",
+          "speaker": "chen-po-han",
+          "title": {
+            "zh": "液態切片 塑造替身",
+            "en": "Liquid Biopsy: Shaping Avatars"
+          },
+          "video": {
+            "id": "DHlMQ93u_-I"
+          },
+          "summary": {
+            "zh": "以腫瘤分身實現多元應用",
+            "en": ""
+          }
+        },
+        {
+          "id": "qin-xianjing-rw0aIIhym1o",
+          "speaker": "qin-xianjing",
+          "title": {
+            "zh": "動物模型 突破異種",
+            "en": "Animal Models: Breaking Through Cross-Species Boundaries"
+          },
+          "video": {
+            "id": "rw0aIIhym1o"
+          },
+          "summary": {
+            "zh": "癌症病患及他們的阿凡達鼠",
+            "en": ""
+          }
+        },
+        {
+          "id": "sun-yi-han-VorebIMTWIQ",
+          "speaker": "sun-yi-han",
+          "title": {
+            "zh": "果然可以 蠅領試藥",
+            "en": "As Expected: Fruit Flies Leading Drug Trials"
+          },
+          "video": {
+            "id": "VorebIMTWIQ"
+          },
+          "summary": {
+            "zh": "以果蠅做藥物篩檢",
+            "en": ""
+          }
+        },
+        {
+          "id": "michael-morehead-akJeqgBMS_M",
+          "speaker": "michael-morehead",
+          "title": {
+            "zh": "The new medium for 3D data exploration, collaboration & communication",
+            "en": "The new medium for 3D data exploration, collaboration & communication"
+          },
+          "video": {
+            "id": "akJeqgBMS_M"
+          }
+        },
+        {
+          "id": "zhang-yongsheng-Gi9rSCg0wfc",
+          "speaker": "zhang-yongsheng",
+          "title": {
+            "zh": "醫療進步 破除恐懼 I",
+            "en": "Medical Advancements: Breaking the Barriers of Fear I"
+          },
+          "video": {
+            "id": "Gi9rSCg0wfc"
+          },
+          "summary": {
+            "zh": "《建立有溫度的癌症輔助平台》Part1",
+            "en": ""
+          }
+        },
+        {
+          "id": "yan-mingde-eiNhWIncbEk",
+          "speaker": "yan-mingde",
+          "title": {
+            "zh": "醫療進步 破除恐懼 II",
+            "en": "Medical Advancements: Breaking the Barriers of Fear II"
+          },
+          "video": {
+            "id": "eiNhWIncbEk"
+          },
+          "summary": {
+            "zh": "《建立有溫度的癌症輔助平台》Part2",
+            "en": ""
+          }
+        },
+        {
+          "id": "zhang-yongsheng-M8zZf1Ylnm8",
+          "speaker": "zhang-yongsheng",
+          "title": {
+            "zh": "醫療進步 破除恐懼 III",
+            "en": "Medical Advancements: Breaking the Barriers of Fear III"
+          },
+          "video": {
+            "id": "M8zZf1Ylnm8"
+          },
+          "summary": {
+            "zh": "《建立有溫度的癌症輔助平台》Part3",
+            "en": ""
+          }
+        },
+        {
+          "id": "qiu-zhongfeng-U4zRlJjlNvM",
+          "speaker": "qiu-zhongfeng",
+          "title": {
+            "zh": "接軌國際 提高療效",
+            "en": "Connecting Globally, Improving Efficacy"
+          },
+          "video": {
+            "id": "U4zRlJjlNvM"
+          },
+          "summary": {
+            "zh": "新境、新競、心靜 創新癌症治療的北醫經驗",
+            "en": ""
+          }
+        },
+        {
+          "id": "huang-shanshan-8romOErwPME",
+          "speaker": "huang-shanshan",
+          "title": {
+            "zh": "閉幕致詞",
+            "en": "Closing Remarks"
+          },
+          "video": {
+            "id": "8romOErwPME"
+          }
+        }
+      ]
+    }
+  ],
+  "faq": [],
+  "partners": {
+    "organizer": [
+      {
+        "id": "nhri",
+        "name": {
+          "zh": "國家衛生研究院",
+          "en": "National Health Research Institutes"
+        },
+        "url": null,
+        "logo": null
+      },
+      {
+        "id": "cancerfree",
+        "name": {
+          "zh": "精拓生技",
+          "en": "CancerFree Biotech"
+        },
+        "url": "https://cancerfree.io/",
+        "logo": "images/CFBiocn2.png"
+      }
+    ],
+    "coOrganizer": [
+      {
+        "id": "sme",
+        "name": {
+          "zh": "經濟部中小企業處"
+        },
+        "url": null,
+        "logo": null
+      },
+      {
+        "id": "taiwan-anti-cancer",
+        "name": {
+          "zh": "社團法人台灣聯合抗癌協會"
+        },
+        "url": null,
+        "logo": null
+      }
+    ],
+    "sponsor": []
+  },
+  "_sources": [
+    "Forum2021tw.html",
+    "Forum2021.html",
+    "data/transcribed.json#2021"
+  ],
+  "_open_questions": [
+    "2021 沒有活動頁，只有影片清單；講者照片、議程時間、活動地點都沒有原始資料。",
+    "「演講影片」是議程分組的標籤（UI 文字），不是原站內容。"
+  ],
+  "_fixes": [
+    "clooaboration → collaboration"
+  ]
+}

@@ -3,3 +3,6 @@ aaa.py
 ap/__pycache__/database.cpython-310.pyc
 *test.html
 oldpage
+# 產生器輸出（由 GitHub Actions 建置部署）
+dist/
+__pycache__/

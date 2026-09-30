@@ -1,0 +1,33 @@
+{
+  "_說明": "原站 HTML 裡沒有、事後查證補上的資料。scripts/extract.py 產生 events/*.json 時會合併進去，重跑 extract.py 不會遺失。每一筆都要附 _source。",
+
+  "2022": {
+    "videos": {
+      "mi-hua-tao": {
+        "id": "CiOMOGHH2K8",
+        "_source": "官方 YouTube 頻道 @avatarmedicine，2026-09-30 MCP_chrome 查證，說明欄列出講者"
+      },
+      "ting-i-chan": {
+        "id": "XmP6LnhNMzk",
+        "_source": "官方 YouTube 頻道 @avatarmedicine，2026-09-30 MCP_chrome 查證，說明欄列出講者"
+      }
+    }
+  },
+
+  "2023": {
+    "sponsorUrls": {
+      "brainv": {
+        "url": "https://www.brainv.cc/",
+        "_source": "官網網址 2026-09-30 MCP_chrome 查證（名稱取自 sponsor 合成圖 alt）"
+      },
+      "grapeking": {
+        "url": "https://www.grapeking.com.tw/",
+        "_source": "官網網址 2026-09-30 MCP_chrome 查證（名稱取自 sponsor 合成圖 alt）"
+      },
+      "cheeseduke": {
+        "url": "https://www.cheeseduke.com.tw/",
+        "_source": "官網網址 2026-09-30 MCP_chrome 查證（名稱取自 sponsor 合成圖 alt）"
+      }
+    }
+  }
+}

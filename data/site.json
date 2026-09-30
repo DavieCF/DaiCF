@@ -1,0 +1,328 @@
+{
+  "_說明": "全站共用設定。品牌名稱與首頁介紹來自 data/home.json（從 index.html / indextw.html 抽出）。這裡的文字只有三種來源：原站頁面、精拓生技官網頁面標題（2026-09-29 抓取）、介面按鈕文字（標 _ui）。",
+  "domain": "https://avatarmedicine.xyz",
+  "_verification_說明": "搜尋引擎站長工具的驗證碼（meta name → content）。從 Google Search Console／Bing Webmaster Tools 取得後填入，空字串不輸出。",
+  "verification": {
+    "google-site-verification": "3SvdtWtcAwPRXNkidp2qrNWDe81ZodzVlK2tQ9USkW8",
+    "msvalidate.01": "748B8DC1531DC8C6642441F1A85DE25A"
+  },
+  "_indexNowKey_說明": "IndexNow 金鑰。舊站（GitHub Pages）目前不用，留空就不會輸出 /<key>.txt；新站 avatarmedicine.cancerfree.io 另有自己的金鑰。",
+  "indexNowKey": "",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "defaultLanguage": "zh",
+  "favicon": "images/favicon.ico",
+  "themeColor": "#1E8C86",
+  "organizer": {
+    "_source": "名稱讀自精拓 logo（images/CFBiocn2.png）；電話與地址取自 2023ForumpageTW/EN.html 頁尾；社群連結取自 2022ForumpageTW.html",
+    "name": {
+      "zh": "精拓生技",
+      "en": "CancerFree Biotech"
+    },
+    "url": "https://cancerfree.io/",
+    "logo": "images/CFBiocn2.png",
+    "phone": "+886-2-27322701",
+    "address": {
+      "zh": "台北市內湖區瑞光路258巷56號3樓之2",
+      "en": "3F.-2, No. 56, Lane 258, Ruiguang Rd, Neihu District, Taipei City"
+    },
+    "social": [
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/CancerFreeBiotech/"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/company/cancerfree-biotech/"
+      },
+      {
+        "name": "Twitter",
+        "url": "https://twitter.com/cancerfreebio"
+      }
+    ]
+  },
+  "_links_說明": "導回精拓生技官網的連結。label 是該頁面在官網上的 <title>（去掉「– 精拓生技 | Cancer Free 精準醫學」後綴），desc 是該頁的 meta description，沒有就留空。舊站用的 https://www.cancerfree.io/zh-tw/index 已 404。",
+  "links": {
+    "home": {
+      "zh": {
+        "url": "https://cancerfree.io/",
+        "label": "精拓生技CancerFree Biotech",
+        "desc": "透過血液檢體，幫助癌症患者在體外打造個人化腫瘤分身，代替患者進行抗癌藥物測試（包含化療藥物、荷爾蒙藥物及標靶藥物），提供最直接的藥物效用評估，達到個人化精準治療，降低無效用藥的可能性。"
+      },
+      "en": {
+        "url": "https://cancerfree.io/en",
+        "label": "CancerFree Biotech",
+        "desc": ""
+      }
+    },
+    "about": {
+      "zh": {
+        "url": "https://cancerfree.io/pages/關於我們",
+        "label": "關於我們"
+      },
+      "en": {
+        "url": "https://cancerfree.io/en/pages/關於我們",
+        "label": "About Us"
+      }
+    },
+    "contact": {
+      "zh": {
+        "url": "https://cancerfree.io/pages/聯絡我們",
+        "label": "聯絡我們"
+      },
+      "en": {
+        "url": "https://cancerfree.io/en/pages/contact",
+        "label": "Contact"
+      }
+    },
+    "avatarMedicine": {
+      "zh": {
+        "url": "https://cancerfree.io/pages/替身醫療為何重要",
+        "label": "精準醫療-替身醫療專區"
+      },
+      "en": {
+        "url": "https://cancerfree.io/en/pages/替身醫療為何重要",
+        "label": "Precision Medicine - Avatar Medicine"
+      }
+    },
+    "avatarArticle": {
+      "zh": {
+        "url": "https://cancerfree.io/blogs/醫師陪你抗癌/替身醫療-癌症個人化醫療的輔助技術-如何減少副作用",
+        "label": "替身醫療：癌症個人化醫療的輔助技術，如何減少副作用？",
+        "desc": "癌症替身醫療（Avatar Medicine）是一種新興的個人化癌症科技，廣義上屬於癌症精準醫療。該技術已在臨床應用，透過腫瘤類器官（organoids）、器官晶片（organ-on-a-chip）與基因檢測技術，模擬患者對各種治療方案的反應，協助醫師進行個人化治療決策。"
+      }
+    },
+    "evaSelect": {
+      "zh": {
+        "url": "https://cancerfree.io/pages/eva-select",
+        "label": "EVA Select 選藥靈"
+      },
+      "en": {
+        "url": "https://cancerfree.io/en/pages/eva-select",
+        "label": "EVA Select"
+      }
+    },
+    "ctc": {
+      "zh": {
+        "url": "https://cancerfree.io/pages/ctc-循體欣",
+        "label": "CTC 循體欣"
+      },
+      "en": {
+        "url": "https://cancerfree.io/en/pages/ctc-循體欣",
+        "label": "CHILINE CATCH™ CTC testing service"
+      }
+    },
+    "ngs": {
+      "zh": {
+        "url": "https://cancerfree.io/pages/ngs-基因檢測",
+        "label": "NGS 基因檢測"
+      },
+      "en": {
+        "url": "https://cancerfree.io/en/pages/ngs-基因檢測",
+        "label": "NGS Genetic Testing"
+      }
+    },
+    "cancerCare": {
+      "zh": {
+        "url": "https://cancerfree.io/pages/癌症照護與知識專區",
+        "label": "全方位癌症補給"
+      },
+      "en": {
+        "url": "https://cancerfree.io/pages/cancer-care-knowledge-en",
+        "label": "Cancer Care & Knowledge Hub"
+      }
+    },
+    "news": {
+      "zh": {
+        "url": "https://cancerfree.io/blogs/最新消息",
+        "label": "最新消息"
+      },
+      "en": {
+        "url": "https://cancerfree.io/blogs/news-en",
+        "label": "News"
+      }
+    },
+    "newsletter": {
+      "zh": {
+        "url": "https://cancerfree.io/pages/newsletter",
+        "label": "企業動態",
+        "desc": "CancerFree Biotech 最新電子報"
+      }
+    },
+    "littlestar": {
+      "_source": "label 與 desc 取自 https://littlestar.cancerfree.io/ 的 <title> 與 meta description（2026-09-30）；舊站依 FP-MAIN 指示連到 littlestar.love，little-star session 會同步該站內容",
+      "zh": {
+        "url": "https://littlestar.love/",
+        "label": "Little Star｜0–12 歲兒童癌症第一次免費檢測",
+        "desc": "Little Star 是精拓生技的兒童癌症公益計畫：針對 0–12 歲兒童癌症，提供第一次免費檢測服務，藉由循環腫瘤細胞（CTC）培養與藥物測試協助癌症用藥的選擇。並整理兒童癌症衛教、發表論文、活動花絮與病友分享。"
+      },
+      "en": {
+        "url": "https://littlestar.love/",
+        "label": "Little Star"
+      }
+    }
+  },
+  "_readMore_說明": "「延伸閱讀」卡片，依序顯示；某語言沒有該連結就不顯示。",
+  "readMore": [
+    "avatarMedicine",
+    "avatarArticle",
+    "evaSelect",
+    "ctc",
+    "littlestar",
+    "ngs",
+    "cancerCare"
+  ],
+  "introLinks": [
+    "avatarMedicine",
+    "evaSelect"
+  ],
+  "footerLinks": [
+    {
+      "heading": "organizer",
+      "items": [
+        "about",
+        "news",
+        "newsletter",
+        "contact"
+      ]
+    },
+    {
+      "heading": "_ui.services",
+      "items": [
+        "avatarMedicine",
+        "evaSelect",
+        "ctc",
+        "ngs",
+        "cancerCare",
+        "littlestar"
+      ]
+    }
+  ],
+  "_ui_說明": "介面文字。有 _source 的是原站用過的字；其餘是新版介面才有的按鈕與標籤。",
+  "ui": {
+    "intro": {
+      "zh": "論壇介紹",
+      "en": "Introduction",
+      "_source": "2023ForumpageTW/EN.html"
+    },
+    "speakers": {
+      "zh": "演講者",
+      "en": "Speakers",
+      "_source": "2022/2023 活動頁"
+    },
+    "guests": {
+      "zh": "貴賓",
+      "en": "Honored Guest",
+      "_source": "2022ForumpageTW/EN.html"
+    },
+    "agenda": {
+      "zh": "活動議程",
+      "en": "Agenda",
+      "_source": "2022/2023 活動頁"
+    },
+    "faq": {
+      "zh": "FAQ",
+      "en": "FAQ",
+      "_source": "2022/2023 活動頁"
+    },
+    "organizer": {
+      "zh": "主辦單位",
+      "en": "Organizer",
+      "_source": "2022/2023 活動頁"
+    },
+    "coOrganizer": {
+      "zh": "協辦單位",
+      "en": "Co-organizer",
+      "_source": "2022/2023 活動頁"
+    },
+    "sponsor": {
+      "zh": "贊助單位",
+      "en": "Sponsor",
+      "_source": "2022/2023 活動頁"
+    },
+    "pastEvents": {
+      "zh": "歷年活動",
+      "en": "Past Events",
+      "_source": "index.html / indextw.html"
+    },
+    "highlights": {
+      "zh": "活動花絮",
+      "en": "Event Highlights",
+      "_source": "index.html / indextw.html"
+    },
+    "contactUs": {
+      "zh": "聯絡我們",
+      "en": "Contact Us",
+      "_source": "2023 活動頁頁尾"
+    },
+    "phone": {
+      "zh": "電話",
+      "en": "Phone",
+      "_source": "2023 活動頁頁尾"
+    },
+    "address": {
+      "zh": "地址",
+      "en": "Address",
+      "_source": "2023 活動頁頁尾"
+    },
+    "langOther": {
+      "zh": "English",
+      "en": "繁體中文",
+      "_source": "2023ForumpageTW.html"
+    },
+    "videos": {
+      "zh": "演講影片",
+      "en": "Videos"
+    },
+    "partners": {
+      "zh": "合作單位",
+      "en": "Partners"
+    },
+    "watch": {
+      "zh": "觀看影片",
+      "en": "Watch videos"
+    },
+    "enter": {
+      "zh": "進入活動頁",
+      "en": "View event"
+    },
+    "bio": {
+      "zh": "講者簡介",
+      "en": "Biography"
+    },
+    "summary": {
+      "zh": "演講摘要",
+      "en": "Summary"
+    },
+    "readMore": {
+      "zh": "延伸閱讀",
+      "en": "Read more"
+    },
+    "services": {
+      "zh": "精準醫療",
+      "en": "Precision medicine"
+    },
+    "home": {
+      "zh": "首頁",
+      "en": "Home"
+    },
+    "menu": {
+      "zh": "選單",
+      "en": "Menu"
+    },
+    "talks": {
+      "zh": "場演講",
+      "en": "talks"
+    },
+    "fileNotice": {
+      "zh": "你正用 file:// 直接開檔案，YouTube 會擋掉嵌入播放（錯誤 153），點縮圖會另開 YouTube。部署後或用 python -m http.server 預覽就會正常。",
+      "en": "Opened via file://, so YouTube blocks embedded playback (Error 153); thumbnails open YouTube instead. Deployed pages and python -m http.server previews play normally."
+    },
+    "notFound": {
+      "zh": "找不到這個頁面",
+      "en": "Page not found"
+    }
+  }
+}

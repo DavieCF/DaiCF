@@ -1,0 +1,65 @@
+{
+  "brand": {
+    "name": {
+      "zh": "替身醫療論壇",
+      "en": "Avatar Medicine Forum"
+    },
+    "tagline": {
+      "zh": "",
+      "en": "Reflection of oneself in the mirror"
+    }
+  },
+  "introTitle": {
+    "zh": "邁向元宇宙 替身醫療論壇",
+    "en": "Towards the Metaverse: Avatar Medical Forum"
+  },
+  "intro": {
+    "zh": [
+      "替身醫療論壇主要推廣虛擬和實體替身應用於患者治療之上的概念，讓大家瞭解替身醫療可能降低其在治療過程中所需承擔的風險，並且可以跨越距離及時間的限制。",
+      "推廣技術層面包含類器官、模式生物、大數據、元宇宙...等，讓一般大眾用新的角度了解目前這些技術開發有潛力替代病患本身並降低醫療上的風險，同時串聯學界及產業界，讓有潛力的技術或產品可以曝光。",
+      "此次論壇邀請到產官學研重量級講者來與我們分享後疫情時代所帶來的替身醫療的改變及發展。",
+      "以期在不久的將來，透過大數據、AI、AR/VR/XR或NFT就可以讓虛擬替身實現於臨床及教學上。"
+    ],
+    "en": [
+      "The Avatar Medical Forum primarily advocates the concept of utilizing virtual and physical avatars in patient treatment, aiming to raise awareness about the potential of avatar-based healthcare to reduce risks associated with traditional treatments. Additionally, it highlights the ability of avatar-based healthcare to overcome limitations posed by distance and time constraints.",
+      "The promotion at the technological level encompasses areas such as artificial organs, bio-mimicry, big data, and the metaverse, among others. It aims to provide the general public with a fresh perspective on how these technologies hold the potential to replace the patient's own functions and mitigate risks in medical treatments. Furthermore, it seeks to foster collaboration between academia and industry, enabling promising technologies or products to gain visibility and exposure.",
+      "This forum has invited influential speakers from industry, government, academia, and research sectors to share insights on the transformative changes and developments in avatar-based healthcare brought about by the post-pandemic era.",
+      "With the integration of big data, AI, AR/VR/XR, or NFT, it is envisaged that virtual avatars can soon be realized for clinical and educational applications."
+    ]
+  },
+  "highlights": [
+    {
+      "image": "images/EVHIJPG/EventHighlights01.jpg",
+      "link": "https://cancerfree.io/"
+    },
+    {
+      "image": "images/EVHIJPG/EventHighlights02.jpg",
+      "link": null
+    },
+    {
+      "image": "images/EVHIJPG/EventHighlights03.jpg",
+      "link": null
+    },
+    {
+      "image": "images/EVHIJPG/EventHighlights04.jpg",
+      "link": null
+    },
+    {
+      "image": "images/EVHIJPG/EventHighlights05.jpg",
+      "link": null
+    },
+    {
+      "image": "images/EVHIJPG/EventHighlights06.jpg",
+      "link": null
+    },
+    {
+      "image": "images/EVHIJPG/EventHighlights07.jpg",
+      "link": null
+    }
+  ],
+  "_sources": [
+    "indextw.html",
+    "index.html"
+  ],
+  "_fixes": []
+}

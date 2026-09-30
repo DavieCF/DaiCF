@@ -1,0 +1,121 @@
+/* 正式版新增的元件：首頁、講者分組、演講摘要、花絮、404。 */
+
+.skip-link { position: absolute; left: -9999px; top: 8px; z-index: 100; padding: 8px 14px; background: var(--accent); color: #fff; border-radius: 4px; }
+.skip-link:focus { left: 16px; }
+
+.brand-name { font-family: var(--font-display); }
+.brand-tagline { display: block; font-family: var(--font-body); font-size: 11px; font-weight: 400; letter-spacing: .08em; color: var(--text-muted); }
+
+/* 講者分組（貴賓／演講者） */
+.speaker-group + .speaker-group { margin-top: 40px; }
+.speaker-group-title { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted); font-family: var(--font-mono); font-weight: 500; margin-bottom: 4px; }
+
+/* 議程裡的演講摘要與無時間分組 */
+.talk-summary { grid-column: 1 / -1; margin: 6px 0 4px; font-size: 14px; color: var(--text-muted); }
+.talk-summary summary { font-size: 13px; color: var(--accent); list-style: none; }
+.talk-summary summary::-webkit-details-marker { display: none; }
+.talk-summary summary::before { content: "+ "; }
+.talk-summary[open] summary::before { content: "– "; }
+.talk-summary p { margin: 8px 0 0; line-height: 1.8; }
+.talk-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 16px; padding: 10px 0; border-bottom: 1px dotted var(--line); }
+.talk-row a { color: var(--text); }
+.talk-row a:hover .talk-title { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+.talk-row .talk-title { font-weight: 600; }
+.talk-row .talk-speaker { color: var(--text-muted); font-size: 14px; }
+.talk-row .talk-speaker a { color: var(--text-muted); }
+.session.session-untimed { grid-template-columns: 1fr; }
+
+/* 影片 */
+.video-open { position: absolute; right: 10px; bottom: 10px; font-size: 12px; padding: 3px 8px; border-radius: 2px; background: rgba(27,31,35,.8); color: #fff; }
+.notice { margin: -12px 0 24px; padding: 12px 16px; border: 1px dashed var(--line-strong); font-size: 14px; color: var(--text-muted); background: var(--surface); }
+.notice[hidden] { display: none; }
+
+/* 首頁 */
+.home-hero .hero-inner { grid-template-columns: 1fr 1fr; }
+.home-hero h1 { font-size: clamp(36px, 5vw, 60px); }
+.home-hero .hero-theme { font-style: normal; }
+.home-intro .prose p { font-size: 17px; }
+/* 歷年活動卡片：用 subgrid 讓「屆數／標題／主題／日期」每一列在所有卡片之間對齊 */
+.editions { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.editions > li { display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 0; }
+.edition { display: grid; grid-row: span 5; grid-template-rows: subgrid; row-gap: 8px; padding-bottom: 20px; border: 1px solid var(--line); background: var(--surface); color: var(--text); transition: border-color .2s; }
+.edition:hover { text-decoration: none; border-color: var(--text); }
+.edition > :not(img) { padding-inline: 20px; margin: 0; }
+.edition img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-bottom: 1px solid var(--line); margin-bottom: 10px; }
+.edition-num { font-family: var(--font-mono); font-size: 12px; letter-spacing: .14em; color: var(--accent); }
+.edition h3 { font-size: 21px; }
+.edition-theme { font-size: 14px; line-height: 1.6; color: var(--text-muted); }
+.edition-meta { align-self: end; padding-top: 8px; font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+@supports not (grid-template-rows: subgrid) {
+  .editions > li { display: flex; }
+  .edition { display: flex; flex-direction: column; gap: 8px; flex: 1; }
+  .edition-meta { margin-top: auto; }
+}
+/* 活動花絮：沿用原站的橫向捲動概念，改成可滑動、會對齊的相片條 */
+.highlights { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(240px, 28%); gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; scrollbar-width: thin; scrollbar-color: var(--line-strong) transparent; }
+.highlights li { scroll-snap-align: start; }
+.highlights img { width: 100%; aspect-ratio: 3/4; object-fit: cover; border: 1px solid var(--line); }
+
+/* 頁尾 */
+.footer-contact dt { font-size: 12px; opacity: .6; }
+.footer-contact dd { margin: 0 0 8px; }
+
+/* 404 */
+.not-found { padding: 120px 0; text-align: center; }
+.not-found h1 { font-size: 40px; margin-bottom: 16px; }
+
+@media (max-width: 1024px) {
+  .editions { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
+  .home-hero .hero-inner { grid-template-columns: 1fr; }
+  .talk-row { grid-template-columns: 1fr; gap: 2px; }
+  .highlights { grid-auto-columns: 72%; }
+}
+@media (max-width: 600px) {
+  .editions { grid-template-columns: 1fr; }
+}
+
+/* 延伸閱讀卡片數量不固定，自動填滿欄數 */
+.cards { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+@media (max-width: 600px) { .cards { grid-template-columns: 1fr; } }
+
+/* 頂部資訊列 + header：內容跟版心同寬，品牌與選單靠左、年份與語言靠右 */
+.topbar { background: var(--text); color: #CFCBC0; font-size: 12px; letter-spacing: .04em; }
+.topbar-inner { display: flex; justify-content: space-between; align-items: center; min-height: 32px; }
+.topbar a { color: #fff; }
+.topbar-sep { margin: 0 8px; opacity: .5; }
+.site-header { display: block; padding: 0; }
+.header-inner { display: flex; align-items: center; gap: 36px; min-height: 68px; }
+.header-inner .brand-name { font-size: 20px; }
+.site-nav { margin-inline: 0; gap: 2px; }
+.site-nav a { font-size: 15px; }
+.header-actions { margin-left: auto; }
+
+/* 頁尾 logo：精拓彩色 logo 用濾鏡轉成白色（原站的白色版 CFBiocn.png 是不透明白底，不能用） */
+.footer-logo { filter: brightness(0) invert(1); opacity: .9; height: 40px; width: auto; margin-bottom: 28px; }
+
+/* hero 是 main 裡的 section，不要再疊一層 section 內距 */
+main section.hero { padding-top: 0; padding-bottom: 0; }
+
+/* 內容很短的頁面（例如 404）頁尾也貼齊底部 */
+body { min-height: 100vh; display: flex; flex-direction: column; }
+body > main { flex: 1; }
+
+/* header 在窄螢幕不要被擠爆 */
+.lang-toggle { white-space: nowrap; }
+.brand { min-width: 0; }
+@media (max-width: 900px) {
+  .topbar { display: none; }
+  .header-inner { gap: 12px; min-height: 60px; }
+  .site-nav { margin: 0; }
+}
+@media (max-width: 600px) {
+  .site-header { gap: 10px; }
+  .brand-tagline { display: none; }
+  .brand-name { overflow: hidden; text-overflow: ellipsis; }
+  .header-actions { gap: 6px; }
+}
+
+.partner-links { margin: 10px 0 0; font-size: 14px; color: var(--text-muted); }
+.partner-links a { color: var(--accent); }

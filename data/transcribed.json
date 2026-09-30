@@ -1,0 +1,419 @@
+{
+  "_說明": "這個檔案只放「原站以圖片呈現、HTML 裡沒有文字」的內容，逐字轉錄自圖片。每一段都標了來源圖檔。其餘所有內容由 scripts/extract.py 直接從舊 HTML 抽出，不經人工改寫。",
+  "2021": {
+    "_source": "images/bk2021.png（2021 主視覺）",
+    "kv": {
+      "title": {
+        "zh": "患者替身醫療論壇",
+        "en": "BIOMODEL & TECH AVATAR MEDICINE FOR PATIENT FORUM"
+      },
+      "theme": {
+        "zh": "精準檢測 新時代",
+        "en": "ACCURATE DETECTION NEW ERA"
+      },
+      "date": "2021 9/25"
+    },
+    "partners": {
+      "organizer": [
+        {
+          "id": "nhri",
+          "name": {
+            "zh": "國家衛生研究院",
+            "en": "National Health Research Institutes"
+          }
+        },
+        {
+          "id": "cancerfree",
+          "name": {
+            "zh": "精拓生技",
+            "en": "CancerFree Biotech"
+          }
+        }
+      ],
+      "coOrganizer": [
+        {
+          "id": "sme",
+          "name": {
+            "zh": "經濟部中小企業處"
+          }
+        },
+        {
+          "id": "taiwan-anti-cancer",
+          "name": {
+            "zh": "社團法人台灣聯合抗癌協會"
+          }
+        }
+      ]
+    }
+  },
+  "2022": {
+    "_source_kv": "images/web_01.png（2022 主視覺）",
+    "kv": {
+      "title": {
+        "zh": "邁向元宇宙 替身醫療論壇",
+        "en": "AVATAR MEDICINE FORUM"
+      },
+      "theme": {
+        "zh": "DIGITAL TWIN & METAVERSE",
+        "en": "DIGITAL TWIN & METAVERSE"
+      },
+      "sessions": [
+        {
+          "zh": "第一場 台灣時間 12/21 10:00-12:00"
+        },
+        {
+          "zh": "第二場 美西時間 12/21 10:00-12:00"
+        }
+      ]
+    },
+    "_source_agenda": "images/agenda.png（中文議程圖）、images/agendaEN.png（英文議程圖）",
+    "agenda": [
+      {
+        "time": [
+          "10:00",
+          "10:10"
+        ],
+        "session": {
+          "zh": "開幕及貴賓致詞",
+          "en": "Opening Remark"
+        },
+        "talks": [
+          {
+            "speaker": "michael-c-lu"
+          },
+          {
+            "speaker": "ching-cheng-chuang"
+          },
+          {
+            "speaker": "jacqueline-whang-peng"
+          }
+        ]
+      },
+      {
+        "time": [
+          "10:10",
+          "11:00"
+        ],
+        "session": {
+          "zh": "實體替身主題講座",
+          "en": "Physical Avatar"
+        },
+        "talks": [
+          {
+            "speaker": "mi-hua-tao",
+            "title": {
+              "zh": "小鼠替身 免疫治療",
+              "en": "Mice & Avatar medicine"
+            }
+          },
+          {
+            "speaker": "shawn-chae",
+            "title": {
+              "zh": "腫瘤替身 三維列印",
+              "en": "3D Print & Avatar medicine"
+            }
+          },
+          {
+            "speaker": "long-sheng-lu",
+            "title": {
+              "zh": "腫瘤替身 臨床實務",
+              "en": "Avatar in Clinical unmet need"
+            }
+          }
+        ]
+      },
+      {
+        "time": [
+          "11:00",
+          "11:50"
+        ],
+        "session": {
+          "zh": "虛擬替身主題講座",
+          "en": "Virtual Avatar"
+        },
+        "talks": [
+          {
+            "speaker": "ching-yung-lin",
+            "title": {
+              "zh": "數據替身 人工智慧",
+              "en": "Data & Avatar medicine"
+            }
+          },
+          {
+            "speaker": "ray-lin",
+            "title": {
+              "zh": "三維替身 虛實整合",
+              "en": "AR/VR & Avatar medicine"
+            }
+          },
+          {
+            "speaker": "jac-hsieh",
+            "title": {
+              "zh": "虛擬替身 遊戲復健",
+              "en": "Fitness in metaverse"
+            }
+          }
+        ]
+      },
+      {
+        "time": [
+          "11:50",
+          "12:00"
+        ],
+        "session": {
+          "zh": "閉幕致詞",
+          "en": "Closing Remark"
+        },
+        "talks": [
+          {
+            "speaker": "ting-i-chan"
+          }
+        ]
+      }
+    ],
+    "_source_partners": "2022ForumpageTW.html 合作單位 logo 圖（名稱讀自 logo 圖上的文字）",
+    "partnerNames": {
+      "images/CFBiocn2.png": {
+        "zh": "精拓生技",
+        "en": "CancerFree Biotech"
+      },
+      "images/DNA.png": {
+        "zh": "DNA CLUB",
+        "en": "DNA CLUB"
+      },
+      "images/TaiwanDAO.png": {
+        "zh": "Taiwan DAO 台灣道",
+        "en": "Taiwan DAO"
+      },
+      "images/nrbct-upl8e.jpg": {
+        "zh": "鏈新聞 abmedia.io",
+        "en": "鏈新聞 abmedia.io"
+      },
+      "images/pRoot.png": {
+        "zh": "pRoots",
+        "en": "pRoots"
+      },
+      "images/GOL.png": {
+        "zh": "GeneOnline",
+        "en": "GeneOnline"
+      },
+      "images/CCF.png": {
+        "zh": "財團法人張榮發慈善基金會",
+        "en": "Chang Yung-Fa Charity Foundation"
+      },
+      "images/SCT.png": {
+        "zh": "葡萄王生技",
+        "en": "葡萄王生技"
+      }
+    }
+  },
+  "2023": {
+    "_source_kv": "documents/替身醫療主視覺.png（2023 主視覺海報）",
+    "kv": {
+      "title": {
+        "zh": "替身醫療論壇",
+        "en": "2023 AVATAR MEDICINE FORUM"
+      },
+      "theme": {
+        "zh": "Beyond Boundaries — Crafting Avatars for Varied Realms of Application",
+        "en": "Beyond Boundaries — Crafting Avatars for Varied Realms of Application"
+      },
+      "posterTime": "2023/10/21 10:30 AM – 12:25 PM (UTC +8)",
+      "format": {
+        "en": "Bilingual Online Event"
+      },
+      "organizer": {
+        "zh": "主辦單位：精拓生技"
+      }
+    },
+    "_source_agenda": "2023_images/agendaChi.png（中文議程圖）、2023_images/agendaEng.png（英文議程圖）。注意：議程圖時間 09:05–12:00 與主視覺海報 10:30–12:25 不一致，以議程圖為準，待確認。 affiliation 欄位是議程圖右欄的單位文字。",
+    "agenda": [
+      {
+        "time": [
+          "09:05",
+          "09:20"
+        ],
+        "session": {
+          "zh": "開幕及來賓致詞",
+          "en": "Opening Remark"
+        },
+        "talks": [
+          {
+            "speaker": "james-s-miser",
+            "affiliation": {
+              "zh": "希望之城醫學中心",
+              "en": "Dean, City of Hope Medical Center"
+            }
+          }
+        ]
+      },
+      {
+        "time": [
+          "09:20",
+          "10:20"
+        ],
+        "session": {
+          "zh": "國外替身主題講座",
+          "en": "International Lecture"
+        },
+        "talks": [
+          {
+            "speaker": "luke-dimasi",
+            "title": {
+              "zh": "腫瘤類器官晶片",
+              "en": "Cancer organ-on-chip"
+            },
+            "affiliation": {
+              "zh": "EMULATE INC.",
+              "en": "EMULATE INC."
+            }
+          },
+          {
+            "speaker": "long-sheng-lu",
+            "title": {
+              "zh": "替身臨床應用",
+              "en": "Clinical Application"
+            },
+            "affiliation": {
+              "zh": "台北醫學大學附設醫院",
+              "en": "Taipei Medical University Hospital"
+            }
+          },
+          {
+            "speaker": "tony-chung",
+            "title": {
+              "zh": "數據替身",
+              "en": "Genomics & Avatar Medicine"
+            },
+            "affiliation": {
+              "zh": "奈捷生技股份有限公司",
+              "en": "INSTANT NANOBIOSENSORS CO.,LTD"
+            }
+          }
+        ]
+      },
+      {
+        "time": [
+          "10:20",
+          "11:40"
+        ],
+        "session": {
+          "zh": "國內替身主題講座",
+          "en": "Domestic Lecture"
+        },
+        "talks": [
+          {
+            "speaker": "i-hsuan-liu",
+            "title": {
+              "zh": "斑馬魚替身",
+              "en": "Zebrafish & Avatar Medicine"
+            },
+            "affiliation": {
+              "zh": "台灣大學動物科學技術學系",
+              "en": "National Taiwan University"
+            }
+          },
+          {
+            "speaker": "jack-lee",
+            "title": {
+              "zh": "數據替身",
+              "en": "Genomics & Avatar Medicine"
+            },
+            "affiliation": {
+              "zh": "資深基因技術專家",
+              "en": "NGS Technical Instructor"
+            }
+          },
+          {
+            "speaker": "rock-wu",
+            "title": {
+              "zh": "虛實運動",
+              "en": "Fitness & AR/VR"
+            },
+            "affiliation": {
+              "zh": "優力勁聯股份有限公司",
+              "en": "Uniigym Co.,Ltd."
+            }
+          },
+          {
+            "speaker": "yen-lin-liu",
+            "title": {
+              "zh": "替身臨床應用",
+              "en": "Clinical Application"
+            },
+            "affiliation": {
+              "zh": "台北醫學大學附設醫院",
+              "en": "Taipei Medical University Hospital"
+            }
+          }
+        ]
+      },
+      {
+        "time": [
+          "11:40",
+          "12:00"
+        ],
+        "session": {
+          "zh": "閉幕致詞",
+          "en": "Closing Remark"
+        },
+        "talks": [
+          {
+            "speaker": "jeng-fong-chiou",
+            "affiliation": {
+              "zh": "台灣放射腫瘤學會理事長",
+              "en": "President, Taiwan Society for Therapeutic Radiation and Oncology"
+            }
+          }
+        ]
+      }
+    ],
+    "_source_partners": "2023_images/organizer.png、gendaini.png、sponsor.png（名稱讀自 logo 圖上的文字）",
+    "partners": {
+      "organizer": [
+        {
+          "id": "cancerfree",
+          "name": {
+            "zh": "精拓生技",
+            "en": "CancerFree Biotech"
+          },
+          "logo": "images/CFBiocn2.png"
+        }
+      ],
+      "coOrganizer": [
+        {
+          "id": "gendanio",
+          "name": {
+            "zh": "GENDANIO",
+            "en": "GENDANIO"
+          },
+          "logo": "2023_images/gendaini.png"
+        }
+      ],
+      "sponsor": [
+        {
+          "id": "brainv",
+          "name": {
+            "zh": "百瑙威 BrainV",
+            "en": "BrainV"
+          }
+        },
+        {
+          "id": "grapeking",
+          "name": {
+            "zh": "葡萄王生技",
+            "en": "葡萄王生技"
+          }
+        },
+        {
+          "id": "cheeseduke",
+          "name": {
+            "zh": "起士公爵 Cheese Duke",
+            "en": "Cheese Duke"
+          }
+        }
+      ],
+      "sponsorComposite": "2023_images/sponsor.png"
+    }
+  }
+}
