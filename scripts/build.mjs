@@ -26,19 +26,47 @@ const EVENTS = readdirSync(resolve(ROOT, "data/events"))
   .sort((a, b) => a.id.localeCompare(b.id));
 const LATEST = EVENTS[EVENTS.length - 1];
 const LANGS = SITE.languages;
-const OTHER = { zh: "en", en: "zh" };
+const OTHER = { zh: "en", en: "zh", ja: "en" };
+// 語言代碼：html lang / hreflang / og:locale / 切換鈕文字
+const LANG_TAG = { zh: "zh-Hant", en: "en", ja: "ja" };
+const OG_LOCALE = { zh: "zh_TW", en: "en_US", ja: "ja_JP" };
+const LANG_LABEL = { zh: "繁中", en: "EN", ja: "日本語" };
+const LANG_SHORT = { zh: "中", en: "EN", ja: "日" }; // 手機版切換鈕
+const langLabel = (l) => `<span class="ls-long">${LANG_LABEL[l]}</span><span class="ls-short" aria-hidden="true">${LANG_SHORT[l]}</span>`;
+// 日文是 AI 翻譯（2026-10-01 Davie 同意），以中文原文（沒有中文時用英文）為 key 存在 data/i18n/ja.json，
+// 原文改了而翻譯沒跟上時會退回原文，並在 build 結束時列出缺少的翻譯。人名不翻。
+const JA = existsSync(resolve(ROOT, "data/i18n/ja.json")) ? JSON.parse(read("data/i18n/ja.json")) : {};
+const NAMES = new Set(EVENTS.flatMap((e) => (e.speakers || []).flatMap((s) => [s.name.zh, s.name.en])).filter(Boolean));
+const jaMissing = new Set();
 
 // ------------------------------------------------------------ helpers
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 // 取某語言的值；沒有就退回另一語言（原文只有一種語言時照原文顯示，不自行翻譯）
+const ok = (x) => (Array.isArray(x) ? x.length > 0 : x != null && x !== "");
+const CJK = /[㐀-鿿]/;
+// 日文：v.ja → 用中文（或英文）原文查 JA；查不到時 fallback=true 退回原文，false 回空字串
+const jaOf = (v, fallback) => {
+  if (ok(v.ja)) return v.ja;
+  const src = ok(v.zh) ? v.zh : v.en;
+  const one = (s, i) => {
+    if (JA[s] != null) return JA[s];
+    const e = Array.isArray(v.en) ? v.en[i] : v.en;
+    if (typeof e === "string" && JA[e] != null) return JA[e];
+    if (typeof s === "string" && CJK.test(s) && !NAMES.has(s)) jaMissing.add(s);
+    return fallback ? s : "";
+  };
+  if (Array.isArray(src)) { const r = src.map(one); return fallback ? r : r.filter(Boolean); }
+  return ok(src) ? one(src) : "";
+};
 const tr = (v, lang) => {
   if (v == null) return "";
   if (typeof v !== "object" || Array.isArray(v)) return v;
+  if (lang === "ja") return jaOf(v, true);
   const a = v[lang], b = v[OTHER[lang]];
-  const ok = (x) => (Array.isArray(x) ? x.length > 0 : x != null && x !== "");
   return ok(a) ? a : ok(b) ? b : "";
 };
-const only = (v, lang) => (v && v[lang]) || ""; // 不 fallback
+const only = (v, lang) => (lang === "ja" ? (v ? jaOf(v, false) : "") : (v && v[lang]) || ""); // 不 fallback
+const editionLabel = (n, lang) => ({ zh: `第 ${n} 屆`, ja: `第${n}回`, en: `Edition ${n}` })[lang];
 const ui = (k, lang) => tr(SITE.ui[k], lang);
 const has = (a) => Array.isArray(a) && a.length > 0;
 const pad2 = (n) => String(n).padStart(2, "0");
@@ -46,7 +74,7 @@ const ytThumb = (id) => `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
 const encPath = (p) => p.split("/").map(encodeURIComponent).join("/");
 
 // 頁面路徑（相對網站根目錄，結尾 /）
-const pathOf = (lang, year) => (lang === "zh" ? "" : "en/") + (year ? `${year}/` : "");
+const pathOf = (lang, year) => (lang === "zh" ? "" : `${lang}/`) + (year ? `${year}/` : "");
 const absUrl = (lang, year) => `${SITE.domain}/${pathOf(lang, year)}`;
 // 從目前頁面到網站根目錄的相對前綴
 const prefixFor = (lang, year) => "../".repeat(pathOf(lang, year).split("/").filter(Boolean).length);
@@ -66,11 +94,11 @@ const SPEAKER_PLACEHOLDER = `<span class="speaker-placeholder" aria-hidden="true
 // ------------------------------------------------------------ 共用區塊
 function head({ lang, year, title, description, ogImage, jsonld, noindex }) {
   const p = prefixFor(lang, year);
-  const alt = LANGS.map((l) => `  <link rel="alternate" hreflang="${l === "zh" ? "zh-Hant" : "en"}" href="${absUrl(l, year)}">`).join("\n");
+  const alt = LANGS.map((l) => `  <link rel="alternate" hreflang="${LANG_TAG[l]}" href="${absUrl(l, year)}">`).join("\n");
   const og = ogImage ? `${SITE.domain}/${encPath(ogImage)}` : "";
   if (ogImage) usedAssets.add(ogImage);
   return `<!DOCTYPE html>
-<html lang="${lang === "zh" ? "zh-Hant" : "en"}">
+<html lang="${LANG_TAG[lang]}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -88,13 +116,13 @@ ${alt}
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:url" content="${absUrl(lang, year)}">
-  <meta property="og:locale" content="${lang === "zh" ? "zh_TW" : "en_US"}">
+  <meta property="og:locale" content="${OG_LOCALE[lang]}">
 ${og ? `  <meta property="og:image" content="${og}">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="${og}">` : ""}
   <link rel="icon" href="${asset(SITE.favicon, p)}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://i.ytimg.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+${lang === "ja" ? `  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">\n` : ""}  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="${p}assets/site.css">
 ${jsonld ? `  <script type="application/ld+json">${JSON.stringify(jsonld).replace(/</g, "\\u003c")}</script>` : ""}
 </head>`;
@@ -106,7 +134,7 @@ function header({ lang, year, nav }) {
   const years = EVENTS.slice().reverse()
     .map((e) => `<li><a href="${p}${pathOf(lang, e.id)}"${e.id === year ? ' aria-current="page"' : ""}>${esc(tr(e.title, lang))}</a></li>`).join("");
   return `
-<a class="skip-link" href="#main">${lang === "zh" ? "跳到主要內容" : "Skip to content"}</a>
+<a class="skip-link" href="#main">${{ zh: "跳到主要內容", en: "Skip to content", ja: "メインコンテンツへスキップ" }[lang]}</a>
 <div class="topbar"><div class="topbar-inner container">
   <span>${esc(ui("organizer", lang))}：<a href="${esc((link("home", lang) || link("home", "zh")).url)}" rel="noopener">${esc(tr(SITE.organizer.name, lang))}</a></span>
   <span><a href="${esc((link("contact", lang) || link("contact", "zh")).url)}" rel="noopener">${esc(ui("contactUs", lang))}</a><span class="topbar-sep">·</span><a href="tel:${esc(SITE.organizer.phone.replace(/[^+\d]/g, ""))}">${esc(SITE.organizer.phone)}</a></span>
@@ -118,7 +146,9 @@ function header({ lang, year, nav }) {
   <nav class="site-nav" id="site-nav" aria-label="${esc(ui("menu", lang))}">${navHtml}</nav>
   <div class="header-actions">
     <details class="year-menu"><summary><span class="year-current">${esc(year || ui("pastEvents", lang))}</span>${year ? `<span class="year-label">${esc(ui("pastEvents", lang))}</span>` : ""}</summary><ul>${years}</ul></details>
-    <a class="lang-toggle" href="${p}${pathOf(OTHER[lang], year)}" hreflang="${OTHER[lang] === "zh" ? "zh-Hant" : "en"}" lang="${OTHER[lang] === "zh" ? "zh-Hant" : "en"}">${esc(ui("langOther", lang))}</a>
+    <div class="lang-switch" role="group" aria-label="Language">${LANGS.map((l) => (l === lang
+      ? `<span aria-current="true" lang="${LANG_TAG[l]}">${langLabel(l)}</span>`
+      : `<a href="${p}${pathOf(l, year)}" hreflang="${LANG_TAG[l]}" lang="${LANG_TAG[l]}">${langLabel(l)}</a>`)).join("")}</div>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="${esc(ui("menu", lang))}"><span></span><span></span><span></span></button>
   </div>
 </div></header>`;
@@ -171,7 +201,7 @@ function editionCard(e, lang, p) {
   const n = allTalks(e).filter(playable).length;
   // 卡片上的日期統一用 date.start（YYYY/M/D），避免 2022 的兩場時間字串太長造成各卡片不對齊
   const [y, m, d] = e.date.start.slice(0, 10).split("-").map(Number);
-  return `<li><a class="edition" href="${p}${pathOf(lang, e.id)}">${img(e.hero.image, tr(e.title, lang), p, 'width="1600" height="900"')}<span class="edition-num">${lang === "zh" ? `第 ${e.edition} 屆` : `Edition ${e.edition}`}</span><h3>${esc(tr(e.title, lang))}</h3><p class="edition-theme">${esc(tr(e.theme, lang))}</p><span class="edition-meta"><time datetime="${esc(e.date.start)}">${y}/${m}/${d}</time> · ${n} ${esc(ui("videos", lang))}</span></a></li>`;
+  return `<li><a class="edition" href="${p}${pathOf(lang, e.id)}">${img(e.hero.image, tr(e.title, lang), p, 'width="1600" height="900"')}<span class="edition-num">${editionLabel(e.edition, lang)}</span><h3>${esc(tr(e.title, lang))}</h3><p class="edition-theme">${esc(tr(e.theme, lang))}</p><span class="edition-meta"><time datetime="${esc(e.date.start)}">${y}/${m}/${d}</time> · ${n} ${esc(ui("videos", lang))}</span></a></li>`;
 }
 
 // ------------------------------------------------------------ 活動頁
@@ -277,7 +307,7 @@ function eventPage(ev, lang) {
 <section class="hero container" aria-label="${esc(tr(ev.title, lang))}"><div class="hero-inner">
   <div class="hero-media">${img(ev.hero.image, tr(ev.title, lang), p, 'fetchpriority="high" loading="eager"').replace(' loading="lazy"', "")}</div>
   <div class="hero-body">
-    <p class="eyebrow">${lang === "zh" ? `第 ${ev.edition} 屆` : `Edition ${ev.edition}`}${fmt ? ` · ${esc(fmt)}` : ""}</p>
+    <p class="eyebrow">${editionLabel(ev.edition, lang)}${fmt ? ` · ${esc(fmt)}` : ""}</p>
     <h1>${esc(tr(ev.title, lang))}</h1>
     ${tr(ev.theme, lang) ? `<p class="hero-theme">${esc(tr(ev.theme, lang))}</p>` : ""}
     <p class="hero-meta"><time datetime="${esc(ev.date.start)}">${esc(tr(ev.date.display, lang))}</time></p>
@@ -295,7 +325,7 @@ function eventPage(ev, lang) {
       eventStatus: "https://schema.org/EventScheduled",
       ...(ev.location.type === "online" ? { eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode", location: { "@type": "VirtualLocation", url: absUrl(lang, ev.id) } } : {}),
       image: [`${SITE.domain}/${encPath(ev.hero.ogImage)}`],
-      inLanguage: lang === "zh" ? "zh-Hant" : "en",
+      inLanguage: LANG_TAG[lang],
       organizer: (partners.organizer || []).map((o) => ({ "@type": "Organization", name: tr(o.name, lang), ...(o.url ? { url: o.url } : {}) })),
       performer: ev.speakers.map((s) => ({
         "@type": "Person", name: tr(s.name, lang),
@@ -362,7 +392,7 @@ function homePage(lang) {
     sections.push(["highlights", ui("highlights", lang), `${sectionHead("highlights", ++num, ui("highlights", lang))}<ul class="highlights">${items}</ul>`]);
   }
   const jsonld = [
-    { "@context": "https://schema.org", "@type": "WebSite", name: tr(HOME.brand.name, lang), url: absUrl(lang), inLanguage: lang === "zh" ? "zh-Hant" : "en", publisher: { "@type": "Organization", name: tr(SITE.organizer.name, lang), url: SITE.organizer.url } },
+    { "@context": "https://schema.org", "@type": "WebSite", name: tr(HOME.brand.name, lang), url: absUrl(lang), inLanguage: LANG_TAG[lang], publisher: { "@type": "Organization", name: tr(SITE.organizer.name, lang), url: SITE.organizer.url } },
     { "@context": "https://schema.org", "@type": "Organization", name: tr(SITE.organizer.name, lang), url: SITE.organizer.url, logo: `${SITE.domain}/${SITE.organizer.logo}`, telephone: SITE.organizer.phone, address: tr(SITE.organizer.address, lang), sameAs: SITE.organizer.social.map((s) => s.url) },
   ];
   usedAssets.add(SITE.organizer.logo);
@@ -375,9 +405,9 @@ function homePage(lang) {
 
 function notFoundPage() {
   const lang = "zh";
-  return head({ lang, year: null, title: `404 | ${tr(HOME.brand.name, lang)}`, description: "", noindex: true }).replace(/href="(?!https?:|#)([^"]*)"/g, 'href="/$1"')
+  return head({ lang, year: null, title: `404 | ${tr(HOME.brand.name, lang)}`, description: "", noindex: true }).replace(/href="(?!https?:|#|tel:)([^"]*)"/g, 'href="/$1"')
     + `\n<body>` + header({ lang, year: null, nav: [] }).replace(/href="(?!https?:|#|tel:)([^"]*)"/g, 'href="/$1"')
-    + `\n<main id="main" class="container not-found"><h1>404</h1><p>${esc(ui("notFound", "zh"))} · ${esc(ui("notFound", "en"))}</p><p><a class="btn btn-primary" href="/">${esc(tr(HOME.brand.name, "zh"))}</a> <a class="btn btn-ghost" href="/en/">${esc(tr(HOME.brand.name, "en"))}</a></p></main>`
+    + `\n<main id="main" class="container not-found"><h1>404</h1><p>${LANGS.map((l) => esc(ui("notFound", l))).join(" · ")}</p><p>${LANGS.map((l, i) => `<a class="btn ${i ? "btn-ghost" : "btn-primary"}" href="/${pathOf(l)}" lang="${LANG_TAG[l]}">${esc(tr(HOME.brand.name, l))}</a>`).join(" ")}</p></main>`
     + footer({ lang, year: null }).replace(/(href|src)="(?!https?:|#|tel:)([^"]*)"/g, '$1="/$2"');
 }
 
@@ -442,7 +472,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 ${pages.map(([lang, year]) => `  <url>
     <loc>${absUrl(lang, year)}</loc>
     <lastmod>${today}</lastmod>
-${LANGS.map((l) => `    <xhtml:link rel="alternate" hreflang="${l === "zh" ? "zh-Hant" : "en"}" href="${absUrl(l, year)}"/>`).join("\n")}
+${LANGS.map((l) => `    <xhtml:link rel="alternate" hreflang="${LANG_TAG[l]}" href="${absUrl(l, year)}"/>`).join("\n")}
     <xhtml:link rel="alternate" hreflang="x-default" href="${absUrl("zh", year)}"/>
   </url>`).join("\n")}
 </urlset>
@@ -450,7 +480,7 @@ ${LANGS.map((l) => `    <xhtml:link rel="alternate" hreflang="${l === "zh" ? "zh
 write("sitemap.xml", sitemap);
 if (SITE.indexNowKey) write(`${SITE.indexNowKey}.txt`, SITE.indexNowKey);
 // AI 爬蟲規則：開放 AI 搜尋（AEO，2026-09-30），訓練爬蟲沿用 FlightPath 範本封鎖（2026-09-10）
-// /docs/ 放舊站檔案與文件；Actions 部署 dist/ 時本來就不公開，這行是給「從分支根目錄發布」時的保險（2026-09-30）
+// /docs/ 放舊站檔案與文件；從分支根目錄發布時會被公開，所以擋爬蟲（2026-09-30）
 write("robots.txt", `User-agent: *\nAllow: /\nDisallow: /docs/\n\nSitemap: ${SITE.domain}/sitemap.xml\n\n${read("scripts/robots-ai.txt")}`);
 
 // 圖片最佳化（需要 Python + Pillow；沒有的話保留原圖）
@@ -462,5 +492,6 @@ if (!IN_PLACE) {
 }
 
 const size = (dir) => readdirSync(dir, { withFileTypes: true }).reduce((n, d) => n + (d.isDirectory() ? size(join(dir, d.name)) : statSync(join(dir, d.name)).size), 0);
+if (jaMissing.size) console.warn(`日文缺翻譯 ${jaMissing.size} 段（退回原文顯示），請補進 data/i18n/ja.json：\n  ` + [...jaMissing].slice(0, 30).join("\n  "));
 console.log(`輸出到 ${OUT}`);
 console.log(`頁面 ${pages.length}、轉址 ${Object.keys(LEGACY).length}、圖片 ${usedAssets.size}${IN_PLACE ? "" : `、總大小 ${(size(OUT) / 1048576).toFixed(1)} MB`}`);

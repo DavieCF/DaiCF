@@ -209,6 +209,11 @@ address { font-style: normal; opacity: .8; margin-bottom: 14px; }
   --footer-bg: #1B1F23; --footer-text: #D7D3C9; --footer-head: #fff;
   --max: 1080px;
 }
+/* 日文頁用日文字型（漢字字形與假名） */
+html[lang="ja"] {
+  --font-display: "Noto Serif JP", "Noto Serif TC", Georgia, serif;
+  --font-body: "Noto Sans JP", "Noto Sans TC", system-ui, sans-serif;
+}
 body { font-feature-settings: "palt"; }
 .brand-name { font-size: 19px; letter-spacing: .02em; }
 .site-nav a { font-size: 14px; letter-spacing: .02em; }
@@ -405,3 +410,21 @@ body > main { flex: 1; }
 
 .partner-links { margin: 10px 0 0; font-size: 14px; color: var(--text-muted); }
 .partner-links a { color: var(--accent); }
+
+/* 語言切換：一顆膠囊內放三種語言，目前語言加粗 */
+.lang-switch { display: flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; padding: 2px; font-size: 13px; white-space: nowrap; }
+.lang-switch > * { padding: 4px 9px; border-radius: 999px; color: var(--text-muted); letter-spacing: .02em; }
+.lang-switch a:hover { color: var(--text); background: var(--nav-hover); }
+.lang-switch [aria-current] { color: var(--text); font-weight: 700; }
+.lang-switch .ls-short { display: none; }
+@media (max-width: 600px) {
+  .lang-switch .ls-long { display: none; }
+  .lang-switch .ls-short { display: inline; }
+  .lang-switch > * { padding: 4px 7px; }
+  /* 標題改成可折兩行，不截斷 */
+  .header-inner .brand-name { white-space: normal; overflow: hidden; text-overflow: clip; font-size: 14px; line-height: 1.2;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .header-actions { gap: 4px; }
+  .lang-switch > * { padding: 4px 5px; }
+  .year-menu summary { padding: 6px 9px; gap: 4px; }
+}

@@ -10,7 +10,8 @@
   "indexNowKey": "",
   "languages": [
     "zh",
-    "en"
+    "en",
+    "ja"
   ],
   "defaultLanguage": "zh",
   "favicon": "images/favicon.ico",
@@ -43,7 +44,7 @@
       }
     ]
   },
-  "_links_說明": "導回精拓生技官網的連結。label 是該頁面在官網上的 <title>（去掉「– 精拓生技 | Cancer Free 精準醫學」後綴），desc 是該頁的 meta description，沒有就留空。舊站用的 https://www.cancerfree.io/zh-tw/index 已 404。",
+  "_links_說明": "導回精拓生技官網的連結。label 是該頁面在官網上的 <title>（去掉「– 精拓生技 | Cancer Free 精準醫學」後綴），desc 是該頁的 meta description，沒有就留空。舊站用的 https://www.cancerfree.io/zh-tw/index 已 404。 ja 的 label 是 cancerfree.io/ja 對應頁面的日文 <title>（2026-10-01 抓取）。",
   "links": {
     "home": {
       "zh": {
@@ -55,6 +56,10 @@
         "url": "https://cancerfree.io/en",
         "label": "CancerFree Biotech",
         "desc": ""
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/",
+        "label": "キャンサーフリーバイオテック CancerFree Biotech"
       }
     },
     "about": {
@@ -65,6 +70,10 @@
       "en": {
         "url": "https://cancerfree.io/en/pages/關於我們",
         "label": "About Us"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/pages/%E9%97%9C%E6%96%BC%E6%88%91%E5%80%91",
+        "label": "CancerFreeについて"
       }
     },
     "contact": {
@@ -75,6 +84,10 @@
       "en": {
         "url": "https://cancerfree.io/en/pages/contact",
         "label": "Contact"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/pages/%E8%81%AF%E7%B5%A1%E6%88%91%E5%80%91",
+        "label": "お問い合わせ"
       }
     },
     "avatarMedicine": {
@@ -85,6 +98,10 @@
       "en": {
         "url": "https://cancerfree.io/en/pages/替身醫療為何重要",
         "label": "Precision Medicine - Avatar Medicine"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/pages/%E6%9B%BF%E8%BA%AB%E9%86%AB%E7%99%82%E7%82%BA%E4%BD%95%E9%87%8D%E8%A6%81",
+        "label": "精密医療 - アバター医療ゾーン"
       }
     },
     "avatarArticle": {
@@ -92,6 +109,10 @@
         "url": "https://cancerfree.io/blogs/醫師陪你抗癌/替身醫療-癌症個人化醫療的輔助技術-如何減少副作用",
         "label": "替身醫療：癌症個人化醫療的輔助技術，如何減少副作用？",
         "desc": "癌症替身醫療（Avatar Medicine）是一種新興的個人化癌症科技，廣義上屬於癌症精準醫療。該技術已在臨床應用，透過腫瘤類器官（organoids）、器官晶片（organ-on-a-chip）與基因檢測技術，模擬患者對各種治療方案的反應，協助醫師進行個人化治療決策。"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/blogs/%E9%86%AB%E5%B8%AB%E9%99%AA%E4%BD%A0%E6%8A%97%E7%99%8C/%E6%9B%BF%E8%BA%AB%E9%86%AB%E7%99%82-%E7%99%8C%E7%97%87%E5%80%8B%E4%BA%BA%E5%8C%96%E9%86%AB%E7%99%82%E7%9A%84%E8%BC%94%E5%8A%A9%E6%8A%80%E8%A1%93-%E5%A6%82%E4%BD%95%E6%B8%9B%E5%B0%91%E5%89%AF%E4%BD%9C%E7%94%A8",
+        "label": "代理療法：個別化がん治療の補助技術、副作用をどのように軽減するか？"
       }
     },
     "evaSelect": {
@@ -102,6 +123,10 @@
       "en": {
         "url": "https://cancerfree.io/en/pages/eva-select",
         "label": "EVA Select"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/pages/eva-select",
+        "label": "EVAセレクト薬剤選択"
       }
     },
     "ctc": {
@@ -112,6 +137,10 @@
       "en": {
         "url": "https://cancerfree.io/en/pages/ctc-循體欣",
         "label": "CHILINE CATCH™ CTC testing service"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/pages/ctc-%E5%BE%AA%E9%AB%94%E6%AC%A3",
+        "label": "CTC シュン・ティ・シン"
       }
     },
     "ngs": {
@@ -122,6 +151,10 @@
       "en": {
         "url": "https://cancerfree.io/en/pages/ngs-基因檢測",
         "label": "NGS Genetic Testing"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/pages/ngs-%E5%9F%BA%E5%9B%A0%E6%AA%A2%E6%B8%AC",
+        "label": "NGS遺伝子検査"
       }
     },
     "cancerCare": {
@@ -132,6 +165,10 @@
       "en": {
         "url": "https://cancerfree.io/pages/cancer-care-knowledge-en",
         "label": "Cancer Care & Knowledge Hub"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/pages/%E7%99%8C%E7%97%87%E7%85%A7%E8%AD%B7%E8%88%87%E7%9F%A5%E8%AD%98%E5%B0%88%E5%8D%80",
+        "label": "がんケア総合サポート"
       }
     },
     "news": {
@@ -142,6 +179,10 @@
       "en": {
         "url": "https://cancerfree.io/blogs/news-en",
         "label": "News"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/blogs/%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF",
+        "label": "速報ニュース"
       }
     },
     "newsletter": {
@@ -149,6 +190,10 @@
         "url": "https://cancerfree.io/pages/newsletter",
         "label": "企業動態",
         "desc": "CancerFree Biotech 最新電子報"
+      },
+      "ja": {
+        "url": "https://cancerfree.io/ja/pages/newsletter",
+        "label": "企業アップデート"
       }
     },
     "littlestar": {
@@ -160,6 +205,10 @@
       },
       "en": {
         "url": "https://littlestar.love/",
+        "label": "Little Star"
+      },
+      "ja": {
+        "url": "https://littlestar.love/ja/",
         "label": "Little Star"
       }
     }

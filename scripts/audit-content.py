@@ -67,6 +67,25 @@ for f in (ROOT / "data/events").glob("*.json"):
 for line in FIXED:
     if " → " in line:
         CORPUS += squash(line.split(" → ", 1)[1])
+# 修正過的句子：把修正還原成原文後，整句必須對得到原文（確保只改了修正的地方）
+REVERT = [tuple(x.split(" → ", 1))[::-1] for x in FIXED if " → " in x]
+
+
+def revert(s):
+    for after, before in REVERT:
+        s = s.replace(after, before)
+    return s
+
+
+# 日文（AI 翻譯，2026-10-01 Davie 同意）：data/i18n/ja.json 以中英原文為 key。
+# 日文頁與 404 頁可以用翻譯當出處；中英文頁仍只認原文。key 本身必須對得到原文資料。
+JA_FILE = ROOT / "data/i18n/ja.json"
+JA = json.loads(JA_FILE.read_text(encoding="utf-8")) if JA_FILE.exists() else {}
+JA_CORPUS = CORPUS + squash("\n".join(JA.values()))
+DATA_TEXT = squash("\n".join(
+    s for f in [ROOT / "data/home.json", *(ROOT / "data/events").glob("*.json")]
+    for s in strings(json.loads(f.read_text(encoding="utf-8")))))
+ja_orphans = [k for k in JA if not k.startswith("_") and squash(k) not in CORPUS and squash(k) not in DATA_TEXT]
 
 
 class Text(HTMLParser):
@@ -99,10 +118,11 @@ class Text(HTMLParser):
 
 
 # 版面自己產生的字：數字、日期、屆數、分隔符號
-LAYOUT = re.compile(r"^(\d+([/:.\-]\d+)*|第 ?\d+ ?屆|Edition \d+|No\.|[·｜|、，：:–—/→+()（）\s\-]+|©.*|YouTube|404|I{1,3}|跳到主要內容|Skip to content|場演講|talks)$")
+LAYOUT = re.compile(r"^(\d+([/:.\-]\d+)*|第 ?\d+ ?屆|Edition \d+|No\.|[·｜|、，：:–—/→+()（）\s\-]+|©.*|YouTube|404|I{1,3}|跳到主要內容|Skip to content|メインコンテンツへスキップ|第\d+回|繁中|EN|日本語|場演講|talks)$")
 
 direct, composed, missing = 0, set(), {}
 for page in sorted(DIST.rglob("index.html")) + [DIST / "404.html"]:
+    corpus = JA_CORPUS if page.relative_to(DIST).parts[0] in ("ja", "404.html") else CORPUS
     p = Text()
     p.feed(page.read_text(encoding="utf-8"))
     for seg in p.out:
@@ -110,12 +130,12 @@ for page in sorted(DIST.rglob("index.html")) + [DIST / "404.html"]:
             piece = piece.strip(" ，、:：").rstrip("…")
             if not piece or LAYOUT.match(piece):
                 continue
-            if squash(piece) in CORPUS:
+            if squash(piece) in corpus or squash(revert(piece)) in corpus:
                 direct += 1
                 continue
             tokens = [t.strip("()（）,") for t in re.split(r"[\s、／/：:]+", piece)]
             tokens = [t for t in tokens if t and not LAYOUT.match(t)]
-            bad = [t for t in tokens if squash(t) not in CORPUS]
+            bad = [t for t in tokens if squash(t) not in corpus and squash(revert(t)) not in corpus]
             if not bad:
                 composed.add(piece)
                 continue
@@ -131,6 +151,9 @@ if missing:
         print(f"  「{k}」  {', '.join(sorted(v))}")
 else:
     print("\n找不到出處：0 段")
+print(f"\n日文翻譯：{len(JA)} 段（data/i18n/ja.json）；key 對不到中英原文：{len(ja_orphans)} 段")
+for k in ja_orphans[:20]:
+    print("   ", k[:80])
 print(f"\n已套用的原文修字：{len(FIXED)} 項")
 for x in sorted(FIXED):
     print("   ", x)

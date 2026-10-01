@@ -22,6 +22,12 @@ FIXES = {
     "替身醫療 (Avatar 替身醫療 (Avatar Medicine)": "替身醫療 (Avatar Medicine)",  # 2022 FAQ 第 1 題重複貼上
     "Avatar Medicine Forum? ?": "Avatar Medicine Forum?",  # 2022 EN FAQ 第 5 題
     "clooaboration": "collaboration",  # 2021 Michael Morehead 講題
+    # 以下是事實錯誤的更正（2026-10-01 查證，Davie 同意），不只是錯字
+    "2013年，首個靶向治療藥物Imatinib": "2001年，首個靶向治療藥物Imatinib",  # Imatinib（Gleevec）FDA 2001-05-10 核准
+    "國家動物中心主任": "國家實驗動物中心主任",  # 秦咸靜：國研院國家實驗動物中心（現名國家生物模式中心）
+    "National Animal Center": "National Laboratory Animal Center",
+    "台灣褐藻醣膠發展協會": "台灣褐藻醣膠發展學會",  # 顏明德為該學會秘書長
+    "Taiwan Alginates Development Association": "Taiwan Fucoidan Development Association",  # 褐藻醣膠是 fucoidan
 }
 COMMA_FIX = re.compile(r",(?=[A-Za-z])")  # 英文逗號後缺空格，例如 "Director,Emulate"
 applied = []

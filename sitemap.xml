@@ -2,58 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://avatarmedicine.xyz/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/"/>
   </url>
   <url>
     <loc>https://avatarmedicine.xyz/2021/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/2021/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/2021/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/2021/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/2021/"/>
   </url>
   <url>
     <loc>https://avatarmedicine.xyz/2022/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/2022/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/2022/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/2022/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/2022/"/>
   </url>
   <url>
     <loc>https://avatarmedicine.xyz/2023/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/2023/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/2023/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/2023/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/2023/"/>
   </url>
   <url>
     <loc>https://avatarmedicine.xyz/en/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/"/>
   </url>
   <url>
     <loc>https://avatarmedicine.xyz/en/2021/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/2021/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/2021/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/2021/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/2021/"/>
   </url>
   <url>
     <loc>https://avatarmedicine.xyz/en/2022/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/2022/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/2022/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/2022/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/2022/"/>
   </url>
   <url>
     <loc>https://avatarmedicine.xyz/en/2023/</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/2023/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/2023/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/2023/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/2023/"/>
+  </url>
+  <url>
+    <loc>https://avatarmedicine.xyz/ja/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/"/>
+  </url>
+  <url>
+    <loc>https://avatarmedicine.xyz/ja/2021/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/2021/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/2021/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/2021/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/2021/"/>
+  </url>
+  <url>
+    <loc>https://avatarmedicine.xyz/ja/2022/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/2022/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/2022/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/2022/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/2022/"/>
+  </url>
+  <url>
+    <loc>https://avatarmedicine.xyz/ja/2023/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://avatarmedicine.xyz/2023/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://avatarmedicine.xyz/en/2023/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://avatarmedicine.xyz/ja/2023/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://avatarmedicine.xyz/2023/"/>
   </url>
 </urlset>

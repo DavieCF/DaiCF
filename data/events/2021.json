@@ -137,8 +137,8 @@
         "en": "Qin Xianjing"
       },
       "title": {
-        "zh": "國家動物中心主任",
-        "en": "Director of National Animal Center"
+        "zh": "國家實驗動物中心主任",
+        "en": "Director of National Laboratory Animal Center"
       },
       "org": {
         "zh": "",
@@ -229,8 +229,8 @@
         "en": "Yan Mingde"
       },
       "title": {
-        "zh": "台灣褐藻醣膠發展協會秘書長",
-        "en": "Secretary-General of Taiwan Alginates Development Association"
+        "zh": "台灣褐藻醣膠發展學會秘書長",
+        "en": "Secretary-General of Taiwan Fucoidan Development Association"
       },
       "org": {
         "zh": "",
@@ -514,6 +514,10 @@
     "「演講影片」是議程分組的標籤（UI 文字），不是原站內容。"
   ],
   "_fixes": [
-    "clooaboration → collaboration"
+    "National Animal Center → National Laboratory Animal Center",
+    "Taiwan Alginates Development Association → Taiwan Fucoidan Development Association",
+    "clooaboration → collaboration",
+    "台灣褐藻醣膠發展協會 → 台灣褐藻醣膠發展學會",
+    "國家動物中心主任 → 國家實驗動物中心主任"
   ]
 }

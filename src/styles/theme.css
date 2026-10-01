@@ -13,6 +13,11 @@
   --footer-bg: #1B1F23; --footer-text: #D7D3C9; --footer-head: #fff;
   --max: 1080px;
 }
+/* 日文頁用日文字型（漢字字形與假名） */
+html[lang="ja"] {
+  --font-display: "Noto Serif JP", "Noto Serif TC", Georgia, serif;
+  --font-body: "Noto Sans JP", "Noto Sans TC", system-ui, sans-serif;
+}
 body { font-feature-settings: "palt"; }
 .brand-name { font-size: 19px; letter-spacing: .02em; }
 .site-nav a { font-size: 14px; letter-spacing: .02em; }
